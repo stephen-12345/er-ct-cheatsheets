@@ -2,17 +2,35 @@
    - HTML / page navigations  -> NETWORK-FIRST (fresh when online, cached when offline)
    - Other assets (CSS/JS/icons) -> CACHE-FIRST with runtime caching
    Bump CACHE on each meaningful change to purge old caches. */
-const CACHE = 'er-ct-v1';
+const CACHE = 'er-ct-v2';
 
 const SHELL = [
   './',
   'index.html',
+  'dx.html',
   'manifest.webmanifest',
   'apple-touch-icon.png',
   'icon-192.png',
   'icon-512.png',
   'assets/sheet.css',
   'assets/sheet.js',
+  'assets/render.js',
+  'assets/launcher.js',
+  // data-driven catalog (powers home search + every generic diagnosis page)
+  'data/_core.js',
+  'data/neuro.js',
+  'data/headneck.js',
+  'data/spine.js',
+  'data/chest.js',
+  'data/cardiac.js',
+  'data/vascular.js',
+  'data/abdomen.js',
+  'data/hpb.js',
+  'data/gu.js',
+  'data/pelvis.js',
+  'data/msk.js',
+  'data/peds.js',
+  // bespoke deep-dive pages
   'aorta/acute-aortic-syndrome.html',
   'pe/pulmonary-embolism.html',
   'appendicitis/appendicitis.html',
@@ -57,7 +75,9 @@ self.addEventListener('fetch', (e) => {
         }
         return res;
       } catch (err) {
-        const cached = await caches.match(req);
+        // exact match first, then ignore the query string so dx.html?dx=<any-slug>
+        // is served by the cached dx.html shell (content is rebuilt from cached data/*.js)
+        const cached = await caches.match(req) || await caches.match(req, { ignoreSearch: true });
         if (cached) return cached;
         const home = await caches.match('index.html');
         if (home) return home;

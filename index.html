@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ER CT Cheat Sheets — Chest / Abdomen / Pelvis</title>
+<title>ER CT Cheat Sheets — Top ED Diagnoses, Head to Toe</title>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#5a121d">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -21,16 +21,35 @@
       <span class="glyph">🫀</span>
       <div>
         <h1>ER CT Cheat Sheets</h1>
-        <p class="sub">Chest · abdomen · pelvis — top emergency-department diagnoses, copy-ready.</p>
+        <p class="sub">Top emergency-department CT diagnoses, head to toe — copy-ready findings &amp; impressions.</p>
       </div>
     </div>
     <div class="pulse-badge"><span class="dot"></span> On-call radiology reference</div>
   </div>
 </header>
 
+<div class="toolbar">
+  <div class="wrap">
+    <div class="searchbar">
+      <span class="mag">🔍</span>
+      <input id="dx-search" type="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="Search 250+ diagnoses — name, region, sign, or threshold…" aria-label="Search diagnoses">
+      <span class="kbd" id="kbd-hint"><kbd>/</kbd></span>
+      <button id="search-clear" aria-label="Clear search">✕</button>
+    </div>
+    <div class="filters">
+      <span class="fchip active" data-sev="all">All</span>
+      <span class="fchip" data-sev="killer">🩸 Killers</span>
+      <span class="fchip" data-sev="urgent">⏱ Time-critical</span>
+      <span class="sep"></span>
+      <a class="fchip" href="#sources" style="text-decoration:none">📚 Sources</a>
+    </div>
+  </div>
+</div>
+
 <main class="wrap">
   <section class="notice">
-    <strong>How it works:</strong> each topic is a color-zoned page —
+    <strong>How it works:</strong> every diagnosis opens a color-zoned sheet —
     <span style="color:#5fc6e6">How to find it</span> ·
     <span style="color:#7fb2ea">Measure / threshold</span> ·
     <span style="color:#f3ad63">Pitfall / mimic</span> ·
@@ -43,98 +62,67 @@
     <strong>⚠️ Educational reference only.</strong> Thresholds and management vary by institution; this is a workstation memory aid, not a substitute for clinical judgment, local protocol, or direct communication of critical results.
   </section>
 
-  <div class="section-title"><span class="pin">▮</span> Chest &amp; Vascular</div>
-  <section class="grid">
+  <nav class="region-nav" id="region-nav" aria-label="Jump to body region"></nav>
+  <div class="result-count" id="result-count"></div>
 
-    <a class="card" href="aorta/acute-aortic-syndrome.html" style="--card-accent:#ff4d5e">
-      <span class="killer">Killer</span>
-      <div>
-        <div class="ct"><span class="ico">🩸</span><div><h2>Acute Aortic Syndrome</h2><div class="region">Chest · Aorta</div></div></div>
-        <p>Dissection (Stanford A/B), intramural hematoma, penetrating ulcer, and ruptured aneurysm — true vs false lumen, malperfusion, and the rupture signs.</p>
-      </div>
-      <div class="tags"><span>Dissection</span><span>IMH</span><span>PAU</span><span>AAA rupture</span></div>
-    </a>
+  <div id="dx-sections"></div>
 
-    <a class="card" href="pe/pulmonary-embolism.html" style="--card-accent:#ff4d5e">
-      <span class="killer">Killer</span>
-      <div>
-        <div class="ct"><span class="ico">🫁</span><div><h2>Pulmonary Embolism</h2><div class="region">Chest · CTPA</div></div></div>
-        <p>Filling defects from saddle to subsegmental, acute vs chronic, and the right-heart strain markers that flag instability.</p>
-      </div>
-      <div class="tags"><span>Saddle</span><span>RV:LV ratio</span><span>Infarct</span></div>
-    </a>
+  <div class="no-results" id="no-results">
+    <div class="big">🔍</div>
+    <p>No diagnosis matches that search. Try a shorter term, a sign, or a body region.</p>
+  </div>
 
-  </section>
-
-  <div class="section-title abd"><span class="pin">▮</span> Abdomen &amp; Pelvis</div>
-  <section class="grid">
-
-    <a class="card" href="appendicitis/appendicitis.html" style="--card-accent:#ffb648">
-      <div>
-        <div class="ct"><span class="ico">🔬</span><div><h2>Acute Appendicitis</h2><div class="region">Abdomen</div></div></div>
-        <p>Find the appendix off the cecal base, size it &gt; 6 mm, and call perforation, abscess, and the appendiceal-mass mimics.</p>
-      </div>
-      <div class="tags"><span>&gt; 6 mm</span><span>Appendicolith</span><span>Perforation</span></div>
-    </a>
-
-    <a class="card" href="diverticulitis/diverticulitis.html" style="--card-accent:#ffb648">
-      <div>
-        <div class="ct"><span class="ico">🌀</span><div><h2>Acute Diverticulitis</h2><div class="region">Abdomen</div></div></div>
-        <p>Modified Hinchey staging, the four complications, and how to tell it from perforated colon cancer.</p>
-      </div>
-      <div class="tags"><span>Hinchey</span><span>Abscess</span><span>Fistula</span></div>
-    </a>
-
-    <a class="card" href="obstruction/bowel-obstruction.html" style="--card-accent:#ffb648">
-      <div>
-        <div class="ct"><span class="ico">🔁</span><div><h2>Bowel Obstruction</h2><div class="region">Abdomen</div></div></div>
-        <p>Transition point, the cause, and the two phrases that matter: closed-loop and ischemia. SBO vs LBO vs ileus.</p>
-      </div>
-      <div class="tags"><span>Transition pt</span><span>Closed loop</span><span>Whirl</span></div>
-    </a>
-
-    <a class="card" href="ischemia/mesenteric-ischemia.html" style="--card-accent:#ff4d5e">
-      <span class="killer">Killer</span>
-      <div>
-        <div class="ct"><span class="ico">🩻</span><div><h2>Mesenteric Ischemia</h2><div class="region">Abdomen · CTA</div></div></div>
-        <p>The high-mortality miss — four mechanisms, the wall-enhancement clues, pneumatosis, and portal venous gas.</p>
-      </div>
-      <div class="tags"><span>SMA / SMV</span><span>Pneumatosis</span><span>NOMI</span></div>
-    </a>
-
-    <a class="card" href="perforation/perforation.html" style="--card-accent:#ff4d5e">
-      <span class="killer">Killer</span>
-      <div>
-        <div class="ct"><span class="ico">💨</span><div><h2>Perforation / Free Air</h2><div class="region">Abdomen</div></div></div>
-        <p>Detect pneumoperitoneum on lung windows, then localize the leak — the site changes the operation.</p>
-      </div>
-      <div class="tags"><span>Rigler</span><span>Lesser sac</span><span>Localize</span></div>
-    </a>
-
-    <a class="card" href="pancreatitis/pancreatitis.html" style="--card-accent:#ffb648">
-      <div>
-        <div class="ct"><span class="ico">🧫</span><div><h2>Acute Pancreatitis</h2><div class="region">Abdomen</div></div></div>
-        <p>Interstitial vs necrotizing, the revised Atlanta collections, CT severity index, and the vascular complications.</p>
-      </div>
-      <div class="tags"><span>Necrosis</span><span>Atlanta</span><span>Pseudoaneurysm</span></div>
-    </a>
-
-    <a class="card" href="renal/renal-colic.html" style="--card-accent:#ffb648">
-      <div>
-        <div class="ct"><span class="ico">🪨</span><div><h2>Renal Colic</h2><div class="region">Abdomen · Pelvis</div></div></div>
-        <p>Non-contrast stone protocol — size, location, HU, passage prediction, and the infected obstructed system.</p>
-      </div>
-      <div class="tags"><span>Rim sign</span><span>Hydronephrosis</span><span>Pyonephrosis</span></div>
-    </a>
-
+  <div class="region-head" id="sources" style="--reg:#6cd49b">
+    <span class="ricon">📚</span>
+    <h2>Sources &amp; references<span class="rsub">Verify thresholds against these</span></h2>
+  </div>
+  <section class="sources-grid">
+    <a class="src" href="https://radiopaedia.org/" target="_blank" rel="noopener noreferrer">
+      <span class="sname">Radiopaedia<span class="ext">↗</span></span>
+      <span class="sdesc">The reference encyclopedia — every diagnosis sheet links to its article. Cases, signs, and measurements.</span></a>
+    <a class="src" href="https://pubs.rsna.org/journal/radiographics" target="_blank" rel="noopener noreferrer">
+      <span class="sname">RadioGraphics (RSNA)<span class="ext">↗</span></span>
+      <span class="sdesc">Peer-reviewed review articles and pictorial essays — the source for reporting frameworks.</span></a>
+    <a class="src" href="https://www.acr.org/Clinical-Resources/ACR-Appropriateness-Criteria" target="_blank" rel="noopener noreferrer">
+      <span class="sname">ACR Appropriateness Criteria<span class="ext">↗</span></span>
+      <span class="sdesc">Evidence-based imaging selection by clinical scenario.</span></a>
+    <a class="src" href="https://www.acr.org/Clinical-Resources/Reporting-and-Data-Systems" target="_blank" rel="noopener noreferrer">
+      <span class="sname">ACR RADS &amp; Reporting<span class="ext">↗</span></span>
+      <span class="sdesc">LI-RADS, TI-RADS, O-RADS and other structured reporting/data systems.</span></a>
+    <a class="src" href="https://www.statdx.com/" target="_blank" rel="noopener noreferrer">
+      <span class="sname">STATdx (Elsevier)<span class="ext">↗</span></span>
+      <span class="sdesc">Differential-driven diagnostic decision support (subscription).</span></a>
+    <a class="src" href="https://www.aast.org/resources-detail/injury-scoring-scale" target="_blank" rel="noopener noreferrer">
+      <span class="sname">AAST Organ Injury Scales<span class="ext">↗</span></span>
+      <span class="sdesc">Splenic, hepatic, renal and other trauma grading scales used in the dictation templates.</span></a>
+    <a class="src" href="https://litfl.com/" target="_blank" rel="noopener noreferrer">
+      <span class="sname">LITFL<span class="ext">↗</span></span>
+      <span class="sdesc">Life in the Fast Lane — emergency-medicine context, classifications, and pearls.</span></a>
+    <a class="src" href="https://www.startradiology.com/" target="_blank" rel="noopener noreferrer">
+      <span class="sname">StartRadiology<span class="ext">↗</span></span>
+      <span class="sdesc">Anatomy-first tutorials — useful for orientation and search patterns.</span></a>
   </section>
 
   <footer>
-    Relative-linked static site — copy the folder anywhere and open <b>index.html</b>, or host it and pin to your home screen.
+    Relative-linked static PWA — copy the folder anywhere and open <b>index.html</b>, or host it and pin to your home screen.
+    Catalog is data-driven (<b>data/*.js</b>); each entry is searchable and renders a full sheet offline.
     <span class="disc">For education and reference; verify against local protocol and clinical context.</span>
   </footer>
 </main>
 
-<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+<script src="data/_core.js"></script>
+<script src="data/neuro.js"></script>
+<script src="data/headneck.js"></script>
+<script src="data/spine.js"></script>
+<script src="data/chest.js"></script>
+<script src="data/cardiac.js"></script>
+<script src="data/vascular.js"></script>
+<script src="data/abdomen.js"></script>
+<script src="data/hpb.js"></script>
+<script src="data/gu.js"></script>
+<script src="data/pelvis.js"></script>
+<script src="data/msk.js"></script>
+<script src="data/peds.js"></script>
+<script src="assets/launcher.js"></script>
 </body>
 </html>

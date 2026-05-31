@@ -1,7 +1,7 @@
 {
   "name": "ER CT Cheat Sheets",
   "short_name": "ER CT",
-  "description": "Dark-mode CT cheat sheets for top emergency-department chest, abdomen, and pelvis diagnoses — copy-ready findings and impressions.",
+  "description": "Dark-mode, offline CT cheat sheets for the top emergency-department diagnoses head to toe — searchable catalog with copy-ready findings and impressions.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

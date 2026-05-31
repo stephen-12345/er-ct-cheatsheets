@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ER CT Cheat Sheet</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/sheet.css">
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <button id="toc-toggle" class="toc-toggle" title="Contents (c)" aria-label="Table of contents">☰ Contents</button>
+  <span class="crumb" id="dx-crumb">Loading…</span>
+  <a href="index.html">← All topics</a>
+  <span class="fontctl" title="Font size — shortcuts: −, +, 0 to reset">
+    <button id="fs-dec" aria-label="Decrease font size">A−</button>
+    <button id="fs-rst" aria-label="Reset font size">A</button>
+    <button id="fs-inc" aria-label="Increase font size">A+</button>
+  </span>
+</div>
+
+<div id="dx-root"></div>
+
+<script src="data/_core.js"></script>
+<script src="data/neuro.js"></script>
+<script src="data/headneck.js"></script>
+<script src="data/spine.js"></script>
+<script src="data/chest.js"></script>
+<script src="data/cardiac.js"></script>
+<script src="data/vascular.js"></script>
+<script src="data/abdomen.js"></script>
+<script src="data/hpb.js"></script>
+<script src="data/gu.js"></script>
+<script src="data/pelvis.js"></script>
+<script src="data/msk.js"></script>
+<script src="data/peds.js"></script>
+<script src="assets/render.js"></script>
+<script src="assets/sheet.js"></script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+</body>
+</html>

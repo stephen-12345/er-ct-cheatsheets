@@ -87,6 +87,55 @@
   <p>An arch dissection <b>not</b> involving the ascending aorta is sometimes called "non-A non-B." Describe the <b>proximal extent</b> explicitly (e.g., "begins at the proximal arch between innominate and left carotid") so the surgeon can classify it.</p>
 </div>
 
+<figure class="diagram">
+<svg viewBox="0 0 640 290" role="img" aria-label="Stanford classification and true versus false lumen schematic">
+  <rect width="640" height="290" rx="7" fill="#070a0e"/>
+  <!-- ===== Panel A: Type A ===== -->
+  <g transform="translate(8,6)">
+    <text class="dgm-label" x="86" y="20" text-anchor="middle">STANFORD A</text>
+    <path d="M52,250 L52,128 A40,40 0 0 1 132,128 L132,262" fill="none" stroke="#33404f" stroke-width="19" stroke-linecap="round"/>
+    <!-- involved: whole aorta red -->
+    <path d="M52,250 L52,128 A40,40 0 0 1 132,128 L132,262" fill="none" stroke="#ff4d5e" stroke-width="19" stroke-linecap="round" opacity="0.9"/>
+    <!-- arch branch vessels -->
+    <path d="M66,92 L62,58 M86,80 L86,50 M106,92 L112,60" fill="none" stroke="#33404f" stroke-width="6" stroke-linecap="round"/>
+    <!-- entry tear in ascending -->
+    <circle cx="52" cy="180" r="6.5" fill="#fff"/>
+    <text class="dgm-label sm" x="20" y="184" text-anchor="end">tear</text>
+    <text class="dgm-crit" style="font:700 12px system-ui" x="86" y="285" text-anchor="middle">ascending → SURGERY</text>
+  </g>
+  <!-- ===== Panel B: Type B ===== -->
+  <g transform="translate(228,6)">
+    <text class="dgm-label" x="86" y="20" text-anchor="middle">STANFORD B</text>
+    <path d="M52,250 L52,128 A40,40 0 0 1 132,128 L132,262" fill="none" stroke="#33404f" stroke-width="19" stroke-linecap="round"/>
+    <!-- involved: only descending, distal to L subclavian -->
+    <path d="M132,118 L132,262" fill="none" stroke="#ff4d5e" stroke-width="19" stroke-linecap="round" opacity="0.9"/>
+    <path d="M66,92 L62,58 M86,80 L86,50 M106,92 L112,60" fill="none" stroke="#33404f" stroke-width="6" stroke-linecap="round"/>
+    <!-- left subclavian marker -->
+    <circle cx="112" cy="60" r="4" fill="#46c6e0"/>
+    <text class="dgm-teal" style="font:600 10px system-ui" x="120" y="50">L subclavian</text>
+    <text class="dgm-amber" style="font:700 12px system-ui" x="86" y="285" text-anchor="middle">distal → MEDICAL / TEVAR</text>
+  </g>
+  <!-- ===== Panel C: cross-section true vs false lumen ===== -->
+  <g transform="translate(448,6)">
+    <text class="dgm-label" x="92" y="20" text-anchor="middle">TRUE vs FALSE LUMEN</text>
+    <!-- aortic wall -->
+    <circle cx="92" cy="140" r="78" fill="#202a39" stroke="#33404f" stroke-width="3"/>
+    <!-- false lumen (larger, surrounds) implied by fill above; true lumen bright, offset -->
+    <circle cx="78" cy="150" r="46" fill="#7fb2ea"/>
+    <!-- intimal flap arc separating the lumina -->
+    <path d="M30,118 Q92,96 150,150" fill="none" stroke="#e9edf4" stroke-width="3"/>
+    <!-- beak sign wedge at flap margin -->
+    <path d="M150,150 L168,140 L160,162 Z" fill="#ffb648"/>
+    <!-- displaced intimal calcification -->
+    <circle cx="70" cy="106" r="3" fill="#fff"/><circle cx="86" cy="100" r="3" fill="#fff"/>
+    <text class="dgm-label" style="font:800 14px system-ui" x="74" y="156" text-anchor="middle" fill="#0a0c10">T</text>
+    <text class="dgm-label" x="120" y="208" text-anchor="middle">F</text>
+    <text class="dgm-amber" style="font:600 10px system-ui" x="182" y="138">beak</text>
+  </g>
+</svg>
+<figcaption><b>Stanford A</b> involves the ascending aorta (any tear site) — a surgical emergency. <b>Stanford B</b> is confined distal to the left subclavian — medical / TEVAR. Cross-section: the <b>true lumen (T)</b> is smaller, bounded by calcified intima; the <b>false lumen (F)</b> is larger with the <b>beak sign</b> wedge at the flap margin.</figcaption>
+</figure>
+
 <h2 id="dissection-findings">Core dissection findings</h2>
 <div class="callout find">
   <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">The intimal flap</span></div>
