@@ -336,6 +336,7 @@ ERCT.add([
   },
   {
     slug:'necrotizing-fasciitis', title:'Necrotizing Fasciitis', region:'msk', system:'Soft tissue',
+    href:'nec-fasc/necrotizing-fasciitis.html',
     modality:'CT', sev:'killer', emoji:'💀',
     blurb:'Gas tracking along fascial planes is the CT signature of necrotizing fasciitis — surgical debridement within hours saves lives.',
     tags:['Fascial gas','Fascial thickening','Surgical emergency'], rp:'necrotizing-fasciitis',

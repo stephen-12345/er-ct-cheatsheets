@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ovarian Torsion — ER CT Cheat Sheet</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/sheet.css">
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <button id="toc-toggle" class="toc-toggle" title="Contents (c)" aria-label="Table of contents">☰ Contents</button>
+  <span class="crumb">Ovarian Torsion</span>
+  <a href="../index.html">← All topics</a>
+  <span class="fontctl" title="Font size — shortcuts: −, +, 0 to reset">
+    <button id="fs-dec" aria-label="Decrease font size">A−</button>
+    <button id="fs-rst" aria-label="Reset font size">A</button>
+    <button id="fs-inc" aria-label="Increase font size">A+</button>
+  </span>
+</div>
+
+<h1 class="sheet-h1">Ovarian Torsion on Imaging</h1>
+<p class="subtitle">US first-line with Doppler; CT often the ED finder. Replace <span class="ph">[bracketed]</span> text.</p>
+
+<div class="crit-strip">
+  <span class="bolt">🚨</span>
+  <span class="txt">Ovarian torsion is a <b>surgical emergency</b> — time-to-OR directly determines ovarian salvage. <b>Normal or preserved Doppler flow does NOT exclude torsion</b>: dual ovarian blood supply can maintain flow even with complete adnexal twisting. Clinical suspicion + asymmetrically enlarged ovary = immediate gyn consult.</span>
+</div>
+
+<!-- ============================================================ ANATOMY -->
+<h2 class="group">Anatomy &amp; Pathophysiology</h2>
+
+<h2 id="anatomy">Relevant anatomy</h2>
+<div class="callout landmark">
+  <div class="c-title"><span class="ico">🫀</span><span class="lbl">Anatomy</span><span class="ttl">Dual blood supply — the salvage paradox</span></div>
+  <ul>
+    <li>The ovary receives blood from the <b>ovarian artery</b> (branch of aorta) via the infundibulopelvic ligament <em>and</em> from the <b>uterine artery</b> via the utero-ovarian ligament.</li>
+    <li>Because of this dual supply, arterial inflow and venous Doppler signal can persist even after the pedicle has twisted — the classic <b>"normal Doppler does not exclude torsion"</b> pitfall.</li>
+    <li>Lymphatic and venous drainage is compromised first (lower-pressure system), causing <b>stromal edema → ovarian enlargement</b>. Arterial compromise follows, causing <b>hemorrhagic infarction</b>.</li>
+    <li>The <b>right ovary</b> twists more often than the left (sigmoid colon partially fixes the left adnexa).</li>
+    <li>The twisted vascular pedicle wraps around the utero-ovarian ligament, creating the <b>whirlpool sign</b> on imaging.</li>
+  </ul>
+</div>
+
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">Lead-point masses predispose</span></div>
+  <p>Any mass that adds weight or alters the center of rotation increases torsion risk. <b>Mature cystic teratomas (dermoids)</b> are the most common lead point. Functional cysts &gt; 5 cm, paraovarian cysts, and serous/mucinous cystadenomas also act as lead points. A <b>normal-sized ovary can also torse</b> — especially in children, where the broad ligament is more lax.</p>
+</div>
+
+<!-- ============================================================ SVG DIAGRAM -->
+<figure class="diagram">
+  <svg viewBox="0 0 640 370" role="img" aria-label="Schematic of ovarian torsion showing enlarged edematous ovary with peripherally displaced follicles and a twisted vascular pedicle (whirlpool sign)">
+    <defs>
+      <radialGradient id="ov-grad" cx="50%" cy="48%" r="50%">
+        <stop offset="0%" stop-color="#3d1e2a"/>
+        <stop offset="55%" stop-color="#2a1018"/>
+        <stop offset="100%" stop-color="#1c0a10"/>
+      </radialGradient>
+      <radialGradient id="follicle-grad" cx="40%" cy="35%" r="55%">
+        <stop offset="0%" stop-color="#46c6e0" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#1a7a96" stop-opacity="0.9"/>
+      </radialGradient>
+      <radialGradient id="uterus-grad" cx="50%" cy="40%" r="50%">
+        <stop offset="0%" stop-color="#4a1520"/>
+        <stop offset="100%" stop-color="#2d0c13"/>
+      </radialGradient>
+      <filter id="glow-red">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#ffb648"/>
+      </marker>
+      <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#ff4d5e"/>
+      </marker>
+      <marker id="arrowhead-teal" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#46c6e0"/>
+      </marker>
+    </defs>
+
+    <!-- Background -->
+    <rect width="640" height="370" fill="#070a0e" rx="7"/>
+
+    <!-- Uterus body (displaced to torsed side = right) -->
+    <ellipse cx="285" cy="220" rx="46" ry="54" fill="url(#uterus-grad)" stroke="#5a1a28" stroke-width="1.5"/>
+    <!-- Uterus cervix -->
+    <rect x="270" y="265" width="30" height="22" rx="7" fill="#3a0f1a" stroke="#5a1a28" stroke-width="1.5"/>
+    <!-- Uterine cavity outline -->
+    <path d="M 278 200 Q 285 190 292 200 L 290 240 Q 285 248 280 240 Z" fill="none" stroke="#7a2a38" stroke-width="1" stroke-dasharray="3 2"/>
+
+    <!-- Normal left ovary (small, for contrast) -->
+    <ellipse cx="200" cy="205" rx="22" ry="19" fill="#1a1428" stroke="#46c6e0" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <!-- Normal follicles — left ovary (evenly distributed) -->
+    <circle cx="191" cy="198" r="5" fill="none" stroke="#46c6e0" stroke-width="1.2"/>
+    <circle cx="207" cy="200" r="4" fill="none" stroke="#46c6e0" stroke-width="1.2"/>
+    <circle cx="198" cy="212" r="4.5" fill="none" stroke="#46c6e0" stroke-width="1.2"/>
+
+    <!-- Torsed right ovary — enlarged, edematous, heterogeneous -->
+    <ellipse cx="450" cy="196" rx="88" ry="74" fill="url(#ov-grad)" stroke="#ff4d5e" stroke-width="2.2" filter="url(#glow-red)"/>
+    <!-- Edematous stroma — central heterogeneous region -->
+    <ellipse cx="448" cy="198" rx="52" ry="42" fill="#4a1828" opacity="0.55"/>
+    <ellipse cx="442" cy="193" rx="28" ry="22" fill="#3a1220" opacity="0.7"/>
+
+    <!-- Peripherally displaced follicles (key finding) -->
+    <!-- Upper arc -->
+    <circle cx="390" cy="148" r="10" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="415" cy="132" r="9.5" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="442" cy="124" r="10.5" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="470" cy="128" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="495" cy="142" r="9.5" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <!-- Right arc -->
+    <circle cx="524" cy="167" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="533" cy="195" r="9.5" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="524" cy="224" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <!-- Lower arc -->
+    <circle cx="498" cy="248" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="470" cy="262" r="10" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="442" cy="266" r="9.5" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <!-- Left arc -->
+    <circle cx="388" cy="242" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="371" cy="216" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+    <circle cx="368" cy="182" r="9" fill="url(#follicle-grad)" stroke="#46c6e0" stroke-width="1.5"/>
+
+    <!-- Twisted vascular pedicle — whirlpool/spiral -->
+    <path d="M 340 270 Q 330 295 345 310 Q 365 328 385 312 Q 405 294 388 275 Q 370 258 350 268 Q 335 278 340 295 Q 348 315 368 318 Q 390 320 400 304" fill="none" stroke="#ff4d5e" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Vascular pedicle shaft leading to ovary -->
+    <path d="M 400 304 Q 415 285 420 265" fill="none" stroke="#ff4d5e" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Secondary vessel twists -->
+    <path d="M 344 280 Q 356 270 368 278 Q 378 288 370 298" fill="none" stroke="#ffb648" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
+    <path d="M 357 302 Q 372 308 380 298 Q 388 286 376 276" fill="none" stroke="#ffb648" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 2"/>
+
+    <!-- Uterine deviation arrow — pointing right toward torsed side -->
+    <line x1="310" y1="220" x2="345" y2="220" stroke="#ffb648" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Free fluid — small locule in cul-de-sac -->
+    <ellipse cx="285" cy="310" rx="28" ry="11" fill="#1a3040" stroke="#46c6e0" stroke-width="1" opacity="0.7"/>
+
+    <!-- ── LABELS ── -->
+    <!-- Ovarian torsion label -->
+    <text x="450" y="96" class="dgm-label" text-anchor="middle" font-size="13" fill="#ffd2d7" font-weight="800">TORSED OVARY</text>
+    <text x="450" y="112" class="dgm-label sm" text-anchor="middle" font-size="11" fill="#ff4d5e">(enlarged, edematous — 7.2 cm)</text>
+
+    <!-- Peripheral follicles bracket + label -->
+    <line x1="568" y1="160" x2="568" y2="240" stroke="#46c6e0" stroke-width="1.5"/>
+    <line x1="562" y1="160" x2="568" y2="160" stroke="#46c6e0" stroke-width="1.5"/>
+    <line x1="562" y1="240" x2="568" y2="240" stroke="#46c6e0" stroke-width="1.5"/>
+    <line x1="568" y1="200" x2="588" y2="200" stroke="#46c6e0" stroke-width="1.5" marker-end="url(#arrowhead-teal)"/>
+    <text x="592" y="196" class="dgm-label" font-size="11.5" fill="#46c6e0" font-weight="700">Peripherally</text>
+    <text x="592" y="210" class="dgm-label" font-size="11.5" fill="#46c6e0" font-weight="700">displaced</text>
+    <text x="592" y="224" class="dgm-label" font-size="11.5" fill="#46c6e0" font-weight="700">follicles</text>
+
+    <!-- Edematous stroma label -->
+    <line x1="440" y1="193" x2="440" y2="165" stroke="#b69cf0" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <text x="440" y="160" class="dgm-label" font-size="11" fill="#b69cf0" font-weight="700" text-anchor="middle">Edematous stroma</text>
+
+    <!-- Whirlpool pedicle label -->
+    <line x1="340" y1="320" x2="310" y2="345" stroke="#ff4d5e" stroke-width="1.5" marker-end="url(#arrowhead-red)"/>
+    <text x="180" y="342" class="dgm-label" font-size="12" fill="#ff4d5e" font-weight="800" text-anchor="middle">Twisted vascular</text>
+    <text x="180" y="356" class="dgm-label" font-size="12" fill="#ff4d5e" font-weight="800" text-anchor="middle">pedicle (whirlpool)</text>
+
+    <!-- Normal ovary label -->
+    <text x="200" y="241" class="dgm-label sm" text-anchor="middle" font-size="11" fill="#7a8698">Normal ovary (L)</text>
+
+    <!-- Uterus label -->
+    <text x="285" y="173" class="dgm-label sm" text-anchor="middle" font-size="11" fill="#a6b1c2">Uterus</text>
+
+    <!-- Uterine deviation label -->
+    <text x="326" y="238" class="dgm-label sm" text-anchor="middle" font-size="10.5" fill="#ffb648">Deviation →</text>
+
+    <!-- Free fluid label -->
+    <text x="285" y="330" class="dgm-label sm" text-anchor="middle" font-size="10.5" fill="#7a8698">Free fluid (cul-de-sac)</text>
+  </svg>
+  <figcaption><b>Schematic: right ovarian torsion.</b> The enlarged, edematous ovary shows the hallmark ring of <b>peripherally displaced follicles</b> (pushed to the cortex by stromal edema). The <b>twisted vascular pedicle</b> appears as a whirlpool of vessels below the ovary. The uterus deviates toward the torsed side. A small free-fluid locule is present in the cul-de-sac. The normal left ovary (dashed outline) shows centrally distributed follicles for comparison.</figcaption>
+</figure>
+
+<!-- ============================================================ FINDINGS -->
+<h2 class="group">CT &amp; US Findings</h2>
+
+<h2 id="primary-findings">Primary CT findings</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">Find</span><span class="ttl">The characteristic CT picture</span></div>
+  <ul>
+    <li><b>Asymmetrically enlarged ovary</b> — unilateral ovarian volume &gt; 4 cm in any dimension (many series use &gt; 20 mL volume); contralateral ovary appears normal.</li>
+    <li><b>Peripherally displaced follicles</b> — cortical follicles pushed outward by edematous stroma; appears as a halo of cysts at the ovarian periphery.</li>
+    <li><b>Ovarian stromal edema and heterogeneity</b> — diffuse low-attenuation enlargement of the stroma; heterogeneous enhancement on IV contrast; may show areas of high attenuation if hemorrhagic infarction has occurred.</li>
+    <li><b>Twisted vascular pedicle / whirlpool sign</b> — spiral or coiled appearance of the infundibulopelvic ligament vessels; best seen on axial CT with IV contrast as a beaked or swirling soft-tissue structure medial and inferior to the ovary.</li>
+    <li><b>Deviation of the uterus</b> toward the torsed side — the pulled utero-ovarian ligament draws the uterine fundus ipsilaterally.</li>
+    <li><b>Free pelvic fluid</b> — small to moderate; non-specific but supports the diagnosis.</li>
+    <li><b>Adnexal mass as a lead point</b> — dermoid (fat density ± calcification), large functional cyst, cystadenoma.</li>
+  </ul>
+</div>
+
+<div class="callout measure">
+  <div class="c-title"><span class="ico">📏</span><span class="lbl">Measure</span><span class="ttl">Thresholds and measurements</span></div>
+  <table>
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Threshold / typical value</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Ovarian diameter</b></td>
+        <td>&gt; 4 cm (some use &gt; 5 cm)</td>
+        <td>Asymmetric enlargement is the key — compare to contralateral</td>
+      </tr>
+      <tr>
+        <td><b>Ovarian volume</b></td>
+        <td>&gt; 20 mL (ellipsoid formula)</td>
+        <td>L × W × H × 0.523; &gt; 3× volume of contralateral is strongly suggestive</td>
+      </tr>
+      <tr>
+        <td><b>Lead-point cyst size</b></td>
+        <td>Functional cysts &gt; 5 cm highest risk</td>
+        <td>Dermoids any size can torse</td>
+      </tr>
+      <tr>
+        <td><b>Peripheral follicle rim</b></td>
+        <td>Follicles &gt; 3 mm at cortex</td>
+        <td>Described in ~74% of torsion cases on US</td>
+      </tr>
+      <tr>
+        <td><b>Free fluid</b></td>
+        <td>Trace to moderate</td>
+        <td>Large hemoperitoneum suggests hemorrhagic cyst rupture or ovarian infarction</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="doppler-us">Doppler US — the critical caveat</h2>
+<div class="callout crit">
+  <div class="c-title"><span class="ico">🚨</span><span class="lbl">Critical</span><span class="ttl">Normal Doppler does NOT exclude torsion</span></div>
+  <p>Preserved arterial flow on color Doppler or spectral waveform is present in <b>up to 60% of surgically confirmed torsions</b>. The dual blood supply (ovarian artery + uterine artery arcade) allows continued perfusion despite pedicle twisting. <b>Do not use Doppler normalcy to reassure</b> when there is high clinical suspicion or morphologic abnormality.</p>
+  <ul>
+    <li><b>Absent flow</b>: strongly supports torsion; ovarian infarction likely.</li>
+    <li><b>Absent venous flow with preserved arterial flow</b>: classic early torsion pattern — venous obstruction precedes arterial.</li>
+    <li><b>Normal arterial and venous flow</b>: does NOT exclude torsion — requires morphologic assessment.</li>
+    <li><b>Hyperemic rim</b>: can be seen in early torsion (reactive) or after detorsion.</li>
+  </ul>
+</div>
+
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">US Finding</span><span class="ttl">US morphologic signs</span></div>
+  <ul>
+    <li><b>Enlarged ovary with peripheral follicles</b>: most reliable US morphologic sign (sensitivity ~74%).</li>
+    <li><b>Whirlpool sign on US</b>: spiral color Doppler pattern at the twisted pedicle — high specificity when present.</li>
+    <li><b>Heterogeneous echogenic stroma</b>: edema → diffuse low echogenicity; hemorrhage → echogenic foci.</li>
+    <li><b>Absent or diminished Doppler</b>: helpful when present; absence does not reassure.</li>
+    <li><b>Lead-point mass</b>: dermoid (bright with posterior shadowing), cyst, or complex mass.</li>
+  </ul>
+</div>
+
+<h2 id="hemorrhagic-infarction">Hemorrhagic infarction — late findings</h2>
+<div class="callout pitfall">
+  <div class="c-title"><span class="ico">⚠️</span><span class="lbl">Pitfall</span><span class="ttl">Late / infarcted ovary</span></div>
+  <ul>
+    <li>Prolonged torsion leads to <b>hemorrhagic infarction</b>: CT shows heterogeneous mixed-attenuation ovarian mass, peripheral rim of residual follicles, possibly high-attenuation hemorrhage (40–70 HU).</li>
+    <li><b>No enhancement</b> of ovarian parenchyma with IV contrast = strong marker of infarction.</li>
+    <li>The ovary may resemble a large complex mass or <b>mimic a tubo-ovarian abscess (TOA)</b>.</li>
+    <li>Even infarcted ovaries can be detorsed — histologic salvage may occur; early OR remains preferred over waiting.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ SPECIAL POPULATIONS -->
+<h2 class="group">Special Populations</h2>
+
+<h2 id="pediatric">Pediatric ovarian torsion</h2>
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">Children and adolescents</span></div>
+  <ul>
+    <li><b>Most common gynecologic emergency in girls</b>; can occur in neonates and prepubertal children.</li>
+    <li>Prepubertal girls often torse <b>normal ovaries</b> due to a longer utero-ovarian ligament with less peritoneal fixation.</li>
+    <li>Ovarian masses are present in ~50% of pediatric torsion (vs. ~70% in adults) — do not require a mass to diagnose.</li>
+    <li>Neonatal torsion often presents as an incidental calcified pelvic mass at birth (intrauterine torsion with auto-amputation).</li>
+    <li>Right-sided predominance maintained; pain may be intermittent with spontaneous detorsion/retorsion.</li>
+    <li>US is the preferred initial modality; radiation should be avoided in children when possible.</li>
+  </ul>
+</div>
+
+<h2 id="pregnancy">Torsion in pregnancy</h2>
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">First and second trimester peaks</span></div>
+  <ul>
+    <li><b>Most common in the first trimester</b> (10–16 weeks), often involving a <b>corpus luteum cyst</b> or ovarian hyperstimulation (ART patients).</li>
+    <li>Second trimester: as the uterus rises, adnexal structures are lifted into the abdomen, increasing mobility and torsion risk.</li>
+    <li>CT is generally avoided; MRI preferred if US is non-diagnostic. In unstable patients, CT is acceptable.</li>
+    <li>Diagnosis and surgery are <b>not contraindicated in pregnancy</b> — prompt laparoscopy is standard of care.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ MIMICS -->
+<h2 class="group">Mimics &amp; Differentials</h2>
+
+<h2 id="mimics">Key mimics on CT</h2>
+<div class="callout pitfall">
+  <div class="c-title"><span class="ico">⚠️</span><span class="lbl">Pitfall</span><span class="ttl">Diagnoses that look like torsion (and vice versa)</span></div>
+  <table>
+    <thead>
+      <tr>
+        <th>Mimic</th>
+        <th>Distinguishing CT feature</th>
+        <th>Clinical clue</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Hemorrhagic ovarian cyst</b></td>
+        <td>Cyst ± high-attenuation blood products; ovarian size may be normal or only mildly enlarged; no twisted pedicle; fat stranding if ruptured</td>
+        <td>Sudden onset; typically less tender; may have haemoperitoneum; US shows reticular fibrin strands</td>
+      </tr>
+      <tr>
+        <td><b>Tubo-ovarian abscess (TOA)</b></td>
+        <td>Thick-walled complex adnexal collection, often bilateral; rim enhancement; inflammatory stranding; ± IUD</td>
+        <td>Fever, cervical motion tenderness, elevated WBC; no whirlpool sign</td>
+      </tr>
+      <tr>
+        <td><b>Appendicitis</b></td>
+        <td>Dilated appendix (&gt; 6 mm) in RLQ; periappendiceal fat stranding</td>
+        <td>Migration of pain; Rovsing sign; may coexist — check appendix even when torsion is confirmed</td>
+      </tr>
+      <tr>
+        <td><b>Ectopic pregnancy</b></td>
+        <td>Adnexal ring sign; empty uterine cavity; hemoperitoneum</td>
+        <td>Positive βhCG; amenorrhea; can mimic torsion and may coexist as heterotopic pregnancy</td>
+      </tr>
+      <tr>
+        <td><b>Ovarian hyperstimulation (OHSS)</b></td>
+        <td>Massively bilaterally enlarged multicystic ovaries; ascites</td>
+        <td>ART history; bilateral; absence of pedicle twist</td>
+      </tr>
+      <tr>
+        <td><b>Degenerating fibroid</b></td>
+        <td>Uterine origin; whorled heterogeneous myometrial mass; no peripheral follicles</td>
+        <td>Known fibroids; less acute; tenderness over uterus</td>
+      </tr>
+      <tr>
+        <td><b>Adnexal torsion without ovarian involvement</b></td>
+        <td>Twisted fallopian tube ± paraovarian cyst; ovarian parenchyma may appear normal</td>
+        <td>Same clinical presentation; CT may show an isolated tubular adnexal structure</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ============================================================ PROTOCOL -->
+<h2 class="group">Imaging Protocol</h2>
+
+<h2 id="protocol">CT &amp; US approach in the ED</h2>
+<div class="callout protocol">
+  <div class="c-title"><span class="ico">🧪</span><span class="lbl">Protocol</span><span class="ttl">When and how to image</span></div>
+  <ul>
+    <li><b>US + Doppler is first-line</b>: pelvic US (transabdominal + transvaginal) with gray-scale and color/spectral Doppler. Transvaginal improves sensitivity in obese patients.</li>
+    <li><b>CT with IV contrast</b> is frequently the first study obtained in the ED (ordered for nonspecific pelvic pain or to exclude appendicitis/bowel pathology). Torsion is often an <em>incidental finding</em> on a bowel/stone CT — do not miss it.</li>
+    <li><b>CT protocol</b>: abdomen/pelvis with IV contrast, portal venous phase; arterial or split-bolus acceptable. Oral contrast optional. Coronal and sagittal reconstructions increase conspicuity of the twisted pedicle.</li>
+    <li><b>MRI</b>: reserved for pregnancy or equivocal US when CT is not preferred. T2 shows edematous stroma well; post-contrast T1 identifies lack of enhancement in infarction.</li>
+    <li><b>Urine βhCG</b> in all women of reproductive age before CT — excludes ectopic pregnancy and identifies pregnancy (reduces CT if negative for urgent cases).</li>
+    <li><b>Surgical diagnosis</b>: laparoscopy is both diagnostic and therapeutic — a normal CT or positive Doppler does not preclude operative exploration when clinical suspicion is high.</li>
+  </ul>
+</div>
+
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">The CT non-contrast trap</span></div>
+  <p>On <b>non-contrast CT</b>, the twisted vascular pedicle and ovarian enhancement pattern are not assessable. Report ovarian asymmetry, peripheral follicles, and pelvic fluid — then recommend US or CT with IV contrast for definitive assessment if torsion is suspected.</p>
+</div>
+
+<!-- ============================================================ DICTATION -->
+<h2 class="group">Copy-Ready Dictation</h2>
+<p class="subtitle">Tap any <b>F:</b>/<b>I:</b> line to copy.</p>
+
+<div class="dx">Right ovarian torsion — enlarged ovary with lead point</div>
+<p class="f"><b>F:</b> The right ovary is asymmetrically enlarged, measuring <span class="ph">[X × Y × Z]</span> cm (volume approximately <span class="ph">[X]</span> mL), consistent with ovarian edema. Peripheral displacement of cortical follicles is present, consistent with stromal edema. There is a <span class="ph">[X × Y]</span> cm <span class="ph">[dermoid / cystic]</span> adnexal mass in the right adnexa serving as a probable lead point. A twisted vascular pedicle is identified inferior and medial to the right ovary demonstrating a whirlpool configuration. The uterus is deviated to the right. Small volume free fluid is present in the cul-de-sac. The left ovary measures <span class="ph">[X]</span> cm and appears normal. No extraluminal gas or bowel obstruction.</p>
+<p class="i"><b>I:</b> Imaging findings are consistent with right ovarian torsion, with asymmetric right ovarian enlargement, peripheral follicle displacement, and a twisted vascular pedicle. A <span class="ph">[dermoid / cystic lesion]</span> in the right adnexa is the probable lead point. Emergent gynecologic surgery consultation recommended. Communicated to <span class="ph">[clinician]</span> at <span class="ph">[time]</span>.</p>
+
+<div class="dx">Ovarian torsion — enlarged ovary, no discrete lead point</div>
+<p class="f"><b>F:</b> The right ovary is enlarged, measuring <span class="ph">[X × Y × Z]</span> cm. Cortical follicles are peripherally displaced with an edematous, heterogeneous ovarian stroma. A twisted vascular pedicle is identified in the right adnexa with a whirlpool appearance of the adnexal vessels. The uterus is deviated to the right. Trace free fluid in the pelvis. No discrete adnexal mass identified. Left ovary appears unremarkable.</p>
+<p class="i"><b>I:</b> CT findings are suspicious for right ovarian torsion. Recommend urgent pelvic ultrasound with Doppler and emergent gynecologic consultation. Note: preserved Doppler flow does not exclude torsion given dual ovarian blood supply. Communicated to <span class="ph">[clinician]</span> at <span class="ph">[time]</span>.</p>
+
+<div class="dx">Left ovarian torsion — hemorrhagic infarction</div>
+<p class="f"><b>F:</b> The left ovary is markedly enlarged, measuring <span class="ph">[X × Y × Z]</span> cm, with heterogeneous internal attenuation including areas of high density (<span class="ph">[X]</span> HU) consistent with hemorrhagic transformation. Following IV contrast administration, there is <span class="ph">[absent / markedly diminished]</span> enhancement of the ovarian parenchyma, suggesting vascular compromise. A twisted vascular pedicle is identified in the left adnexa. Moderate free pelvic fluid. No extraluminal gas. Right ovary unremarkable.</p>
+<p class="i"><b>I:</b> Markedly enlarged left ovary with hemorrhagic transformation and diminished/absent parenchymal enhancement is consistent with ovarian torsion with probable hemorrhagic infarction. Emergent gynecologic surgery consultation recommended — ovarian salvage may still be possible. Communicated to <span class="ph">[clinician]</span> at <span class="ph">[time]</span>.</p>
+
+<!-- ============================================================ SEARCH PATTERN -->
+<h2 id="search-pattern">Search pattern</h2>
+<ol>
+  <li><b>Compare ovaries bilaterally</b> on every pelvic CT — asymmetric enlargement is the primary trigger. Measure the larger ovary in three dimensions.</li>
+  <li><b>Assess ovarian morphology</b> — peripheral follicle displacement, stromal edema/heterogeneity, high-attenuation hemorrhage.</li>
+  <li><b>Trace the adnexal pedicle</b> medially and inferiorly from the enlarged ovary — look for the whirlpool/beaked soft-tissue structure of the twisted infundibulopelvic ligament.</li>
+  <li><b>Uterine position</b> — ipsilateral deviation of the uterine fundus supports the diagnosis.</li>
+  <li><b>Look for a lead-point mass</b> — fat density (dermoid), simple or complex cyst, cystadenoma.</li>
+  <li><b>IV contrast enhancement</b> — absent or diminished ovarian enhancement implies vascular compromise / infarction.</li>
+  <li><b>Free pelvic fluid</b> — trace to moderate; large hemoperitoneum widens the differential.</li>
+  <li><b>Exclude mimics</b> — check the appendix (appendicitis), the uterus (fibroids), and the adnexa for TOA features (thick-walled collection, bilateral involvement).</li>
+  <li><b>Confirm βhCG status</b> — exclude ectopic pregnancy; if positive, heterotopic pregnancy must be considered.</li>
+  <li><b>Call it — don't hedge</b>: if findings are suspicious, explicitly state "findings are concerning for ovarian torsion; emergent gyn consult recommended" and communicate directly.</li>
+</ol>
+
+<!-- ============================================================ SOURCES -->
+<h2 id="sources">Source notes</h2>
+<p>Clinical scope: ED/gyn body CT and pelvic US reporting framework. Background and imaging criteria adapted from:</p>
+<ul>
+  <li><a href="https://radiopaedia.org/articles/ovarian-torsion" target="_blank" rel="noopener noreferrer">Ovarian torsion — Radiopaedia</a></li>
+  <li><a href="https://radiopaedia.org/articles/peripheral-follicle-sign" target="_blank" rel="noopener noreferrer">Peripheral follicle sign — Radiopaedia</a></li>
+  <li><a href="https://radiopaedia.org/articles/whirlpool-sign-ovarian-torsion" target="_blank" rel="noopener noreferrer">Whirlpool sign (ovarian torsion) — Radiopaedia</a></li>
+  <li><a href="https://radiopaedia.org/articles/adnexal-torsion" target="_blank" rel="noopener noreferrer">Adnexal torsion — Radiopaedia</a></li>
+  <li><a href="https://radiopaedia.org/articles/haemorrhagic-ovarian-cyst" target="_blank" rel="noopener noreferrer">Haemorrhagic ovarian cyst (mimic) — Radiopaedia</a></li>
+</ul>
+<p style="margin-top:14px; color:var(--tx3); font-size:14px;">⚠️ Educational reference only — not clinical decision-making guidance. Always correlate with clinical findings and consult gynecology for suspected torsion.</p>
+
+<script src="../assets/sheet.js"></script>
+</body>
+</html>

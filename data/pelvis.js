@@ -3,6 +3,7 @@ ERCT.add([
 
   {
     slug:'ectopic-pregnancy-tubal', title:'Tubal Ectopic Pregnancy', region:'pelvis', system:'Pregnancy',
+    href:'ectopic/ectopic-pregnancy.html',
     modality:'CT pelvis', sev:'killer', emoji:'🚨',
     blurb:'Adnexal ring mass with no IUP — ruptured tubal ectopic bleeds fast and kills fast.',
     tags:['No IUP','Adnexal ring','Hemoperitoneum'], rp:'ectopic-pregnancy',
@@ -35,6 +36,7 @@ ERCT.add([
 
   {
     slug:'ovarian-torsion', title:'Ovarian (Adnexal) Torsion', region:'pelvis', system:'Adnexa',
+    href:'ovarian-torsion/ovarian-torsion.html',
     modality:'US/CT', sev:'killer', emoji:'🌀',
     blurb:'Enlarged edematous ovary with absent flow and a twisted pedicle — act before infarction.',
     tags:['Enlarged ovary','Whirl sign','Absent flow'], rp:'ovarian-torsion',
@@ -270,6 +272,7 @@ ERCT.add([
 
   {
     slug:'testicular-torsion', title:'Testicular Torsion', region:'pelvis', system:'Scrotum',
+    href:'testicular-torsion/testicular-torsion.html',
     modality:'US/CT', sev:'killer', emoji:'🔵',
     blurb:'Absent testicular blood flow with twisting of the spermatic cord — the six-hour window to salvage the testicle.',
     tags:['Absent flow','Spermatic cord twist','Bell-clapper'], rp:'testicular-torsion',

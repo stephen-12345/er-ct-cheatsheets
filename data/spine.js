@@ -167,6 +167,7 @@ ERCT.add([
   },
   {
     slug:'cauda-equina-syndrome', title:'Cauda Equina Syndrome — Large Central Disc', region:'spine', system:'Canal/cord',
+    href:'cauda-equina/cauda-equina.html',
     modality:'MRI (if available) — describe CT findings', sev:'killer', emoji:'🐴',
     blurb:'Massive central L4-L5 or L5-S1 disc herniation compressing the cauda equina — bowel and bladder dysfunction is a surgical alarm.',
     tags:['Central disc','Cauda equina','Saddle anesthesia'], rp:'cauda-equina-syndrome',

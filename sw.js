@@ -2,7 +2,7 @@
    - HTML / page navigations  -> NETWORK-FIRST (fresh when online, cached when offline)
    - Other assets (CSS/JS/icons) -> CACHE-FIRST with runtime caching
    Bump CACHE on each meaningful change to purge old caches. */
-const CACHE = 'er-ct-v2';
+const CACHE = 'er-ct-v3';
 
 const SHELL = [
   './',
@@ -39,7 +39,16 @@ const SHELL = [
   'ischemia/mesenteric-ischemia.html',
   'perforation/perforation.html',
   'pancreatitis/pancreatitis.html',
-  'renal/renal-colic.html'
+  'renal/renal-colic.html',
+  'stroke/acute-ischemic-stroke.html',
+  'sah/subarachnoid-hemorrhage.html',
+  'pneumothorax/pneumothorax.html',
+  'ectopic/ectopic-pregnancy.html',
+  'ovarian-torsion/ovarian-torsion.html',
+  'testicular-torsion/testicular-torsion.html',
+  'cauda-equina/cauda-equina.html',
+  'nec-fasc/necrotizing-fasciitis.html',
+  'cholangitis/ascending-cholangitis.html'
 ];
 
 self.addEventListener('install', (e) => {

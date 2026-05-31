@@ -2,6 +2,7 @@
 ERCT.add([
   {
     slug:'acute-ischemic-stroke-early-ct',
+    href:'stroke/acute-ischemic-stroke.html',
     title:'Acute Ischemic Stroke — Early CT Signs',
     region:'neuro', system:'Supratentorial',
     modality:'NCCT', sev:'killer', emoji:'🧠',
@@ -92,6 +93,7 @@ ERCT.add([
   },
   {
     slug:'subarachnoid-hemorrhage',
+    href:'sah/subarachnoid-hemorrhage.html',
     title:'Subarachnoid Hemorrhage',
     region:'neuro', system:'Supratentorial',
     modality:'NCCT', sev:'killer', emoji:'💥',

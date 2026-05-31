@@ -77,6 +77,7 @@ ERCT.add([
 
   {
     slug:'ascending-cholangitis', title:'Ascending Cholangitis', region:'hpb', system:'Biliary',
+    href:'cholangitis/ascending-cholangitis.html',
     modality:'CT abdomen', sev:'killer', emoji:'🔥',
     blurb:'Charcot triad on CT — dilated ducts with wall enhancement, obstructing stone, and hepatic abscesses signal Reynold\'s pentad.',
     tags:['Duct enhancement','Obstruction','Abscess'], rp:'ascending-cholangitis',

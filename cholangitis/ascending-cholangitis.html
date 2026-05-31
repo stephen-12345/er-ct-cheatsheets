@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ascending Cholangitis — ER CT Cheat Sheet</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/sheet.css">
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <button id="toc-toggle" class="toc-toggle" title="Contents (c)" aria-label="Table of contents">☰ Contents</button>
+  <span class="crumb">Ascending Cholangitis</span>
+  <a href="../index.html">← All topics</a>
+  <span class="fontctl" title="Font size — shortcuts: −, +, 0 to reset">
+    <button id="fs-dec" aria-label="Decrease font size">A−</button>
+    <button id="fs-rst" aria-label="Reset font size">A</button>
+    <button id="fs-inc" aria-label="Increase font size">A+</button>
+  </span>
+</div>
+
+<h1 class="sheet-h1">Ascending Cholangitis on CT</h1>
+<p class="subtitle">Biliary obstruction with retrograde bacterial infection of the bile ducts — identify the level, cause, and severity so the team can move to urgent drainage. Replace <span class="ph">[bracketed]</span> text in dictations.</p>
+
+<div class="crit-strip">
+  <span class="bolt">🚨</span>
+  <span class="txt"><b>Obstructed infected bile is a surgical/GI emergency.</b> Suppurative (Grade III) cholangitis mandates urgent biliary drainage (ERCP or PTC) and ICU-level support. Call the team before you finish dictating.</span>
+</div>
+
+<!-- ============================================================ -->
+<h2 class="group">Clinical Context &amp; Severity</h2>
+
+<h2 id="clinical-context">Charcot triad &amp; Reynolds pentad</h2>
+<table>
+<thead>
+  <tr><th>Syndrome</th><th>Components</th><th>Significance</th></tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>Charcot triad</b></td>
+    <td>RUQ pain · fever/rigors · jaundice</td>
+    <td>Classic presentation; ~70% sensitivity</td>
+  </tr>
+  <tr>
+    <td><b>Reynolds pentad</b></td>
+    <td>Charcot triad + hypotension + altered mental status</td>
+    <td>Suppurative cholangitis — septic shock; requires <b>emergent</b> drainage</td>
+  </tr>
+</tbody>
+</table>
+
+<h2 id="tokyo">Tokyo Guidelines severity (TG18)</h2>
+<table>
+<thead>
+  <tr><th>Grade</th><th>Criteria</th><th>Drainage urgency</th></tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>I — Mild</b></td>
+    <td>Does not meet Grade II/III criteria; responds to initial medical therapy</td>
+    <td>Elective (within 72 h)</td>
+  </tr>
+  <tr>
+    <td><b>II — Moderate</b></td>
+    <td>Fever ≥39 °C, WBC &gt;12 or &lt;4, age ≥75, bilirubin ≥5 mg/dL, hypoalbuminaemia</td>
+    <td>Early (within 24 h)</td>
+  </tr>
+  <tr>
+    <td><b>III — Severe</b></td>
+    <td>Cardiovascular, neurological, respiratory, renal, hepatic, or haematological dysfunction</td>
+    <td><b>Emergent</b> (ASAP)</td>
+  </tr>
+</tbody>
+</table>
+
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">CT grades severity; MRCP defines anatomy</span></div>
+  <p>CT establishes biliary obstruction, identifies the cause (stone vs stricture vs mass), and detects life-threatening complications (hepatic abscesses, portal vein involvement). MRCP or ERCP then provides higher-resolution biliary roadmapping before drainage.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2 class="group">Biliary Anatomy Schematic</h2>
+
+<h2 id="anatomy-diagram">Distal CBD stone with upstream dilatation</h2>
+
+<figure class="diagram">
+<svg viewBox="0 0 480 520" role="img" aria-label="Schematic biliary tree showing dilated intrahepatic and extrahepatic ducts with an obstructing distal CBD stone at the ampulla" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ff4d5e"/>
+    </marker>
+  </defs>
+
+  <!-- Liver outline -->
+  <ellipse cx="240" cy="80" rx="180" ry="60" fill="#5fd39a" fill-opacity="0.18" stroke="#5fd39a" stroke-width="2"/>
+  <text x="240" y="84" text-anchor="middle" font-size="13" fill="#5fd39a" font-family="sans-serif" font-weight="bold">LIVER</text>
+
+  <!-- Right intrahepatic ducts — dilated (thick, blue) -->
+  <path d="M 180 95 Q 160 110 155 135" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 200 90 Q 190 115 180 140" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 155 135 Q 158 148 162 160" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 180 140 Q 172 152 165 162" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- Left intrahepatic ducts — dilated -->
+  <path d="M 295 90 Q 310 110 315 135" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 275 88 Q 280 112 282 138" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 315 135 Q 312 148 308 162" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M 282 138 Q 290 154 298 163" stroke="#46c6e0" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+  <!-- Common hepatic duct (CHD) — dilated -->
+  <rect x="218" y="158" width="44" height="72" rx="22" fill="#46c6e0" fill-opacity="0.30" stroke="#46c6e0" stroke-width="2.5"/>
+  <line x1="240" y1="162" x2="240" y2="228" stroke="#46c6e0" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Cystic duct -->
+  <path d="M 240 185 Q 305 178 320 155" stroke="#5fd39a" stroke-width="3" fill="none" stroke-dasharray="5,3" stroke-linecap="round"/>
+
+  <!-- Gallbladder -->
+  <ellipse cx="335" cy="138" rx="28" ry="18" fill="#ffb648" fill-opacity="0.25" stroke="#ffb648" stroke-width="2"/>
+  <text x="335" y="142" text-anchor="middle" font-size="10" fill="#ffb648" font-family="sans-serif" font-weight="bold">GB</text>
+
+  <!-- CBD — dilated, wall-thickened -->
+  <rect x="214" y="226" width="52" height="110" rx="26" fill="#46c6e0" fill-opacity="0.18" stroke="#46c6e0" stroke-width="3"/>
+  <line x1="240" y1="228" x2="240" y2="334" stroke="#46c6e0" stroke-width="10" stroke-linecap="round"/>
+  <!-- Wall thickening highlight -->
+  <line x1="234" y1="240" x2="234" y2="330" stroke="#ffb648" stroke-width="2.5" stroke-opacity="0.7" stroke-linecap="round"/>
+  <line x1="246" y1="240" x2="246" y2="330" stroke="#ffb648" stroke-width="2.5" stroke-opacity="0.7" stroke-linecap="round"/>
+
+  <!-- Pancreatic duct -->
+  <path d="M 240 338 Q 170 345 110 340" stroke="#5fd39a" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Pancreas body outline -->
+  <rect x="92" y="328" width="165" height="28" rx="14" fill="#5fd39a" fill-opacity="0.15" stroke="#5fd39a" stroke-width="1.5"/>
+  <text x="175" y="347" text-anchor="middle" font-size="11" fill="#5fd39a" font-family="sans-serif" font-weight="bold">PANCREAS</text>
+
+  <!-- Obstructing STONE in distal CBD -->
+  <circle cx="240" cy="338" r="14" fill="#ff4d5e" stroke="#c0001e" stroke-width="2.5"/>
+  <text x="240" y="342" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">●</text>
+
+  <!-- Ampulla / duodenal wall -->
+  <path d="M 225 355 Q 240 375 255 355" stroke="#ffb648" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="240" y="390" text-anchor="middle" font-size="11" fill="#ffb648" font-family="sans-serif">Ampulla of Vater</text>
+  <line x1="240" y1="378" x2="240" y2="384" stroke="#ffb648" stroke-width="1.5"/>
+
+  <!-- Duodenum suggestion -->
+  <path d="M 255 355 Q 290 360 295 400 Q 295 440 260 445" stroke="#888" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <text x="298" y="402" font-size="10" fill="#888" font-family="sans-serif">duodenum</text>
+
+  <!-- Arrow to stone -->
+  <line x1="310" y1="315" x2="258" y2="333" stroke="#ff4d5e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="315" y="310" font-size="12" fill="#ff4d5e" font-family="sans-serif" font-weight="bold">Obstructing</text>
+  <text x="315" y="324" font-size="12" fill="#ff4d5e" font-family="sans-serif" font-weight="bold">distal CBD stone</text>
+
+  <!-- Arrow to dilated IHDs -->
+  <line x1="100" y1="115" x2="148" y2="128" stroke="#46c6e0" stroke-width="1.5"/>
+  <text x="28" y="110" font-size="11" fill="#46c6e0" font-family="sans-serif">Dilated IHDs</text>
+  <text x="28" y="123" font-size="10" fill="#46c6e0" font-family="sans-serif">(≥3 mm 3rd-order)</text>
+
+  <!-- CBD caliber label -->
+  <line x1="200" y1="280" x2="215" y2="280" stroke="#46c6e0" stroke-width="1.5"/>
+  <text x="140" y="276" font-size="11" fill="#46c6e0" font-family="sans-serif">CBD ≥8 mm</text>
+  <text x="140" y="289" font-size="10" fill="#46c6e0" font-family="sans-serif">(dilated)</text>
+
+  <!-- Wall thickening label -->
+  <line x1="250" y1="270" x2="278" y2="260" stroke="#ffb648" stroke-width="1.5"/>
+  <text x="280" y="256" font-size="11" fill="#ffb648" font-family="sans-serif">Wall thickening</text>
+  <text x="280" y="269" font-size="10" fill="#ffb648" font-family="sans-serif">&amp; hyperenhancement</text>
+
+  <!-- Duct wall labels -->
+  <text class="dgm-label" x="240" y="510" text-anchor="middle" font-size="10" fill="#888" font-family="sans-serif">IHD = intrahepatic duct · CHD = common hepatic duct · CBD = common bile duct · GB = gallbladder</text>
+</svg>
+<figcaption>Schematic biliary tree: dilated intrahepatic and extrahepatic ducts caused by a distal CBD stone (red) at the ampulla. Yellow highlights indicate concentric duct-wall thickening and hyperenhancement — a key inflammatory sign of ascending cholangitis. Normal CBD &lt;8 mm (post-cholecystectomy &lt;10 mm).</figcaption>
+</figure>
+
+<!-- ============================================================ -->
+<h2 class="group">Primary CT Findings</h2>
+
+<h2 id="duct-dilatation">Biliary duct dilatation</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">Extrahepatic &amp; intrahepatic ducts</span></div>
+  <ul>
+    <li><b>Common bile duct (CBD)</b>: measure at widest point in the hepatoduodenal ligament on axial portal-phase. Normal ≤8 mm (≤10 mm post-cholecystectomy, ≤11 mm in elderly). Trace from the hilum to the ampulla.</li>
+    <li><b>Intrahepatic ducts (IHDs)</b>: normal 3rd-order branches are invisible. Dilatation &gt;40% of adjacent portal vein caliber, or visible ducts paralleling portal veins ("parallel channel sign"), is abnormal.</li>
+    <li><b>Level of obstruction</b>: distal CBD (stone, pancreatitis, ampullary lesion) vs mid CBD (stricture, cholangiocarcinoma) vs hilar (Klatskin tumour) vs diffuse (PSC, IgG4-related).</li>
+    <li><b>Abrupt vs gradual tapering</b>: abrupt cutoff → stone or tumour; smooth fusiform tapering → benign stricture.</li>
+  </ul>
+</div>
+<div class="callout measure">
+  <div class="c-title"><span class="ico">📏</span><span class="lbl">Measure</span><span class="ttl">CBD diameter — always report</span></div>
+  <ul>
+    <li>Measure outer-to-outer wall on axial image at widest point, in millimetres.</li>
+    <li>Correlate with patient age and prior cholecystectomy status.</li>
+    <li>Pneumobilia (gas in biliary tree) may decompress ducts — do not falsely reassure on caliber.</li>
+  </ul>
+</div>
+
+<h2 id="wall-changes">Duct wall thickening &amp; enhancement</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">Concentric wall changes — the inflammatory hallmark</span></div>
+  <ul>
+    <li>Concentric duct-wall <b>thickening</b> (&gt;1.5 mm) and <b>hyperenhancement</b> on portal-venous phase — the key CT sign distinguishing cholangitis from simple obstruction.</li>
+    <li>Best seen on the CBD in the hepatoduodenal ligament; look for similar changes in IHDs within the liver.</li>
+    <li>Periductal <b>haziness/stranding</b> of the hepatoduodenal ligament fat.</li>
+  </ul>
+</div>
+
+<h2 id="periductal-enhancement">Periductal hepatic parenchymal enhancement</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">Transient hepatic attenuation differences (THAD)</span></div>
+  <ul>
+    <li>Wedge-shaped or segmental areas of early arterial-phase hyperenhancement adjacent to inflamed ducts, normalising on portal-venous phase.</li>
+    <li>Reflects hyperaemia and altered portal flow from periductal inflammation, <b>not infarction</b>.</li>
+    <li>Peripheral THAD in a hepatic segment + dilated IHDs in that segment → high specificity for ascending cholangitis.</li>
+    <li>Not present on all scans (depends on phase timing); absence does not exclude cholangitis.</li>
+  </ul>
+</div>
+
+<h2 id="obstructing-stone">Obstructing distal CBD stone</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">Target sign at the ampulla</span></div>
+  <ul>
+    <li>Scroll the CBD from the confluence down to the ampulla in axial + coronal MPR. A stone appears as a hyperdense or isodense filling defect in a dilated duct, often with a <b>target sign</b> (hyperdense rim) or <b>crescent sign</b> (bile crescent around the stone).</li>
+    <li>Most choledocholithiasis stones are visible on unenhanced CT (hyperdense, 100–200 HU); pigment stones may be isodense — rely on portal-phase filling defect.</li>
+    <li>Measure distal CBD stone in mm (longest diameter); note distance from the ampulla.</li>
+    <li>Always look for cholelithiasis and gallbladder wall changes (concomitant acute cholecystitis in ~15%).</li>
+  </ul>
+</div>
+<div class="callout pitfall">
+  <div class="c-title"><span class="ico">⚠️</span><span class="lbl">Pitfall</span><span class="ttl">Isodense stones and soft-tissue masses can mimic each other</span></div>
+  <ul>
+    <li>Cholesterol/soft stones may be isodense on contrast CT — a non-enhancing filling defect in a dilated CBD needs MRCP to characterise.</li>
+    <li>An ampullary or distal CBD tumour can appear identical to a stone on CT. Look for soft-tissue mass enhancement and lymphadenopathy.</li>
+    <li>Periampullary duodenal fold thickening can simulate a mass — evaluate on coronal/oblique MPR.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<h2 class="group">Aetiology — Obstruction Causes</h2>
+
+<h2 id="causes">Common causes by CT appearance</h2>
+<table>
+<thead>
+  <tr><th>Cause</th><th>CT appearance</th><th>Clues</th></tr>
+</thead>
+<tbody>
+  <tr>
+    <td><b>Choledocholithiasis</b></td>
+    <td>Hyperdense or filling-defect stone in distal CBD; abrupt cutoff; target sign</td>
+    <td>Cholelithiasis present; abrupt dilatation; calcified stones pre-contrast</td>
+  </tr>
+  <tr>
+    <td><b>Biliary stricture (benign)</b></td>
+    <td>Smooth fusiform tapering; no mass; possible post-op changes</td>
+    <td>History of surgery, prior ERCP, PSC, IgG4 cholangiopathy</td>
+  </tr>
+  <tr>
+    <td><b>Cholangiocarcinoma</b></td>
+    <td>Periductal-infiltrating soft-tissue; hepatic atrophy; ductal dilatation above mass</td>
+    <td>Irregular wall, biliary tree involvement, liver atrophy, LN</td>
+  </tr>
+  <tr>
+    <td><b>Pancreatic head mass</b></td>
+    <td>Double-duct sign (CBD + PD dilatation); hypoenhancing pancreatic mass</td>
+    <td>Associated PD dilatation; vascular involvement</td>
+  </tr>
+  <tr>
+    <td><b>Ampullary lesion</b></td>
+    <td>Soft-tissue at ampulla; double-duct sign</td>
+    <td>Smaller than pancreatic mass; look on thin-section coronal</td>
+  </tr>
+  <tr>
+    <td><b>Post-instrumentation (stent/ERCP)</b></td>
+    <td>Pneumobilia; stent in place; possible sludge/recurrent stone</td>
+    <td>Clinical history; gas in expected biliary distribution</td>
+  </tr>
+</tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2 class="group">Complications to Call</h2>
+
+<h2 id="suppurative">Suppurative cholangitis &amp; hepatic abscesses</h2>
+<div class="callout crit">
+  <div class="c-title"><span class="ico">🚨</span><span class="lbl">Critical finding</span><span class="ttl">Suppurative cholangitis — emergent drainage</span></div>
+  <ul>
+    <li>Pus under pressure in the biliary tree. CT may show: gas within the biliary tree <em>without</em> prior instrumentation, extreme duct dilatation, periductal fat infiltration.</li>
+    <li><b>Hepatic microabscesses</b>: multiple small (&lt;1 cm) hypoenhancing round foci in a periductal distribution — pathognomonic when clustered along bile ducts. May coalesce into a large abscess.</li>
+    <li>Any hepatic abscess in the context of biliary obstruction = biliary source until proven otherwise. Measure and count dominant collections.</li>
+    <li><b>Portal vein involvement</b>: periportal thickening, periportal oedema tracking along portal tracts (periportal tracking sign), and in severe cases pylephlebitis (portal vein thrombosis + gas).</li>
+  </ul>
+</div>
+
+<h2 id="pneumobilia">Pneumobilia</h2>
+<div class="callout find">
+  <div class="c-title"><span class="ico">🔍</span><span class="lbl">How to find it</span><span class="ttl">Gas in the biliary tree — central distribution</span></div>
+  <ul>
+    <li>Branching gas in the <b>central/hilar</b> biliary tree, following the biliary distribution — contrast with portal venous gas which is <b>peripheral</b> (&lt;2 cm from liver capsule).</li>
+    <li>Causes: prior ERCP/sphincterotomy, biliary-enteric anastomosis, biliary stent, or gas-forming organisms (emphysematous cholangitis).</li>
+    <li>Pneumobilia from gas-forming infection <em>without</em> prior instrumentation = critical finding, emergent drainage and broad-spectrum antibiotics.</li>
+  </ul>
+</div>
+<div class="callout pitfall">
+  <div class="c-title"><span class="ico">⚠️</span><span class="lbl">Pitfall</span><span class="ttl">Pneumobilia vs portal venous gas</span></div>
+  <ul>
+    <li>Portal venous gas (PVG) is peripheral, tracks to within 2 cm of the liver capsule on the portal phase. Pneumobilia is central and hilar.</li>
+    <li>PVG in the right clinical context (bowel ischaemia, necrosis) is also a critical finding — do not dismiss it as pneumobilia.</li>
+  </ul>
+</div>
+
+<h2 id="portal-complications">Portal &amp; vascular complications</h2>
+<div class="callout crit">
+  <div class="c-title"><span class="ico">🚨</span><span class="lbl">Critical finding</span><span class="ttl">Pylephlebitis &amp; portal vein thrombosis</span></div>
+  <ul>
+    <li><b>Pylephlebitis</b>: septic thrombophlebitis of the portal vein — hypoattenuating or gas-containing thrombus in the portal vein in the context of biliary/abdominal sepsis.</li>
+    <li>Periportal tracking on portal-phase CT: low-attenuation halo around portal triads reflecting oedema/inflammation propagating along portal tracts.</li>
+    <li>Hepatic artery: rarely involved but look for adjacent inflammatory changes if cholangitis is prolonged.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<h2 class="group">Protocol &amp; Technique</h2>
+
+<h2 id="protocol">CT protocol for suspected cholangitis</h2>
+<div class="callout protocol">
+  <div class="c-title"><span class="ico">🧪</span><span class="lbl">Protocol</span><span class="ttl">Recommended approach</span></div>
+  <ul>
+    <li><b>Unenhanced phase</b>: essential for detecting calcified CBD stones (hyperdense); identifying pneumobilia and portal venous gas without confusion from contrast.</li>
+    <li><b>Arterial phase (optional)</b>: best for THAD / periductal parenchymal hyperenhancement; also detects vascular complications.</li>
+    <li><b>Portal-venous phase</b>: most useful overall — duct wall enhancement, filling defects in ducts, hepatic abscesses, pylephlebitis.</li>
+    <li><b>Thin sections + coronal/sagittal MPR</b>: mandatory to trace the biliary tree fully, especially the distal CBD and ampullary region.</li>
+    <li><b>MRCP</b>: superior to CT for non-calcified stones, stricture characterisation, and biliary anatomy planning before ERCP. Order when CT is inconclusive or ERCP is being planned.</li>
+  </ul>
+</div>
+<div class="callout pearl">
+  <div class="c-title"><span class="ico">💡</span><span class="lbl">Pearl</span><span class="ttl">Always trace the CBD to the ampulla on coronal MPR</span></div>
+  <p>The distal CBD can be obscured on axial images by duodenal gas or bowel. A dedicated thin-section coronal MPR through the hepatoduodenal ligament and into the pancreatic head is the single most useful reconstruction for identifying a distal CBD stone.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2 class="group">Copy-Ready Dictation</h2>
+<p class="subtitle">Tap any <b>F:</b>/<b>I:</b> line to copy. Replace <span class="ph">[bracketed]</span> text with patient-specific values.</p>
+
+<div class="dx">Choledocholithiasis with ascending cholangitis</div>
+<p class="f"><b>F:</b> The common bile duct measures <span class="ph">[X]</span> mm at its widest point with dilatation extending to the level of the <span class="ph">[distal CBD / ampulla]</span>. A <span class="ph">[X]</span> mm hyperdense / filling-defect calculus is identified in the distal CBD <span class="ph">[X]</span> mm from the ampulla, consistent with an obstructing choledocholithiasis. Concentric CBD wall thickening and hyperenhancement are present. <span class="ph">[Mild intrahepatic biliary dilatation bilaterally / left lobe predominant.]</span> <span class="ph">[Periductal hepatic parenchymal hyperenhancement in hepatic segments V/VI consistent with THAD.]</span> <span class="ph">[No pneumobilia. No hepatic abscess. No portal vein thrombosis.]</span> Cholelithiasis is <span class="ph">[present / absent]</span>. Gallbladder wall is <span class="ph">[normal / thickened to X mm suggesting concomitant cholecystitis]</span>.</p>
+<p class="i"><b>I:</b> Obstructing distal CBD choledocholithiasis with concurrent ascending cholangitis. <span class="ph">[Tokyo Grade II / III.]</span> Urgent biliary decompression (ERCP) recommended. Communicated to <span class="ph">[provider]</span> at <span class="ph">[time]</span>.</p>
+
+<div class="dx">Suppurative cholangitis with hepatic abscesses</div>
+<p class="f"><b>F:</b> Markedly dilated CBD measuring <span class="ph">[X]</span> mm with concentric wall thickening and hyperenhancement consistent with cholangitis. <span class="ph">[Obstructing distal CBD stone / biliary stricture at the level of the X.]</span> Multiple clustered rim-enhancing hypoattenuating foci in the <span class="ph">[right lobe / segments V and VI]</span> measuring up to <span class="ph">[X]</span> mm consistent with hepatic microabscesses / early coalescent abscess. <span class="ph">[Gas within the biliary tree without prior instrumentation — emphysematous cholangitis.]</span> <span class="ph">[Periportal low-attenuation tracking along portal triads consistent with periportal oedema.]</span> <span class="ph">[No portal vein thrombosis on this examination.]</span></p>
+<p class="i"><b>I:</b> Ascending cholangitis with hepatic microabscesses consistent with suppurative cholangitis (Tokyo Grade III). Emergent biliary drainage and hepatobiliary surgical consultation recommended. Communicated to <span class="ph">[provider]</span> at <span class="ph">[time]</span>.</p>
+
+<div class="dx">Malignant biliary obstruction with secondary cholangitis</div>
+<p class="f"><b>F:</b> <span class="ph">[X]</span> cm hypoenhancing mass in the <span class="ph">[pancreatic head / distal CBD / hepatic hilum]</span> causing abrupt dilatation of the <span class="ph">[CBD to X mm and main pancreatic duct to X mm (double-duct sign) / intrahepatic bile ducts above the level of the hilum]</span>. Concentric CBD wall thickening and hyperenhancement above the obstruction suggest superimposed ascending cholangitis. <span class="ph">[No hepatic metastases / X hepatic lesions suspicious for metastases.]</span> <span class="ph">[Vascular involvement: SMV/portal confluence abutment/encasement.]</span> <span class="ph">[Regional lymphadenopathy in the hepatoduodenal ligament.]</span></p>
+<p class="i"><b>I:</b> Malignant biliary obstruction (pancreatic head mass / cholangiocarcinoma — differential includes <span class="ph">[X]</span>) with superimposed ascending cholangitis. Urgent biliary decompression followed by oncological evaluation recommended. Communicated to <span class="ph">[provider]</span> at <span class="ph">[time]</span>.</p>
+
+<!-- ============================================================ -->
+<h2 id="search-pattern">Search pattern</h2>
+<ol>
+  <li><b>CBD caliber</b>: measure on axial portal-phase at widest point, then trace on coronal MPR from hilum to ampulla. Record the diameter and identify the level and cause of obstruction.</li>
+  <li><b>Intrahepatic ducts</b>: look for parallel-channel sign, note distribution (diffuse vs segmental — a segmental IHD dilatation may point to a peripheral stricture or tumour).</li>
+  <li><b>Wall changes</b>: concentric thickening and hyperenhancement of the CBD and IHDs — present in cholangitis, absent in simple obstruction.</li>
+  <li><b>Periductal parenchyma</b>: check arterial phase for THAD (wedge hyperenhancement adjacent to inflamed ducts).</li>
+  <li><b>Obstructing lesion</b>: stone (target sign, pre-contrast hyperdensity), stricture (smooth tapering, history), tumour (enhancing mass, double-duct sign, LN, vascular involvement).</li>
+  <li><b>Complications</b>: hepatic abscesses (rim-enhancing periductal foci), pneumobilia (central biliary gas), portal venous gas (peripheral), pylephlebitis (portal vein thrombus ± gas), concomitant cholecystitis.</li>
+  <li><b>Severity clues</b>: volume of pus under pressure is not directly visible on CT — the constellation of extreme duct dilatation + wall enhancement + abscesses + gas + patient instability = Grade III; alert the team immediately.</li>
+</ol>
+
+<!-- ============================================================ -->
+<h2 id="sources">Source notes</h2>
+<p>Clinical grading per Tokyo Guidelines 2018 (TG18). Imaging references:</p>
+<ul>
+  <li><a href="https://radiopaedia.org/articles/ascending-cholangitis" target="_blank" rel="noopener noreferrer">ascending cholangitis</a> — Radiopaedia</li>
+  <li><a href="https://radiopaedia.org/articles/choledocholithiasis" target="_blank" rel="noopener noreferrer">choledocholithiasis</a> — Radiopaedia</li>
+  <li><a href="https://radiopaedia.org/articles/pneumobilia" target="_blank" rel="noopener noreferrer">pneumobilia</a> — Radiopaedia</li>
+  <li><a href="https://radiopaedia.org/articles/periportal-tracking" target="_blank" rel="noopener noreferrer">periportal tracking</a> — Radiopaedia</li>
+  <li><a href="https://radiopaedia.org/articles/transient-hepatic-attenuation-difference" target="_blank" rel="noopener noreferrer">transient hepatic attenuation difference (THAD)</a> — Radiopaedia</li>
+  <li><a href="https://radiopaedia.org/articles/pylephlebitis" target="_blank" rel="noopener noreferrer">pylephlebitis</a> — Radiopaedia</li>
+</ul>
+
+<script src="../assets/sheet.js"></script>
+</body>
+</html>

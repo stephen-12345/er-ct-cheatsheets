@@ -9,6 +9,7 @@ ERCT.add([
   },
   {
     slug:'tension-pneumothorax', title:'Tension Pneumothorax', region:'chest', system:'Pleura',
+    href:'pneumothorax/pneumothorax.html',
     modality:'CT chest', sev:'killer', emoji:'💨',
     blurb:'Air under pressure collapses the lung, shifts the mediastinum, and obstructs venous return — do not scan, decompress.',
     tags:['Mediastinal shift','Hemidiaphragm inversion','Tracheal deviation'], rp:'tension-pneumothorax',
