@@ -18,8 +18,8 @@ ERCT.add([
     blurb:'Gallstone impacted at the neck, distended gallbladder with wall thickening and pericholecystic stranding.',
     tags:['Calculus','Wall thickening','Stranding'], rp:'acute-cholecystitis',
     sheet:{
-      find:'<b>Gallbladder distension</b> (&gt;5 cm transverse), wall thickening (&gt;3 mm), <b>pericholecystic fat stranding</b>, and a calculus impacted at the neck or cystic duct. Subserosal edema produces a halo.',
-      measure:'GB wall &gt;3 mm (in a non-contracted, non-fasting state). Transverse GB diameter &gt;5 cm. Identify the obstructing stone at the neck or cystic duct.',
+      find:'<b>Gallbladder distension</b> (>5 cm transverse), wall thickening (>3 mm), <b>pericholecystic fat stranding</b>, and a calculus impacted at the neck or cystic duct. Subserosal edema produces a halo.',
+      measure:'GB wall >3 mm (in a non-contracted, non-fasting state). Transverse GB diameter >5 cm. Identify the obstructing stone at the neck or cystic duct.',
       pitfall:'Ascites and hypoalbuminemia cause GB wall thickening without cholecystitis. <b>Acalculous cholecystitis</b> (ICU patients) shares the same CT findings without a calculus — clinical context is key.',
       pearl:'<b>Pericholecystic fluid</b> confined to the GB fossa is a strong secondary sign. The <b>CT Murphy sign</b> (hyperemia on arterial phase) supports the diagnosis when clinical signs are equivocal.',
       call:'Signs of perforation (pericholecystic abscess, free air in GB wall, free fluid) require <b>urgent surgical consultation</b>.',
@@ -52,7 +52,7 @@ ERCT.add([
     sheet:{
       find:'<b>Gas within the gallbladder wall</b> (curvilinear or bubbly lucency conforming to the wall contour) on CT — the key distinction from simple intraluminal gas. May extend into the pericholecystic tissues or portal venous radicles.',
       measure:'Identify gas as intramural (wall-conforming) vs intraluminal (non-dependent layer) vs biliary. Three types: Type I = wall gas only; Type II = wall + lumen gas; Type III = pericholecystic extension.',
-      pitfall:'Intraluminal gas alone (Type 0/II) without mural involvement does not meet criteria for emphysematous cholecystitis. Scout/plain film may show the GB gas and prompt CT confirmation.',
+      pitfall:'Intraluminal gas alone (without mural gas) does not meet criteria for emphysematous cholecystitis, which requires gas in the wall. Scout/plain film may show the GB gas and prompt CT confirmation.',
       pearl:'<b>Clostridium welchii</b> and other anaerobes predominate. Acalculous in ~50%. Mortality 15–25%, much higher than standard cholecystitis — expedite surgical or IR referral.',
       call:'<b>Gas in the gallbladder wall</b> is emphysematous cholecystitis until proven otherwise — <b>call surgery immediately</b>.',
       f:'Gas within the [gallbladder wall / pericholecystic tissues], consistent with emphysematous cholecystitis. [Distended gallbladder with wall thickening.] [No portal venous gas / portal venous gas present.]',
@@ -67,7 +67,7 @@ ERCT.add([
     tags:['CBD stone','Duct dilation','Target sign'], rp:'choledocholithiasis',
     sheet:{
       find:'<b>Hyperdense (or isodense) calculus</b> within the common bile duct, producing a <b>target sign</b> (stone surrounded by bile) on axial images. Upstream intrahepatic and common bile duct dilation. Trace the CBD to the ampulla.',
-      measure:'CBD &gt;8 mm (post-cholecystectomy &gt;10 mm) is dilated. Measure the calculus. Note any associated bile duct wall thickening (cholangitis) or pancreatitis.',
+      measure:'CBD >6–7 mm is dilated (allow ~1 mm per decade over age 60); a post-cholecystectomy duct up to ~10 mm can be normal. Measure the calculus. Note any associated bile duct wall thickening (cholangitis) or pancreatitis.',
       pitfall:'Isodense stones (cholesterol) are easy to miss — a dilated CBD terminating abruptly at the ampulla without visible mass should prompt MRCP. Pneumobilia (prior sphincterotomy or fistula) can obscure small stones.',
       pearl:'<b>MRCP is more sensitive</b> for small stones; CT misses ~20–30% of isodense calculi. Always consider concurrent cholangitis (fever, jaundice, RUQ pain = Charcot triad).',
       f:'Hyperdense calculus ([X] mm) within the [distal] common bile duct with upstream CBD dilation ([X] mm) and [mild] intrahepatic biliary dilation. [No associated pancreatitis or biloma.]',
@@ -99,7 +99,7 @@ ERCT.add([
     tags:['Rigler triad','Pneumobilia','Ectopic stone'], rp:'gallstone-ileus',
     sheet:{
       find:'<b>Rigler triad</b>: (1) small bowel obstruction with transition point; (2) ectopic radiopaque or radio-lucent gallstone (most often at <b>terminal ileum</b>); (3) pneumobilia or air in the GB. Contracted or absent gallbladder with pericholecystic fat stranding from the fistula site.',
-      measure:'Stone diameter — stones &gt;2.5 cm cause ileus; those &lt;2.5 cm may pass. Identify transition point. Bouveret syndrome = rare gastric outlet obstruction from stone at duodenum.',
+      measure:'Stone diameter — stones >2.5 cm cause ileus; those <2.5 cm may pass. Identify transition point. Bouveret syndrome = rare gastric outlet obstruction from stone at duodenum.',
       pitfall:'Only ~50% of gallstones are calcified on CT — look for the transition point ± a soft-tissue density filling defect within the lumen. Pneumobilia may be absent if the fistula closed.',
       pearl:'The <b>cholecystoduodenal fistula</b> is the most common; cholecystocolonic and cholecystogastric fistulas also occur. Enterolithotomy is the emergency procedure; fistula repair is deferred.',
       call:'Complete SBO with obstructing ectopic stone requires <b>surgical consultation</b>.',
@@ -117,7 +117,7 @@ ERCT.add([
       find:'<b>Large stone in the cystic duct or infundibulum</b> abutting and compressing the <b>common hepatic duct</b> with upstream intrahepatic biliary dilation. The CBD below the cystic duct junction is normal caliber. Look for cholecystobiliary fistula (Type II–IV).',
       measure:'Measure CHD at point of compression vs CBD below. Distinguish Type I (extrinsic compression only) from Type II–IV (fistula with varying degrees of CBD wall involvement — changes surgical approach dramatically).',
       pitfall:'CT alone may miss the fistula component; MRCP (or ERCP) is needed for full classification. Cholangiocarcinoma can produce an identical appearance — look for ductal wall mass/enhancement.',
-      pearl:'<b>McSherry classification</b> (I–IV) determines operability and technique. Type I can be treated laparoscopically; Types III–IV often need hepaticojejunostomy.',
+      pearl:'<b>Csendes classification</b> (I–IV) determines operability and technique. Type I can be treated laparoscopically; Types III–IV often need hepaticojejunostomy.',
       f:'Large calculus ([X] mm) in the [cystic duct/GB infundibulum] with extrinsic compression of the common hepatic duct. Intrahepatic biliary dilation. CBD below the cystic duct junction [normal / [X] mm]. [No cholecystobiliary fistula identified on CT.]',
       i:'CT findings consistent with Mirizzi syndrome, Type [I]. MRCP recommended for fistula classification before surgical planning.'
     }
@@ -146,7 +146,7 @@ ERCT.add([
     tags:['AAST grade','Active bleed','Devascularization'], rp:'liver-trauma',
     sheet:{
       find:'<b>Hypodense linear or branching lacerations</b> through the hepatic parenchyma. Active extravasation = <b>hyperdense blush</b> on portal or delayed phase. Subcapsular/perihepatic hematoma. Assess the hepatic veins, IVC, and portal vein for involvement.',
-      measure:'<b>AAST grading</b>: I = subcapsular hematoma &lt;10% or laceration &lt;1 cm deep; II = &lt;50% subcapsular or &lt;10 cm parenchymal hematoma / laceration 1–3 cm; III = &gt;50% subcapsular or expanding / laceration &gt;3 cm; IV = laceration 25–75% of lobe or 1–3 Couinaud segments; V = &gt;75% of lobe or &gt;3 Couinaud segments or hepatic vein/IVC injury; VI = hepatic avulsion.',
+      measure:'<b>AAST grading</b>: I = subcapsular hematoma <10% or laceration <1 cm deep; II = <50% subcapsular or <10 cm parenchymal hematoma / laceration 1–3 cm; III = >50% subcapsular or expanding / laceration >3 cm; IV = laceration 25–75% of lobe or 1–3 Couinaud segments; V = >75% of lobe or >3 Couinaud segments or hepatic vein/IVC injury; VI = hepatic avulsion.',
       pitfall:'Arterial-phase images are essential to detect extravasation — portal phase alone will miss many. <b>Delayed-phase pooling</b> of contrast confirms active hemorrhage vs pseudoaneurysm.',
       pearl:'Grade III–V with active extravasation typically warrants angioembolization. Isolated hepatic vein injuries (Grade V) carry very high mortality; early communication is critical.',
       call:'Active extravasation or Grade IV–V injury — <b>notify surgery and IR immediately</b>.',
@@ -180,7 +180,7 @@ ERCT.add([
       find:'<b>Non-opacification of hepatic veins</b> on portal-phase CT with <b>heterogeneous "flip-flop" enhancement</b> — central parenchyma (caudate) enhances early (direct IVC drainage), peripheral parenchyma enhances late. Caudate lobe hypertrophy, ascites, and congested portal/IVC.',
       measure:'Identify which hepatic veins are thrombosed (right, middle, left). Assess IVC for involvement (hepatic portion and suprarenal IVC). Note acute vs chronic: acute has hyperdense thrombus; chronic has collateral veins.',
       pitfall:'Early acute Budd-Chiari may show only subtle hepatic heterogeneity — delayed-phase imaging is essential to show the "flip-flop" pattern. Hepatic veno-occlusive disease (sinusoidal obstruction) produces similar CT findings but occludes at a sub-venous level.',
-      pearl:'Underlying thrombophilia (myeloproliferative neoplasm, antiphospholipid syndrome, PNH) is present in &gt;75% — labs are essential. TIPS or liver transplant for refractory disease.',
+      pearl:'Underlying thrombophilia (myeloproliferative neoplasm, antiphospholipid syndrome, PNH) is present in >75% — labs are essential. TIPS or liver transplant for refractory disease.',
       f:'Non-opacification of the [right / middle / left] hepatic vein(s) with heterogeneous hepatic enhancement and caudate lobe hypertrophy. [IVC involvement: yes/no.] [Ascites present.] Acute thrombus [seen/not seen].',
       i:'CT findings consistent with Budd-Chiari syndrome involving the [right/middle/left] hepatic vein(s). [IVC extension noted.] Hematology consultation recommended for thrombophilia workup.'
     }
@@ -210,7 +210,7 @@ ERCT.add([
       find:'<b>Active contrast extravasation</b> (arterial-phase blush) within or at the surface of a hypervascular hepatic lesion with <b>peritumoral and perihepatic hematoma</b>. Subcapsular hematoma ± hemoperitoneum (hyperdense free fluid). The underlying lesion may be heterogeneous with internal hemorrhage.',
       measure:'Estimate hemoperitoneum volume. Identify the bleeding segment for IR guidance. Note whether the capsule is intact (subcapsular) vs ruptured (free hemoperitoneum).',
       pitfall:'Bleeding HCC and adenoma are indistinguishable on emergency CT without clinical context (cirrhosis, OCP use). HCC often has portal vein thrombus and background cirrhosis; adenoma in young women without cirrhosis.',
-      pearl:'<b>Adenoma rupture risk</b> increases with lesion &gt;5 cm, sub-capsular location, beta-catenin subtype, and OCP use. Emergency angioembolization is first-line; resection is elective after stabilization.',
+      pearl:'<b>Adenoma rupture risk</b> increases with lesion >5 cm, sub-capsular location, beta-catenin subtype, and OCP use. Emergency angioembolization is first-line; resection is elective after stabilization.',
       call:'Active hepatic hemorrhage — <b>notify IR and surgery immediately</b> for angioembolization.',
       f:'Heterogeneous [hypervascular] hepatic lesion in [segment] with [subcapsular/perihepatic] hematoma and active contrast extravasation on arterial phase. [Hemoperitoneum in [locations].]',
       i:'Ruptured hepatic [adenoma/HCC] with active hemorrhage and [subcapsular/free intraperitoneal] hematoma. Emergent angioembolization discussed with IR at [time].'
@@ -224,7 +224,7 @@ ERCT.add([
     tags:['AAST grade','Splenic blush','Nonoperative'], rp:'splenic-trauma',
     sheet:{
       find:'<b>Hypodense linear or stellate lacerations</b> through the spleen. Active extravasation = <b>arterial-phase blush</b> (hyperdense) within or adjacent to the spleen. Subcapsular or perisplenic hematoma. Assess the splenic hilum and vessels.',
-      measure:'<b>AAST grading</b>: I = subcapsular hematoma &lt;10% surface or laceration &lt;1 cm; II = subcapsular 10–50% or &lt;5 cm intraparenchymal / laceration 1–3 cm; III = subcapsular &gt;50% or expanding / &gt;5 cm intraparenchymal / laceration &gt;3 cm; IV = laceration involving hilar vessels with &gt;25% devascularization; V = completely shattered spleen or hilar vascular injury with total devascularization.',
+      measure:'<b>AAST grading</b>: I = subcapsular hematoma <10% surface or laceration <1 cm; II = subcapsular 10–50% or <5 cm intraparenchymal / laceration 1–3 cm; III = subcapsular >50% or expanding / >5 cm intraparenchymal / laceration >3 cm; IV = laceration involving hilar vessels with >25% devascularization; V = completely shattered spleen or hilar vascular injury with total devascularization.',
       pitfall:'Arterial-phase blush in the spleen can be normal heterogeneous enhancement (arciform pattern in early arterial phase) — confirmed only when the blush persists on portal phase or is focal/irregular.',
       pearl:'Grade III+ with blush or Grade IV–V: angioembolization is first-line in hemodynamically stable patients. Grades I–II are managed nonoperatively with serial imaging.',
       call:'Active splenic extravasation or Grade IV–V — <b>notify surgery and IR immediately</b>.',
@@ -240,8 +240,8 @@ ERCT.add([
     tags:['Wedge','Non-enhancement','Embolic'], rp:'splenic-infarction',
     sheet:{
       find:'<b>Wedge-shaped, peripheral, non-enhancing hypodense defect</b> in the spleen with its base at the capsule and apex pointing toward the hilum. May be solitary or multiple. Look for associated splenic vein or portal vein thrombosis.',
-      measure:'Extent of splenic involvement (partial vs near-total infarction). If &gt;50% infarcted, rupture risk increases. Search for the embolic source: cardiac (thrombus, endocarditis, AF), aortic atheroma, or hematologic cause.',
-      pitfall:'<b>Early infarcts</b> (&lt;6 hours) may be isodense on non-contrast and subtle on portal phase — arterial phase is most sensitive. Accessory spleen and cleft can mimic small infarcts.',
+      measure:'Extent of splenic involvement (partial vs near-total infarction). If >50% infarcted, rupture risk increases. Search for the embolic source: cardiac (thrombus, endocarditis, AF), aortic atheroma, or hematologic cause.',
+      pitfall:'<b>Early infarcts</b> (<6 hours) may be isodense on non-contrast and subtle on portal phase — arterial phase is most sensitive. Accessory spleen and cleft can mimic small infarcts.',
       pearl:'<b>Septic emboli</b> (endocarditis, IV drug use) produce multiple small splenic infarcts with surrounding enhancement ± abscess formation — look for liver and renal infarcts as well.',
       f:'[Wedge-shaped/geographic] non-enhancing hypodense defect(s) in the [upper/lower/mid] pole of the spleen, [X] cm, consistent with splenic infarction. [Splenic vein thrombosis: present/absent.] [Hematologic or cardiac source suggested.]',
       i:'Splenic infarct(s), [partial/near-total], [embolic/thrombotic] etiology. Source evaluation recommended (echocardiogram, hypercoagulability workup).'
@@ -269,10 +269,10 @@ ERCT.add([
     blurb:'Most common visceral aneurysm — rupture risk rises with pregnancy and portal hypertension; size and symptoms drive urgency.',
     tags:['Visceral aneurysm','Rupture risk','Pregnancy'], rp:'splenic-artery-aneurysm',
     sheet:{
-      find:'<b>Focal saccular or fusiform dilation</b> of the splenic artery (&gt;1 cm). May be calcified (eggshell). Assess for rupture: perisplenic hematoma, active extravasation, hemoperitoneum.',
+      find:'<b>Focal saccular or fusiform dilation</b> of the splenic artery (>1 cm). May be calcified (eggshell). Assess for rupture: perisplenic hematoma, active extravasation, hemoperitoneum.',
       measure:'Maximal diameter. Location (proximal, mid, or hilar — hilar is higher surgical risk). Morphology: saccular (higher rupture risk) vs fusiform. Document relationship to pancreatic parenchyma.',
-      pitfall:'A tortuous splenic artery can appear aneurysmal on single-axis measurement — true aneurysm requires dilation &gt;1 cm in two planes. Don\'t miss the "double rupture" sign: initial bleed contained by lesser sac, then free rupture.',
-      pearl:'<b>Indications for intervention</b>: &gt;2 cm, symptomatic, rapidly enlarging, pregnant, portal hypertension. Endovascular coil embolization is preferred; surgery for complex hilar aneurysms.',
+      pitfall:'A tortuous splenic artery can appear aneurysmal on single-axis measurement — true aneurysm requires dilation >1 cm in two planes. Don\'t miss the "double rupture" sign: initial bleed contained by lesser sac, then free rupture.',
+      pearl:'<b>Indications for intervention</b>: >2 cm, symptomatic, rapidly enlarging, pregnant, portal hypertension. Endovascular coil embolization is preferred; surgery for complex hilar aneurysms.',
       call:'Ruptured splenic artery aneurysm with active extravasation is a <b>surgical/vascular emergency</b> — call IR and surgery now.',
       f:'Focal [saccular/fusiform] aneurysm of the [proximal/mid/distal] splenic artery measuring [X] cm. [No active extravasation or perisplenic hematoma.] [Calcified wall/no calcification.]',
       i:'Splenic artery aneurysm, [X] cm, [saccular/fusiform]. [No evidence of rupture.] [Meets/does not meet] intervention threshold.'
@@ -286,7 +286,7 @@ ERCT.add([
     tags:['Non-enhancement','WON','Infected necrosis'], rp:'acute-pancreatitis',
     sheet:{
       find:'<b>Non-enhancing areas of pancreatic parenchyma</b> on portal-phase CT (normal pancreas enhances avidly). Associated heterogeneous peripancreatic collections containing non-liquefied material (necrosis debris). After 4 weeks: <b>walled-off necrosis (WON)</b> = encapsulated collection with a defined wall containing solid debris.',
-      measure:'Estimate % pancreatic necrosis (&lt;30%, 30–50%, &gt;50%). CT Severity Index (CTSI): grade A–E + necrosis score = 0–10. Note gas in the collection (infected necrosis). WON: largest diameter and proximity to stomach for transgastric drainage.',
+      measure:'Estimate % pancreatic necrosis (<30%, 30–50%, >50%). CT Severity Index (CTSI): grade A–E + necrosis score = 0–10. Note gas in the collection (infected necrosis). WON: largest diameter and proximity to stomach for transgastric drainage.',
       pitfall:'CT is unreliable before 72 hours — early pancreatitis may show full enhancement then develop necrosis. <b>Contrast-enhanced CT at 72–96 hours</b> is the standard for necrosis assessment.',
       pearl:'<b>Gas in a peripancreatic collection = infected necrosis</b> until proven otherwise — aspiration for culture and step-up drainage. Percutaneous or endoscopic transgastric necrosectomy for symptomatic WON.',
       call:'Gas within a peripancreatic collection or clinical sepsis — <b>infected necrosis: notify surgery/gastroenterology</b>.',
@@ -301,8 +301,8 @@ ERCT.add([
     blurb:'Homogeneous fluid collection with a thin wall more than 4 weeks after pancreatitis — no solid debris distinguishes it from WON.',
     tags:['Thin wall','Homogeneous fluid','Revised Atlanta'], rp:'pancreatic-pseudocyst',
     sheet:{
-      find:'<b>Well-defined, round/oval, homogeneous fluid-density collection</b> (&lt;20 HU) with a <b>thin, imperceptible to thin wall</b>, no solid components, arising in or adjacent to the pancreas. Occurs after acute pancreatitis or trauma (&gt;4 weeks), or in chronic pancreatitis via ductal disruption.',
-      measure:'Largest diameter. Relationship to pancreatic duct — ductal communication changes management. Pseudocysts &gt;6 cm that are symptomatic or enlarging warrant drainage.',
+      find:'<b>Well-defined, round/oval, homogeneous fluid-density collection</b> (<20 HU) with a <b>thin, imperceptible to thin wall</b>, no solid components, arising in or adjacent to the pancreas. Occurs after acute pancreatitis or trauma (>4 weeks), or in chronic pancreatitis via ductal disruption.',
+      measure:'Largest diameter. Relationship to pancreatic duct — ductal communication changes management. Pseudocysts >6 cm that are symptomatic or enlarging warrant drainage.',
       pitfall:'<b>Solid components = WON, not pseudocyst</b> — this distinction is critical and changes management. CT may underestimate solid content; MRCP/EUS is more accurate. Cystic neoplasm (IPMN, MCN) is the other major differential in the absence of pancreatitis history.',
       pearl:'Most pseudocysts regress spontaneously. Endoscopic transmural (cystgastrostomy) or transpapillary drainage is preferred if intervention is needed. MRCP to evaluate for ductal communication before intervention.',
       f:'[Round/oval] homogeneous fluid collection ([X] HU) adjacent to the [pancreatic body/tail/head], measuring [X] cm, with a thin wall and no internal solid components. [Pancreatic duct communication: suspected/not identified.]',
@@ -317,7 +317,7 @@ ERCT.add([
     tags:['Double duct','Vascular encasement','Resectability'], rp:'pancreatic-ductal-adenocarcinoma',
     sheet:{
       find:'<b>Hypovascular (hypoattenuating) mass</b> in the pancreatic head or uncinate process with upstream <b>pancreatic duct and CBD dilation</b> (<b>double duct sign</b>). Parenchymal atrophy upstream. Assess for peripancreatic fat stranding and vascular involvement.',
-      measure:'Tumor size. Critical vascular assessment: SMA, celiac, hepatic artery, SMV, and portal vein. <b>Resectability</b>: resectable = no vascular contact; borderline = ≤180° vein contact or artery abutment; unresectable = &gt;180° arterial encasement or vein occlusion/thrombus.',
+      measure:'Tumor size. Critical vascular assessment: SMA, celiac, hepatic artery, SMV, and portal vein. <b>Resectability</b>: resectable = no vascular contact; borderline = ≤180° vein contact or artery abutment; unresectable = >180° arterial encasement or vein occlusion/thrombus.',
       pitfall:'<b>Autoimmune pancreatitis</b> (IgG4-related) produces a diffuse "sausage" pancreas or focal mass — look for capsule-like rim, duct threading through the mass, and biliary involvement. Serum IgG4 and steroid trial distinguish it.',
       pearl:'<b>Pancreatic protocol CT</b> (dual-phase: pancreatic parenchymal at 40s and portal venous at 65s) is the standard staging CT. Always report SMA, celiac, and portal-SMV confluence.',
       call:'Biliary obstruction with cholangitis requires <b>urgent biliary decompression</b> regardless of oncologic status.',
@@ -347,7 +347,7 @@ ERCT.add([
     blurb:'Peripheral hepatic gas = portal venous gas (ominous); central branching gas = pneumobilia (often benign).',
     tags:['Peripheral gas','Central gas','Distribution'], rp:'portal-vein-gas',
     sheet:{
-      find:'<b>Portal venous gas</b>: air in the <b>peripheral branches</b> of the portal vein within 2 cm of the liver capsule (gas follows blood to periphery by gravity/flow). <b>Pneumobilia</b>: gas in the <b>central biliary tree</b> (CBD and hilar ducts), branching from the hilum outward, often non-dependent.',
+      find:'<b>Portal venous gas</b>: air in the <b>peripheral branches</b> of the portal vein within 2 cm of the liver capsule (hepatopetal, centrifugal portal flow carries gas to the periphery). <b>Pneumobilia</b>: gas in the <b>central biliary tree</b> (CBD and hilar ducts), branching from the hilum outward, often non-dependent.',
       measure:'Distribution is the key discriminator. Portal venous gas: peripheral, often bilateral hepatic lobes. Pneumobilia: central, follows biliary anatomy toward hilum. CT is far more sensitive than plain film for both.',
       pitfall:'Both can coexist. On UNENHANCED CT the two can be indistinguishable if gas is central — trace the branching pattern: portal branches taper peripherally; biliary branches are larger centrally. <b>Portal venous gas without bowel ischemia</b> can occur (e.g., IBD, iatrogenic) — context is key but ischemia must be excluded.',
       pearl:'<b>Portal venous gas + pneumatosis intestinalis</b> = transmural bowel ischemia until proven otherwise — an immediately actionable CT finding. Pneumobilia is most often benign (post-ERCP sphincterotomy, biliary-enteric anastomosis, Mirizzi, gallstone ileus).',

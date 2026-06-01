@@ -94,7 +94,7 @@ ERCT.add([
     sheet:{
       find:'<b>Pedunculated heterogeneous mass</b> in the left atrium with a stalk at the fossa ovalis — the hallmark of myxoma. Variable internal calcification, cystic change, and peripheral fronds. Note chamber of origin, attachment site, and any obstruction of the mitral valve.',
       measure:'Measure in three planes. Assess for prolapse across the mitral valve (functional obstruction risk). Note any intratumoral calcification or enhancement pattern.',
-      pitfall:'RV/RA masses are more likely metastatic (melanoma, RCC tumor thrombus, lymphoma) or thrombus than myxoma. A sessile mural mass with surrounding edema in an immunosuppressed patient raises papillary fibroelastoma or metastasis.',
+      pitfall:'RV/RA masses are more likely metastatic (melanoma, RCC tumor thrombus, lymphoma) or thrombus than myxoma. A sessile, infiltrative mural mass with surrounding myocardial edema raises malignancy (angiosarcoma, lymphoma, or metastasis). Papillary fibroelastoma, by contrast, is a small frond-like tumor attached to a valve leaflet.',
       pearl:'Myxoma is the most common primary cardiac tumor in adults; two-thirds arise in the left atrium. Metastases (especially lung, breast, melanoma) are far more common than primary tumors overall.',
       f:'Heterogeneous [pedunculated] intracardiac mass within the [left atrium] measuring [X × X × X] mm, with [a stalk at the fossa ovalis / broad-based attachment], [with / without] prolapse across the mitral valve.',
       i:'Intracardiac mass in the [left atrium]; myxoma is the most common etiology. [Cardiac surgery / cardiology consultation recommended.]'
@@ -184,7 +184,7 @@ ERCT.add([
       find:'<b>Pericardial thickening (>4 mm) ± calcification</b>, predominantly over the RV and AV groove. Tubular/narrowed RV contour, biatrial enlargement, dilated IVC/hepatic veins, pericardial tethering, and conical-shaped ventricles. Septal bounce on cine CT.',
       measure:'Pericardial thickness at the RV: normal <2 mm, abnormal >4 mm. Extent and pattern of calcification (circumferential vs focal). Hepatic vein dilatation.',
       pitfall:'Pericardial thickening without calcification is non-specific and also seen in active pericarditis; MRI constrictive physiology (septal bounce and hepatic vein flow reversal) may be required for confirmation. Up to 20% of proven constrictive pericarditis has normal pericardial thickness.',
-      pearl:'Pericardial calcification is pathognomonic but not necessary — effusive-constrictive physiology can occur with normal-thickness pericardium (viral, radiation, idiopathic).',
+      pearl:'Pericardial calcification is highly suggestive but neither necessary nor sufficient (constriction is a physiologic diagnosis) — effusive-constrictive physiology can occur with normal-thickness pericardium (viral, radiation, idiopathic).',
       f:'Pericardial thickening measuring up to [X] mm [with extensive calcification] over the right ventricular free wall and atrioventricular grooves. [Biatrial enlargement.] [Tubular right ventricular contour.] [Dilated IVC and hepatic veins.]',
       i:'CT findings consistent with constrictive pericarditis. [Cardiology / cardiac surgery consultation for pericardiectomy evaluation.]'
     }

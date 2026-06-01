@@ -59,10 +59,10 @@ ERCT.add([
     blurb:'CT characterizes effusion density and pleural enhancement to distinguish transudate, exudate, blood, and chyle.',
     tags:['HU density','Pleural enhancement','Loculated'], rp:'pleural-effusion',
     sheet:{
-      find:'Free-flowing dependent pleural fluid. Measure HU on non-contrast: <b>0–15 HU</b> = transudate; <b>20–40 HU</b> = exudate/protein-rich; <b>>35 HU</b> = blood; <b>negative HU</b> = chylothorax/lipid. Post-contrast: smooth uniform pleural enhancement = benign; nodular/irregular = malignant or empyema.',
+      find:'Free-flowing dependent pleural fluid. Measure HU on non-contrast: <b>0–15 HU</b> = transudate; <b>~15–30 HU</b> = exudate/protein-rich; <b>35–70 HU</b> = acute blood; <b>negative HU</b> = chyle/lipid (significant overlap — use as a guide). Post-contrast: smooth uniform pleural enhancement = benign; nodular/irregular = malignant or empyema.',
       measure:'Volume estimation: sum of cross-sectional areas × slice thickness, or use the ellipsoid method (L × W × H × 0.5). Report if unilateral, bilateral, or asymmetric.',
       pitfall:'Post-contrast density of fluid is unreliable for characterization — always check pre-contrast series if available. Loculation can be mistaken for a solid pleural mass.',
-      pearl:'<b>Split-pleura sign</b> (enhancing visceral and parietal pleura separated by fluid) indicates empyema or exudate. Bilateral symmetric low-density effusions favor a transudate (CHF, cirrhosis, nephrotic).',
+      pearl:'<b>Split-pleura sign</b> (enhancing visceral and parietal pleura separated by fluid) indicates empyema / complicated parapneumonic effusion. Bilateral symmetric low-density effusions favor a transudate (CHF, cirrhosis, nephrotic).',
       f:'[Small / moderate / large] [right / bilateral] pleural effusion measuring [X] HU on non-contrast images. [Smooth / nodular] pleural enhancement. [No loculation / complex loculation identified.]',
       i:'[Moderate bilateral] pleural effusions, density consistent with [transudate / exudate]. [Recommend clinical correlation with Light\'s criteria.]'
     }
@@ -433,7 +433,7 @@ ERCT.add([
     tags:['Anterior PTX','Deep sulcus','Positive pressure'], rp:'pneumothorax',
     sheet:{
       call:'Any pneumothorax in a <b>ventilated patient on positive-pressure ventilation</b> carries high risk of conversion to tension — communicate to the ICU team immediately for drainage decision.',
-      find:'Air in the <b>anteromedial</b> and <b>subpulmonic</b> pleural recesses on supine CT (the most gravity-independent areas). Deep sulcus sign: abnormally sharp lateral costophrenic angle extending inferiorly. Air may also collect in the anteromedial recess.',
+      find:'Air in the <b>anteromedial</b> and <b>subpulmonic</b> pleural recesses on supine CT (the most gravity-independent areas). (The deep sulcus sign — an abnormally deep, lucent lateral costophrenic angle — is a supine-CXR sign, not a CT finding.)',
       measure:'Interpleural distance at the anterior lung edge. Assess for mediastinal shift and hemidiaphragm inversion to exclude occult tension physiology.',
       pitfall:'The deep sulcus sign on CXR is easily overlooked in a busy ICU. On CT, the anterior position of air (rather than lateral/posterior) is the key to diagnosis. Compare with prior CTshowing the pleural recesses.',
       pearl:'In ARDS patients on high PEEP, <b>barotrauma</b> commonly causes pneumothorax, pneumomediastinum, and pneumopericardium simultaneously — survey all three compartments.',

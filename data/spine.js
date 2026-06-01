@@ -22,7 +22,7 @@ ERCT.add([
     tags:['C1 ring','Lateral mass','Transverse ligament'], rp:'jefferson-fracture',
     sheet:{
       find:'<b>Bilateral anterior and posterior arch fractures of C1</b> on axial CT, with lateral displacement of the C1 lateral masses relative to C2. Look for at least 2 fractures in the ring.',
-      measure:'Sum of <b>bilateral C1 lateral mass overhang on C2 >6.9 mm (rule of Spence)</b> indicates transverse ligament disruption and instability. A single measurement >3.5 mm on either side is suspicious.',
+      measure:'Sum of <b>bilateral C1 lateral mass overhang on C2 >6.9 mm (rule of Spence)</b> indicates transverse ligament disruption and instability. This threshold derives from plain films; MRI is definitive for transverse ligament integrity.',
       pitfall:'A unilateral anterior arch fracture is not a Jefferson fracture. Pseudo-spread of C1 on C2 occurs in children due to cartilaginous growth plates — confirm with CT.',
       pearl:'Stable Jefferson = intact transverse ligament (overhang ≤6.9 mm); unstable = disrupted ligament; MRI of the transverse ligament guides surgical planning.',
       call:'Overhang >6.9 mm or any neurologic deficit — <b>call neurosurgery immediately</b> for unstable Jefferson fracture.',
@@ -52,7 +52,7 @@ ERCT.add([
     tags:['C2 pars','Spondylolisthesis','Levine-Edwards'], rp:'hangman-fracture',
     sheet:{
       find:'<b>Bilateral fractures through the C2 pedicles or pars interarticularis</b> with anterior subluxation of the C2 body on C3. Review the C2-C3 disc space and anterior longitudinal ligament on CT/MRI.',
-      measure:'<b>Levine-Edwards classification</b>: Type I — <3 mm displacement, no angulation; Type II — >3 mm or angulation >11°; Type IIa — angulation without displacement; Type III — bilateral facet dislocation.',
+      measure:'<b>Levine-Edwards classification</b>: Type I — <3 mm displacement, no angulation; Type II — >3 mm or angulation >11°; Type IIa — severe angulation with little or no translation (flexion-distraction); Type III — bilateral facet dislocation.',
       pitfall:'Type IIa can be worsened by traction — do not apply axial traction before checking the classification. This is the key surgical planning distinction.',
       pearl:'True "hangman" is a judicial execution pattern (hyperextension-distraction); most ED presentations are hyperextension-axial load (MVA). Neurologic deficits are paradoxically uncommon due to canal widening.',
       call:'Type III with facet dislocation and neurologic deficit — <b>emergent neurosurgery call</b>.',

@@ -88,7 +88,7 @@ ERCT.add([
     sheet:{
       call:'Active extravasation = ongoing hemorrhage. <b>Call the team and IR/surgery now</b> and give the source vessel if you can.',
       find:'A focus of <b>high-attenuation contrast (≈ arterial density)</b> that <b>increases and changes shape on the delayed phase</b>, surrounded by hematoma. Compare arterial and portal/delayed phases side by side.',
-      pitfall:'A <b>contained pseudoaneurysm</b> follows the blood pool on all phases and has a rounded margin that washes out; <b>extravasation</b> spreads and persists. Hyperdense surgical material, enteric contrast, and calcified plaque are mimics.',
+      pitfall:'A <b>contained pseudoaneurysm</b> follows the blood pool on all phases (isoattenuating to the lumen, does not wash out) with a rounded margin; <b>extravasation</b> spreads and changes shape on delayed phase. Hyperdense surgical material, enteric contrast, and calcified plaque are mimics.',
       pearl:'Measure HU: extravasation is typically 85–370 HU and approaches the aorta; hematoma is 40–70 HU.',
       f:'Focus of high-attenuation contrast within the [mesenteric/pelvic] hematoma that increases in size and attenuation on delayed imaging, consistent with active arterial extravasation arising from the [branch] artery.',
       i:'Active arterial extravasation from the [vessel]. Communicated to [name] at [time]; [IR for embolization].'

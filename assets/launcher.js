@@ -15,12 +15,8 @@
   // ---- build region quick-nav + sections ----
   ERCT.regions.forEach(function (r) {
     if (!r.dx.length) return;
-    // sort within region: killers first, then urgent, then routine; alpha within
-    var order = { killer: 0, urgent: 1, routine: 2 };
-    r.dx.sort(function (a, b) {
-      var s = (order[a.sev] || 3) - (order[b.sev] || 3);
-      return s !== 0 ? s : a.title.localeCompare(b.title);
-    });
+    // sort alphabetically within region
+    r.dx.sort(function (a, b) { return a.title.localeCompare(b.title); });
 
     var nav = el('a', null,
       '<span class="rdot"></span>' + esc(r.name) + ' <span class="rcount">' + r.dx.length + '</span>');
@@ -43,10 +39,8 @@
       var href = d.href ? d.href : 'dx.html?dx=' + encodeURIComponent(d.slug);
       var a = el('a', 'dxcard');
       a.href = href;
-      a.style.setProperty('--card-accent', d.sev === 'killer' ? '#ff4d5e' : d.sev === 'urgent' ? '#ffb648' : r.color);
-      var badge = d.sev === 'killer' ? '<span class="badge killer">Killer</span>'
-        : d.sev === 'urgent' ? '<span class="badge urgent">Urgent</span>'
-        : d.href ? '<span class="badge deep">Deep dive</span>' : '';
+      a.style.setProperty('--card-accent', r.color);
+      var badge = d.href ? '<span class="badge deep">Deep dive</span>' : '';
       var tags = (d.tags || []).slice(0, 3).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
       a.innerHTML =
         badge +
@@ -58,7 +52,6 @@
       // searchable haystack
       a.dataset.search = (d.title + ' ' + (d.system || '') + ' ' + (d.blurb || '') + ' ' +
         (d.tags || []).join(' ') + ' ' + r.name + ' ' + (d.modality || '')).toLowerCase();
-      a.dataset.sev = d.sev || 'routine';
       grid.appendChild(a);
     });
     sectionsWrap.appendChild(grid);
@@ -68,7 +61,6 @@
   var input = document.getElementById('dx-search');
   var clearBtn = document.getElementById('search-clear');
   var kbdHint = document.getElementById('kbd-hint');
-  var sevFilter = 'all';
   var allCards = [].slice.call(document.querySelectorAll('.dxcard'));
 
   function apply() {
@@ -76,12 +68,8 @@
     var terms = q ? q.split(/\s+/) : [];
     var shown = 0;
     allCards.forEach(function (c) {
-      var okSev = sevFilter === 'all' ? true
-        : sevFilter === 'killer' ? c.dataset.sev === 'killer'
-        : sevFilter === 'urgent' ? (c.dataset.sev === 'killer' || c.dataset.sev === 'urgent') : true;
       var hay = c.dataset.search;
-      var okText = terms.every(function (t) { return hay.indexOf(t) !== -1; });
-      var vis = okSev && okText;
+      var vis = terms.every(function (t) { return hay.indexOf(t) !== -1; });
       c.style.display = vis ? '' : 'none';
       if (vis) shown++;
     });
@@ -92,8 +80,7 @@
       var head = document.getElementById('r-' + g.dataset.region);
       if (head) head.style.display = any ? '' : 'none';
     });
-    var filtering = q || sevFilter !== 'all';
-    countEl.textContent = filtering ? (shown + ' of ' + allCards.length + ' diagnoses') : (allCards.length + ' diagnoses across ' + ERCT.regions.filter(function (r) { return r.dx.length; }).length + ' regions');
+    countEl.textContent = q ? (shown + ' of ' + allCards.length + ' diagnoses') : (allCards.length + ' diagnoses across ' + ERCT.regions.filter(function (r) { return r.dx.length; }).length + ' regions');
     noRes.classList.toggle('show', shown === 0);
     clearBtn.classList.toggle('show', !!q);
     if (kbdHint) kbdHint.style.display = q ? 'none' : '';
@@ -102,15 +89,6 @@
 
   input.addEventListener('input', apply);
   clearBtn.addEventListener('click', function () { input.value = ''; input.focus(); apply(); });
-
-  [].forEach.call(document.querySelectorAll('.filters .fchip'), function (chip) {
-    chip.addEventListener('click', function () {
-      [].forEach.call(document.querySelectorAll('.filters .fchip'), function (c) { c.classList.remove('active'); });
-      chip.classList.add('active');
-      sevFilter = chip.dataset.sev || 'all';
-      apply();
-    });
-  });
 
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input) {

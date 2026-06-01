@@ -36,7 +36,7 @@ ERCT.add([
     blurb:'Deformed or collapsed globe with intraocular air, lens dislocation, or vitreous hemorrhage after trauma.',
     tags:['Flat tire sign','Vitreous hemorrhage','Lens dislocation'], rp:'open-globe-injury',
     sheet:{
-      find:'<b>Decreased globe volume (flat tire sign)</b>, irregular or squared-off contour, <b>intraocular air</b>, vitreous hemorrhage (high density filling the posterior chamber), lens dislocation, or scleral buckle discontinuity.',
+      find:'<b>Decreased globe volume (flat tire sign)</b>, irregular or squared-off contour, <b>intraocular air</b>, vitreous hemorrhage (high density filling the posterior chamber), lens dislocation, or focal scleral contour discontinuity (flattening or buckling of the scleral wall).',
       pitfall:'Do NOT perform MRI if intraocular foreign body (IOFB) is possible (metal). CT detects metal and glass IOFBs; wood/plastic may be isodense to vitreous.',
       pearl:'A <b>high-density vitreous</b> (70–80 HU) = vitreous hemorrhage. Intraocular air is the most specific sign of open globe — even a tiny bubble.',
       call:'Suspected open globe — <b>ophthalmology immediately</b>, shield the eye, no pressure, no examination.',

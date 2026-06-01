@@ -2,7 +2,7 @@
    - HTML / page navigations  -> NETWORK-FIRST (fresh when online, cached when offline)
    - Other assets (CSS/JS/icons) -> CACHE-FIRST with runtime caching
    Bump CACHE on each meaningful change to purge old caches. */
-const CACHE = 'er-ct-v3';
+const CACHE = 'er-ct-v4';
 
 const SHELL = [
   './',

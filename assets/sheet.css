@@ -184,6 +184,8 @@ body{
 .filters .fchip.active{ color:#fff; border-color:var(--teal); background:rgba(70,198,224,0.13); }
 .filters .fchip[data-sev="killer"].active{ border-color:var(--crit); background:rgba(255,77,94,0.14); color:#ffd2d7; }
 .filters .sep{ width:1px; height:20px; background:var(--bdr); margin:0 3px; }
+.filters .hint-text{ color:var(--tx3); font-size:.86rem; }
+@media (max-width:520px){ .filters .hint-text{ display:none; } }
 
 .region-nav{ display:flex; flex-wrap:wrap; gap:7px; margin:18px 0 4px; }
 .region-nav a{

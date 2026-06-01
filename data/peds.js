@@ -152,7 +152,7 @@ ERCT.add([
       measure:'Normal subglottic width is approximately equal to the tracheal width below it. Steeple sign: subglottic diameter <4 mm in a child or visually narrower than the trachea below.',
       pitfall:'Normal infants can have apparent subglottic narrowing during expiration or crying. Always obtain radiograph in inspiration. <b>Do not attempt direct laryngoscopy in the radiology suite</b> if epiglottitis cannot be excluded — risk of complete obstruction.',
       pearl:'Croup is a clinical diagnosis; radiograph is obtained mainly to exclude epiglottitis or foreign body when presentation is atypical. Steroid and nebulized racemic epinephrine are mainstays of treatment.',
-      f:'AP neck radiograph demonstrates <b>symmetric subglottic narrowing</b> — steeple sign — at the level of the glottis. The epiglottis and aryepiglottic folds appear [normal]. [No foreign body. No pre-vertebral soft tissue swelling.]',
+      f:'AP neck radiograph demonstrates <b>symmetric subglottic narrowing</b> — steeple sign — in the subglottic trachea. The epiglottis and aryepiglottic folds appear [normal]. [No foreign body. No pre-vertebral soft tissue swelling.]',
       i:'Symmetric subglottic narrowing consistent with croup (laryngotracheobronchitis). Normal epiglottis — epiglottitis excluded.'
     }
   },
@@ -163,7 +163,7 @@ ERCT.add([
     blurb:'Swollen epiglottis producing a thumbprint sign on lateral neck radiograph — secure the airway before imaging.',
     tags:['Thumbprint sign','Epiglottis','Airway emergency'], rp:'epiglottitis',
     sheet:{
-      find:'<b>Lateral soft-tissue neck radiograph</b>: <b>thickened epiglottis (thumbprint sign)</b> — the epiglottis occupies more than one-third of the AP diameter of the subglottic airway. Thickened aryepiglottic folds (normal: thin and linear). Loss of the vallecula air space. Hypopharyngeal distension.',
+      find:'<b>Lateral soft-tissue neck radiograph</b>: <b>thickened epiglottis (thumbprint sign)</b> — the swollen epiglottis loses its normal thin, curved configuration and projects into the airway. Thickened aryepiglottic folds (normal: thin and linear). Loss of the vallecula air space. Hypopharyngeal distension.',
       measure:'Normal epiglottis width: <8 mm in children, <10 mm in adults. Aryepiglottic folds: ≤7 mm. Thickening beyond these values with the appropriate clinical picture confirms epiglottitis.',
       pitfall:'Do NOT examine the pharynx or attempt IV access without airway personnel present. The radiograph should be obtained only in stable patients with personnel capable of immediate intubation. Never use AP view alone — the epiglottis is only reliably assessed on lateral.',
       pearl:'Classically caused by <i>Haemophilus influenzae</i> type b (now rare with vaccination); increasingly adult patients with <i>Streptococcus</i>. Adults can present with a more indolent course but are at equal risk of sudden obstruction.',
@@ -181,7 +181,7 @@ ERCT.add([
     sheet:{
       find:'Contrast CT neck: <b>hypodense collection with a peripheral enhancing rim</b> in the pre-vertebral/retropharyngeal space (posterior to the posterior pharyngeal wall and anterior to the pre-vertebral muscles). Anterior displacement and narrowing of the airway, mass effect on adjacent structures. Extension into the parapharyngeal or danger space warrants notation.',
       measure:'Report craniocaudal extent, AP depth, and width of the collection. Airway AP diameter at the narrowest point. Assess for gas within the collection (anaerobic infection), internal septations, and internal low-density debris vs uniform pus.',
-      pitfall:'Retropharyngeal <b>cellulitis/lymphadenitis</b> shows diffuse swelling without a discrete drainable fluid core — do not call it an abscess. Normal retropharyngeal soft tissue: ≤7 mm at C2, ≤22 mm at C6 in children. Inspiratory lateral radiographs can artifactually thicken retropharyngeal tissue.',
+      pitfall:'Retropharyngeal <b>cellulitis/lymphadenitis</b> shows diffuse swelling without a discrete drainable fluid core — do not call it an abscess. Normal retropharyngeal soft tissue: ≤7 mm at C2, ≤22 mm at C6 in children. Expiratory or neck-flexed lateral radiographs can artifactually thicken the retropharyngeal tissue — obtain a true inspiratory, extended view.',
       pearl:'Danger space (between alar and pre-vertebral fascia) extends from skull base to the posterior mediastinum — infection here can descend to cause mediastinitis. Report any inferior extension beyond T4.',
       call:'<b>Airway narrowing >50% or rapid progression</b> = ENT and anesthesia at bedside; the child must not be sent to CT unaccompanied without airway support.',
       f:'[X × X × X] cm rim-enhancing hypodense collection within the retropharyngeal space at [C2–C4], anteriorly displacing the posterior pharyngeal wall with [X] mm of residual airway lumen. [No gas. No extension into the danger space. No mediastinitis.]',
@@ -196,7 +196,7 @@ ERCT.add([
     tags:['Absent Doppler flow','Whirlpool sign','Enlarged gonad'], rp:'ovarian-torsion',
     sheet:{
       find:'<b>Ovarian torsion</b>: enlarged (>4 cm) ovary with peripheral follicles displaced to the periphery, free pelvic fluid, and a <b>twisted vascular pedicle (whirlpool sign)</b>. Absent or markedly diminished intraovarian Doppler signal. The ipsilateral fallopian tube may be thickened. <b>Testicular torsion</b>: enlarged testis with heterogeneous echogenicity, absent intratesticular Doppler flow, and a hyperechoic epididymis with reactive hydrocele.',
-      measure:'Ovarian volume: length × width × height × 0.523. Ovary >4 cm³ (prepubertal) or >20 cm³ (adolescent) is abnormal. Testicular Doppler: compare with the contralateral side; always document the presence or absence of flow.',
+      measure:'Ovarian volume: length × width × height × 0.523. Marked asymmetric enlargement (often >3–4× the contralateral ovary) suggests torsion; absolute volume cutoffs are unreliable, especially prepubertally. Testicular Doppler: compare with the contralateral side; always document the presence or absence of flow.',
       pitfall:'Preserved Doppler flow does NOT exclude torsion — intermittent torsion or early torsion can have preserved signal. Clinical suspicion in a girl with acute pelvic pain and an enlarged ovary is sufficient for surgical exploration. Ovarian torsion is associated with a mass or cyst in 50–70% of cases in children.',
       pearl:'The <b>twisted pedicle (whirlpool sign)</b> is the most specific sonographic finding for torsion and may be visible even when Doppler seems preserved. Ovarian salvage is possible with prompt detorsion even if the ovary appears necrotic.',
       call:'<b>Clinical suspicion for torsion with equivocal or absent Doppler = emergent gynecology or urology consultation.</b> Do not delay surgery awaiting repeat imaging.',
@@ -269,7 +269,7 @@ ERCT.add([
   },
 
   {
-    slug:'scfe-transient-synovitis', title:'SCFE and Developmental Dysplasia of the Hip', region:'peds', system:'Skeletal',
+    slug:'scfe-ddh', title:'SCFE and Developmental Dysplasia of the Hip', region:'peds', system:'Skeletal',
     modality:'Radiograph', sev:'urgent', emoji:'🦴',
     blurb:'Klein\'s line violation and a widened physis confirm SCFE in a limping obese adolescent — urgent orthopedic referral.',
     tags:['Klein\'s line','Widened physis','DDH'], rp:'slipped-capital-femoral-epiphysis',

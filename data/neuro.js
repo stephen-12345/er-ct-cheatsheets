@@ -67,7 +67,7 @@ ERCT.add([
       find:'On NCCT, scan the sagittal/axial posterior fossa for a <b>hyperdense basilar artery</b>. On CTA, trace the vertebral arteries through the basilar to the PCA origins. Report the level of occlusion (proximal/mid/distal basilar or top-of-basilar), extent, and collateral PCOM flow.',
       measure:'Report vertebral artery origins and dominant VA; proximal occlusion vs. top-of-basilar syndrome (bilateral PCA involvement, thalami, midbrain) have different clinical profiles.',
       pitfall:'Dense basilar is easy to miss versus atherosclerotic calcification — check Hounsfield units and compare to vertebral arteries. Early pontine infarcts are invisible on NCCT; a normal NCCT does not exclude BAO.',
-      pearl:'<b>Top-of-basilar syndrome</b>: bilateral thalamic, midbrain, occipital, and medial temporal ischemia from embolism at the basilar apex — look for bilateral thalamic involvement (artery of Percheron territory).',
+      pearl:'<b>Top-of-basilar syndrome</b>: bilateral thalamic, midbrain, occipital, and medial temporal ischemia from embolism at the basilar apex — look for bilateral thalamic involvement.',
       call:'Any suspected basilar occlusion warrants immediate call to stroke/neurointerventional team — thrombectomy window extends to 24 h in select cases.',
       f:'Hyperdense basilar artery on NCCT with HU [X]. CTA demonstrates [complete/partial] occlusion of the [proximal/mid/distal] basilar artery with [absent/reduced] filling. [Top-of-basilar involvement with bilateral PCAs.] Posterior fossa shows [early ischemic changes / established infarct] in [pons/cerebellum].',
       i:'Acute basilar artery occlusion at the [proximal/distal] basilar. Immediately communicated to [provider] at [time]. Thrombectomy evaluation recommended.'
@@ -454,7 +454,7 @@ ERCT.add([
     tags:['Grey-white loss','Reversal sign','Diffuse swelling'],
     rp:'hypoxic-ischaemic-brain-injury',
     sheet:{
-      find:'Diffuse loss of <b>grey-white differentiation throughout multiple vascular territories</b> (not following one arterial territory), sulcal effacement, diffuse cerebral swelling, basal ganglia and cortex hypoattenuation. In severe cases, <b>reversal sign</b>: cerebral cortex/basal ganglia appear dense relative to diffusely low-density white matter.',
+      find:'Diffuse loss of <b>grey-white differentiation throughout multiple vascular territories</b> (not following one arterial territory), sulcal effacement, diffuse cerebral swelling, basal ganglia and cortex hypoattenuation. In severe cases, the <b>reversal sign</b>: white matter appears denser than the cortex and deep grey matter (reversal of the normal grey>white attenuation), indicating profound injury.',
       measure:'Extent of grey-white loss (focal vs. diffuse). Whether basal ganglia are involved (prognostic). Look for <b>pseudosubarachnoid hemorrhage</b> (diffuse high attenuation in cisterns/sulci due to relative cerebral hypodensity in severe HII — not true blood).',
       pitfall:'<b>Pseudo-SAH</b>: in severe cerebral edema after HII, the blood/CSF attenuation difference is lost and cisterns appear falsely hyperdense. Measure cistern HU — true SAH > 40–50 HU; pseudo-SAH is lower (~35–40 HU).',
       pearl:'<b>Basal ganglia involvement in HII</b> correlates with severe/near-total injury. The "reversal sign" (white matter appears denser than cortex) indicates profound, typically fatal injury.',

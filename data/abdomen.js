@@ -94,10 +94,10 @@ ERCT.add([
     tags:['Whirl sign','C-loop','Ischemia'], rp:'closed-loop-obstruction',
     sheet:{
       call:'Closed-loop obstruction with any ischemic sign — <b>call surgery immediately</b>; this is a surgical emergency.',
-      find:'A <b>C- or U-shaped</b> dilated loop with both limbs converging on a single twist point (whirl sign). Radially oriented dilated loops converging on a mesenteric whirl in the right lower quadrant are classic for an internal hernia. Look for <b>mesenteric venous engorgement</b>, bowel wall thickening, and decreased or absent mural enhancement.',
+      find:'A <b>C- or U-shaped</b> dilated loop with both limbs converging on a single twist point (whirl sign). Radially oriented dilated loops converging on a mesenteric whirl are classic for an internal hernia (whirl location is variable, often central/posterior to the SMA after gastric bypass). Look for <b>mesenteric venous engorgement</b>, bowel wall thickening, and decreased or absent mural enhancement.',
       measure:'Loop diameter >3 cm. Document mesenteric vessel orientation. Pneumatosis or portal venous gas = ischemia.',
       pitfall:'Plain films are often misleading; the closed loop may appear as a paucity of bowel gas or a "gasless abdomen" if fluid-filled.',
-      pearl:'In a post-gastric bypass patient, a mesenteric whirl in the right lower quadrant is <b>Peterson space internal hernia</b> until proven otherwise.',
+      pearl:'In a post-gastric bypass patient, a mesenteric whirl is a <b>Petersen-space internal hernia</b> until proven otherwise (location variable).',
       f:'[C-shaped] dilated small-bowel loop measuring [X] cm with a whirl sign at the [right lower quadrant] mesentery, consistent with a closed-loop obstruction. [Decreased mural enhancement and mesenteric venous congestion suggesting ischemia.] [No pneumatosis or free air.]',
       i:'Closed-loop small-bowel obstruction with [ischemic / no ischemic] features. Emergency surgical consultation.'
     }
@@ -109,9 +109,9 @@ ERCT.add([
     blurb:'Post-bypass mesenteric whirl or paraduodenal cluster — small-bowel ischemia lurks without prompt repair.',
     tags:['Mesenteric whirl','Post-bypass','Paraduodenal'], rp:'internal-hernia',
     sheet:{
-      find:'<b>Mesenteric whirl</b> with crowded, swirling vessels and a cluster of small-bowel loops in an abnormal location (right lower quadrant for Peterson; left paraduodenal fossa for paraduodenal hernia). Bowel loops displaced behind the SMA or into the lesser sac.',
-      measure:'Evaluate mural enhancement and thickness of herniated loops. Note degree of SBO. Map which mesenteric defect: transmesocolic, Peterson, Petersen, paraduodenal, paracecal, or foramen of Winslow.',
-      pitfall:'May appear as a simple SBO without an obvious transition — the mesenteric whirl and ectopic bowel cluster are the clues. In Peterson hernia the whirl is right-sided and posterior to the SMA.',
+      find:'<b>Mesenteric whirl</b> with crowded, swirling vessels and a cluster of small-bowel loops in an abnormal location (central/left and posterior to the SMA for a Petersen hernia after gastric bypass; left paraduodenal fossa for a paraduodenal hernia). Bowel loops displaced behind the SMA or into the lesser sac.',
+      measure:'Evaluate mural enhancement and thickness of herniated loops. Note degree of SBO. Map which mesenteric defect: transmesocolic, Petersen, paraduodenal, paracecal, or foramen of Winslow.',
+      pitfall:'May appear as a simple SBO without an obvious transition — the mesenteric whirl and ectopic bowel cluster are the clues. In a Petersen hernia the swirling mesentery is typically posterior to the SMA (location variable).',
       pearl:'<b>Paraduodenal hernia</b>: cluster of small bowel in the left paraduodenal fossa displaced the stomach and pushing the inferior mesenteric vein anteriorly. Foramen of Winslow hernia places bowel behind the hepatoduodenal ligament (lesser sac).',
       call:'Any associated ischemia or complete obstruction demands <b>urgent surgical consultation</b>.',
       f:'Mesenteric whirl in the [right lower quadrant] with a cluster of small-bowel loops in an ectopic position posterior to the SMA, consistent with [Peterson] internal hernia. [Partial small-bowel obstruction. No pneumatosis.]',
@@ -217,7 +217,7 @@ ERCT.add([
     blurb:'Watershed zone wall thickening at the splenic flexure and sigmoid — check the IMA and portal venous gas.',
     tags:['Watershed','Thumbprinting','IMA'], rp:'ischaemic-colitis',
     sheet:{
-      find:'<b>Segmental wall thickening</b> preferentially at the <b>splenic flexure</b> (Griffith point) and sigmoid (Sudeck point) — the watershed zones. Bowel wall thickening with submucosal edema, pericolonic fat stranding, and <b>thumbprinting</b> on plain film. In severe cases: absent enhancement, pneumatosis, portal venous gas.',
+      find:'<b>Segmental wall thickening</b> preferentially at the <b>splenic flexure</b> (Griffith point) and rectosigmoid junction (Sudeck point) — the watershed zones. Bowel wall thickening with submucosal edema, pericolonic fat stranding, and <b>thumbprinting</b> on plain film. In severe cases: absent enhancement, pneumatosis, portal venous gas.',
       measure:'Normal wall ≤3 mm. Document segment length. Look for IMA occlusion or stenosis.',
       pitfall:'Ascending colon involvement with right-sided predominance is more concerning for superior mesenteric artery ischemia; pancolonic pneumatosis suggests transmural necrosis requiring surgery.',
       pearl:'Non-occlusive causes (hypotension, vasopressors, after AAA repair) are more common than occlusive. Check for IMA origin atherosclerosis/occlusion.',

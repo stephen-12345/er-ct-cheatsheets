@@ -6,8 +6,8 @@ ERCT.add([
     blurb:'Anterior-posterior compression opens the pelvic ring — APC III ruptures all ligaments and tears pelvic vessels.',
     tags:['Pubic diastasis','Open book','Ligament disruption'], rp:'pelvic-ring-fracture',
     sheet:{
-      find:'Symphyseal diastasis and anterior sacroiliac joint widening on axial and coronal CT. Grade: <b>APC I</b> — symphysis &lt;2.5 cm; <b>APC II</b> — anterior SI widening, posterior ligaments intact; <b>APC III</b> — complete SI disruption with posterior widening.',
-      measure:'Pubic symphysis &gt;2.5 cm = unstable. Posterior SI joint gap &gt;5 mm = posterior ligamentous failure.',
+      find:'Symphyseal diastasis and anterior sacroiliac joint widening on axial and coronal CT. Grade: <b>APC I</b> — symphysis <2.5 cm; <b>APC II</b> — anterior SI widening, posterior ligaments intact; <b>APC III</b> — complete SI disruption with posterior widening.',
+      measure:'Pubic symphysis >2.5 cm = unstable. Posterior SI joint gap >5 mm = posterior ligamentous failure.',
       pitfall:'Overlying bowel gas on scout can mask diastasis — axial CT is mandatory for any pelvic trauma.',
       pearl:'APC III has ~30% associated vascular injury; CTA pelvis or IR angioembolization is often next.',
       call:'APC II–III patterns carry major hemorrhage risk — <b>communicate immediately</b> to trauma surgery.',
@@ -22,7 +22,7 @@ ERCT.add([
     tags:['Lateral compression','Vertical shear','Hemipelvis'], rp:'pelvic-ring-fracture',
     sheet:{
       find:'<b>LC</b>: impaction fractures of anterior sacrum or ilium with internal rotation of the ipsilateral hemipelvis. <b>VS</b>: vertical displacement of an entire hemipelvis (Malgaigne) — look for vertical offset at symphysis and SI joint simultaneously.',
-      measure:'VS pattern: vertical displacement &gt;1 cm at either the symphysis or the SI joint confirms instability.',
+      measure:'VS pattern: vertical displacement >1 cm at either the symphysis or the SI joint confirms instability.',
       pitfall:'LC fractures can have deceptively subtle anterior sacral impaction — review coronal and sagittal reformats; do not rely on axial alone.',
       pearl:'VS injuries are the most unstable pattern and carry the highest transfusion requirement of all pelvic fracture types.',
       call:'Vertical shear with hemipelvis displacement requires urgent trauma surgery notification for external fixation or pelvic binder assessment.',
@@ -36,8 +36,8 @@ ERCT.add([
     blurb:'Classify the column or wall pattern and exclude femoral head impaction — both determine surgical approach.',
     tags:['Anterior column','Posterior wall','Femoral head'], rp:'acetabular-fracture',
     sheet:{
-      find:'Use axial + coronal + 3-D reformats. Identify which of <b>5 elementary</b> (anterior wall/column, posterior wall/column, transverse) or <b>5 associated</b> (T-type, both-column, transverse + posterior wall, etc.) patterns is present. Check for posterior wall impaction ("gull sign") and loose bodies in the joint.',
-      measure:'Posterior wall comminution &gt;40% of wall surface predicts instability. Step-off at the weight-bearing dome &gt;2 mm = surgical threshold.',
+      find:'Use axial + coronal + 3-D reformats. Identify which of <b>5 elementary</b> (anterior wall/column, posterior wall/column, transverse) or <b>5 associated</b> (T-type, both-column, transverse + posterior wall, etc.) patterns is present. Check for posterior wall marginal impaction (impacted articular fragment) and intra-articular loose bodies.',
+      measure:'Posterior wall comminution >40% of wall surface predicts instability. Step-off at the weight-bearing dome >2 mm = surgical threshold.',
       pitfall:'Both-column fracture detaches the entire articular surface from the axial skeleton but can still have a congruent reduction ("secondary congruence") — do not mistake this for a less severe pattern.',
       pearl:'<b>Ilioischial line disruption</b> = posterior column; <b>iliopectineal line disruption</b> = anterior column on AP pelvic radiograph, confirmed on CT.',
       f:'Comminuted [posterior wall] acetabular fracture with [X]% wall involvement and [no / a X mm] articular step-off at the weight-bearing dome. [No / Yes, intra-articular loose body.] [Femoral head congruent.]',
@@ -51,7 +51,7 @@ ERCT.add([
     tags:['Denis zone','Spinopelvic','Neurologic risk'], rp:'sacral-fracture',
     sheet:{
       find:'On coronal and axial CT: <b>Denis I</b> — lateral to neural foramina; <b>Denis II</b> — through foramina; <b>Denis III</b> — central canal. <b>H-type</b> bilateral vertical fractures with transverse fracture = spinopelvic dissociation.',
-      measure:'Kyphotic angulation &gt;15° at the fracture = displacement requiring stabilization. Foraminal narrowing predicts L5/S1 root injury.',
+      measure:'Kyphotic angulation >15° at the fracture = displacement requiring stabilization. Foraminal narrowing predicts L5/S1 root injury.',
       pitfall:'Sacral fractures are missed on plain films ~30% of the time — always review sacrum on all pelvic CTs.',
       pearl:'An H-fracture (bilateral vertical + horizontal) signifies complete spinopelvic disconnection; urgent spine surgery consult needed.',
       call:'Denis III and H-type fractures carry significant neurologic injury risk — communicate to trauma and spine surgery.',
@@ -66,7 +66,7 @@ ERCT.add([
     tags:['Garden classification','AVN risk','Displaced'], rp:'femoral-neck-fracture',
     sheet:{
       find:'Cortical break or trabecular impaction at the femoral neck on CT scout and axial/coronal images. <b>Garden I</b> — valgus impaction; <b>II</b> — complete non-displaced; <b>III</b> — partial displacement; <b>IV</b> — complete displacement.',
-      measure:'Vertical angle at the fracture (Pauwels): &gt;70° is the most unstable configuration.',
+      measure:'Vertical angle at the fracture (Pauwels): >70° is the most unstable configuration.',
       pitfall:'Subtle Garden I impacted fractures can look nearly normal on plain film — CT or MRI if clinical suspicion persists.',
       pearl:'Garden III–IV in a young patient: the clock is AVN — timing to OR matters. In the elderly, arthroplasty is often preferred.',
       call:'Displaced femoral neck fracture (Garden III–IV) requires urgent orthopedic consultation for same-day or next-day fixation.',
@@ -110,7 +110,7 @@ ERCT.add([
     tags:['Schatzker','Depression','Vascular injury'], rp:'tibial-plateau-fracture',
     sheet:{
       find:'Axial + coronal + sagittal CT. <b>Schatzker I</b> — lateral split; <b>II</b> — lateral split-depression; <b>III</b> — lateral pure depression; <b>IV</b> — medial; <b>V</b> — bicondylar; <b>VI</b> — metaphyseal dissociation.',
-      measure:'Articular depression &gt;3 mm or condylar widening &gt;5 mm are general thresholds for surgical intervention. Measure maximum depression in mm.',
+      measure:'Articular depression >3 mm or condylar widening >5 mm are general thresholds for surgical intervention. Measure maximum depression in mm.',
       pitfall:'Posterior plateau fractures are easily missed on axial images — coronal and sagittal reformats are essential. Also look for a Segond fracture (ACL avulsion) on the lateral tibial rim.',
       pearl:'Schatzker V–VI with vascular injury to the popliteal artery: always check for vascular compromise (CTA knee in high-energy bicondylar fractures).',
       call:'Bicondylar (Schatzker V–VI) with tense compartments — compartment syndrome; notify orthopedic surgery immediately.',
@@ -125,9 +125,9 @@ ERCT.add([
     tags:['Weber A/B/C','Syndesmosis','Bimalleolar'], rp:'ankle-fracture',
     sheet:{
       find:'<b>Weber A</b> — below the plafond (avulsion); <b>Weber B</b> — at the plafond, syndesmosis possibly intact; <b>Weber C</b> — above the plafond, syndesmosis disrupted. Assess medial mortise width (normal ≤4 mm). Evaluate for posterior malleolus fracture.',
-      measure:'Medial clear space &gt;4 mm = medial instability. Tibiofibular clear space &gt;6 mm on mortise view = syndesmotic diastasis.',
+      measure:'Medial clear space >4 mm = medial instability. Tibiofibular clear space >6 mm on mortise view = syndesmotic diastasis.',
       pitfall:'Maisonneuve fracture — proximal fibular fracture with ankle mortise disruption; always palpate the entire fibula and image the knee if there is isolated medial malleolus fracture or syndesmotic widening without a fibular fracture at the ankle.',
-      pearl:'Posterior malleolus involvement &gt;25% of the joint surface usually requires fixation to restore plafond congruity.',
+      pearl:'Posterior malleolus involvement >25% of the joint surface usually requires fixation to restore plafond congruity.',
       f:'[Weber B] fibular fracture [at the level of the plafond] with [medial clear space of X mm]. [No / Posterior malleolus fracture involving X% of the articular surface.] [Syndesmosis intact / disrupted.]',
       i:'[Bimalleolar-equivalent / Trimalleolar] ankle fracture, [Weber B]. Orthopedic surgery notified.'
     }
@@ -139,7 +139,7 @@ ERCT.add([
     tags:['Plafond','Ruedi-Allgower','Soft tissue'], rp:'pilon-fracture',
     sheet:{
       find:'Comminuted distal tibial articular fracture with variable fibular fracture. Use <b>Ruedi-Allgower</b>: I — non-displaced; II — displaced without comminution; III — comminuted with displacement.',
-      measure:'Count the primary articular fragments; measure maximum step-off and gap. &gt;2 mm step-off = surgical threshold.',
+      measure:'Count the primary articular fragments; measure maximum step-off and gap. >2 mm step-off = surgical threshold.',
       pitfall:'Pilon fractures are high-energy with severe soft-tissue compromise — CT is key for surgical planning but timing of definitive fixation depends on soft-tissue swelling (often staged).',
       pearl:'Associated fibular fracture is present in ~80%; stabilizing it is often the first surgical step (staged approach with external fixator bridging).',
       call:'Severe soft-tissue injury (fracture blisters, vascular compromise) requires urgent orthopedic surgery and possible vascular consult.',
@@ -154,7 +154,7 @@ ERCT.add([
     tags:['Bohler angle','Posterior facet','Sanders'], rp:'calcaneal-fracture',
     sheet:{
       find:'Identify intra-articular vs extra-articular fracture. For intra-articular: use <b>Sanders classification</b> on coronal CT at the widest posterior facet: I — non-displaced; II — two-part; III — three-part; IV — comminuted.',
-      measure:'<b>Bohler angle</b> (normal 20–40°) on lateral: &lt;20° indicates posterior facet depression. Measure the angle between the superior tuberosity and the posterior facet summit.',
+      measure:'<b>Bohler angle</b> (normal 20–40°) on lateral: <20° indicates posterior facet depression. Measure the angle between the superior tuberosity and the posterior facet summit.',
       pitfall:'Associated lumbar burst fracture (L1/L2) occurs in ~10% of calcaneal fractures from falls — always image the lumbar spine.',
       pearl:'Sanders IV (severely comminuted) may be managed non-operatively or with primary subtalar fusion rather than ORIF.',
       f:'Intra-articular calcaneal fracture with a Bohler angle of [X°] and [Sanders II / III] comminution of the posterior facet. [No / Associated peroneal tendon subluxation.]',
@@ -168,7 +168,7 @@ ERCT.add([
     tags:['Fleck sign','TMT alignment','Missed injury'], rp:'lisfranc-fracture-dislocation',
     sheet:{
       find:'On weight-bearing views or CT: disruption of the normal alignment between the 2nd metatarsal base and middle cuneiform (medial border of 2nd MT should align with medial border of middle cuneiform). The <b>fleck sign</b> — a small avulsion fragment between the 1st and 2nd metatarsal bases — is pathognomonic.',
-      measure:'Diastasis &gt;2 mm between the 1st and 2nd metatarsal bases or between the medial and middle cuneiforms = ligamentous Lisfranc injury.',
+      measure:'Diastasis >2 mm between the 1st and 2nd metatarsal bases or between the medial and middle cuneiforms = ligamentous Lisfranc injury.',
       pitfall:'A purely ligamentous Lisfranc injury can appear normal on non-weight-bearing plain films — weight-bearing films or CT mandatory if clinical suspicion exists.',
       pearl:'Homolateral (all metatarsals displace in same direction) vs divergent (1st MT medial, others lateral) pattern — both require ORIF or primary fusion.',
       call:'Neurovascular compromise (dorsalis pedis artery proximity) requires urgent vascular assessment.',
@@ -183,7 +183,7 @@ ERCT.add([
     tags:['Hawkins classification','AVN risk','Subtalar'], rp:'talar-neck-fracture',
     sheet:{
       find:'Fracture at the talar neck on CT. <b>Hawkins I</b> — non-displaced, intact subtalar; <b>II</b> — displaced with subtalar dislocation; <b>III</b> — tibiotalar also dislocated; <b>IV</b> — talonavicular also dislocated.',
-      measure:'Displacement &gt;2 mm or angulation &gt;5° = Hawkins II or higher; AVN risk escalates from ~13% (I) to &gt;90% (III–IV).',
+      measure:'Displacement >2 mm or angulation >5° = Hawkins II or higher; AVN risk escalates from ~13% (I) to >90% (III–IV).',
       pitfall:'Hawkins sign on radiographs at 6–8 weeks (subchondral lucency) indicates revascularization and rules out AVN — its absence at that time is concerning.',
       pearl:'Hawkins III is a surgical emergency for urgent reduction to restore blood supply to the talar body.',
       call:'Hawkins III–IV: call orthopedic surgery immediately for urgent anatomic reduction.',
@@ -198,7 +198,7 @@ ERCT.add([
     tags:['Waist fracture','AVN risk','Proximal pole'], rp:'scaphoid-fracture',
     sheet:{
       find:'Cortical break or trabecular impaction on CT coronal reformats. Classify location: <b>proximal pole</b> (highest AVN risk), <b>waist</b> (most common), distal pole.',
-      measure:'Displacement &gt;1 mm or angulation (scapholunate angle &gt;60° or intrascaphoid angle &gt;35°) = displaced, requiring surgery.',
+      measure:'Displacement >1 mm or angulation (scapholunate angle >60° or intrascaphoid angle >35°) = displaced, requiring surgery.',
       pitfall:'Plain films miss ~20% of scaphoid fractures — if snuffbox tenderness and normal X-ray, CT (or MRI within 48 h) is the next step.',
       pearl:'Humpback deformity (volar flexion of the distal fragment) on sagittal CT is a sign of instability requiring ORIF.',
       f:'[Waist / Proximal pole] scaphoid fracture with [no / X mm] displacement and [no / humpback] angulation.',
@@ -212,7 +212,7 @@ ERCT.add([
     tags:['Colles/Smith','Articular step-off','Radial shortening'], rp:'distal-radius-fracture',
     sheet:{
       find:'<b>Colles</b> — dorsal displacement and angulation (dinner fork); <b>Smith</b> — volar displacement (garden spade). Assess articular involvement, comminution, radial length, inclination, and ulnar variance.',
-      measure:'Radial shortening &gt;3 mm, articular step-off &gt;2 mm, or dorsal tilt &gt;10° beyond neutral are generally surgical thresholds. Check ulnar variance (normal 0 ± 2 mm).',
+      measure:'Radial shortening >3 mm, articular step-off >2 mm, or dorsal tilt >10° beyond neutral are generally surgical thresholds. Check ulnar variance (normal 0 ± 2 mm).',
       pitfall:'Associated scaphoid or ulnar styloid fracture is easily missed — review all carpal bones on every distal radius fracture.',
       pearl:'Intra-articular die-punch fragment at the lunate fossa is a CT finding that changes surgical planning even if not apparent on plain films.',
       f:'Distal radial fracture with [dorsal / volar] angulation of [X°], radial shortening of [X mm], and [no / X mm] articular step-off. [Intra-articular extension to the [lunate fossa].] [Associated ulnar styloid fracture [base / tip].]',
@@ -226,7 +226,7 @@ ERCT.add([
     tags:['Fat pad sign','Occult fracture','Hemarthrosis'], rp:'elbow-fat-pad-sign',
     sheet:{
       find:'On the lateral radiograph in 90° flexion: the anterior fat pad normally hugs the coronoid fossa (sail sign if elevated). A <b>posterior fat pad</b> is always abnormal. CT identifies the fracture: most commonly radial head, then coronoid, then capitellar.',
-      measure:'Elevation of the anterior fat pad &gt;4 mm or any posterior fat pad visibility = hemarthrosis and occult fracture until proven otherwise.',
+      measure:'Elevation of the anterior fat pad >4 mm or any posterior fat pad visibility = hemarthrosis and occult fracture until proven otherwise.',
       pitfall:'A normal lateral view does not exclude fracture — if clinical suspicion is high, obtain CT. Posterior fat pad can be obscured if the elbow is not in true lateral position.',
       pearl:'Posterior fat pad with a normal-appearing radial head in an adult: Mason I radial head fracture is likely; treat as fracture clinically even if CT shows only a hairline.',
       f:'[Posterior fat pad sign present on lateral view.] CT demonstrates [Mason I radial head fracture with no displacement / fracture of the coronoid process at X]. [Hemarthrosis.]',
@@ -239,8 +239,8 @@ ERCT.add([
     blurb:'Mason classification guides management — block to pronation/supination and comminution are keys to surgical triage.',
     tags:['Mason classification','Block to motion','Essex-Lopresti'], rp:'radial-head-fracture',
     sheet:{
-      find:'Fracture of the radial head on CT: <b>Mason I</b> — marginal crack, no displacement (&lt;2 mm); <b>II</b> — displaced or angulated; <b>III</b> — comminuted; <b>IV</b> — with elbow dislocation.',
-      measure:'Displacement &gt;2 mm or articular involvement &gt;30% of the radial head surface = Mason II, typically requiring ORIF or arthroplasty.',
+      find:'Fracture of the radial head on CT: <b>Mason I</b> — marginal crack, no displacement (<2 mm); <b>II</b> — displaced or angulated; <b>III</b> — comminuted; <b>IV</b> — with elbow dislocation.',
+      measure:'Displacement >2 mm or articular involvement >30% of the radial head surface = Mason II, typically requiring ORIF or arthroplasty.',
       pitfall:'<b>Essex-Lopresti injury</b> — radial head fracture + interosseous membrane rupture + distal radioulnar joint disruption — is missed when only the elbow is imaged; examine the wrist if forearm tenderness or ulnar variance is noted.',
       pearl:'The anterior neurovascular fat stripe and posterior fat pad elevation are indirect signs; CT is definitive for fragment displacement and comminution.',
       f:'Radial head fracture, [Mason II], with [X mm] articular step-off and [no / X] comminuted fragments. [No elbow dislocation.] [Distal radioulnar joint: normal / disrupted.]',
@@ -254,7 +254,7 @@ ERCT.add([
     tags:['Reverse Hill-Sachs','Lightbulb sign','Seizure/electrocution'], rp:'posterior-shoulder-dislocation',
     sheet:{
       find:'On CT axial: humeral head displaced posterior to the glenoid, internal rotation fixed. Look for <b>reverse Hill-Sachs</b> (anteromedial humeral head impaction defect) and reverse Bankart (posterior glenoid rim fracture).',
-      measure:'Reverse Hill-Sachs depth: &gt;20% of humeral head articular surface = high risk of re-engagement ("locking"); may require surgical management.',
+      measure:'Reverse Hill-Sachs depth: >20% of humeral head articular surface = high risk of re-engagement ("locking"); may require surgical management.',
       pitfall:'On AP radiograph the humeral head retains a rounded "lightbulb" appearance from fixed internal rotation — this can look almost normal without a Y-view or axillary view. <b>Always obtain a second orthogonal view</b>.',
       pearl:'Classic mechanism: seizure, electrocution, or bilateral dislocation — have a high index of suspicion when bilateral or history of seizure.',
       call:'Locked posterior dislocation requires urgent orthopedic reduction under sedation/anesthesia.',
@@ -269,7 +269,7 @@ ERCT.add([
     tags:['Hill-Sachs','Bankart lesion','Bony glenoid'], rp:'anterior-shoulder-dislocation',
     sheet:{
       find:'Humeral head anterior and inferior to glenoid on CT. Assess for: <b>Hill-Sachs</b> (posterolateral humeral head impaction), <b>bony Bankart</b> (anterior inferior glenoid rim fracture), and glenoid track engagement.',
-      measure:'Bony glenoid loss &gt;20–25% of glenoid width = "off-track" Hill-Sachs, indicating high recurrence risk requiring Latarjet procedure rather than soft-tissue repair.',
+      measure:'Bony glenoid loss >20–25% of glenoid width = "off-track" Hill-Sachs, indicating high recurrence risk requiring Latarjet procedure rather than soft-tissue repair.',
       pitfall:'Isolated Hill-Sachs without glenoid loss is low recurrence risk; it is the combination with glenoid bone loss that predicts instability. Always measure both.',
       pearl:'Post-reduction CT (after reduction confirmed) is the standard of care for first-time dislocations in young active patients to quantify bone loss.',
       f:'[Anterior] glenohumeral dislocation [now reduced]. [Hill-Sachs defect posterolateral, X% of humeral head.] [Bony Bankart fragment / No glenoid rim fracture, X% glenoid width loss.]',
@@ -282,8 +282,8 @@ ERCT.add([
     blurb:'Neer classification by number of displaced parts guides fixation vs arthroplasty — axillary nerve and vascular injury must be excluded.',
     tags:['Neer classification','4-part','AVN risk'], rp:'proximal-humerus-fracture',
     sheet:{
-      find:'Identify displacement (&gt;1 cm) or angulation (&gt;45°) of the anatomic neck, surgical neck, greater tuberosity, and lesser tuberosity to assign <b>Neer parts</b> (1–4). CT with 3-D reconstruction best defines fragment anatomy.',
-      measure:'Greater tuberosity displacement &gt;5 mm = surgical in a young patient, even as an isolated fragment.',
+      find:'Identify displacement (>1 cm) or angulation (>45°) of the anatomic neck, surgical neck, greater tuberosity, and lesser tuberosity to assign <b>Neer parts</b> (1–4). CT with 3-D reconstruction best defines fragment anatomy.',
+      measure:'Greater tuberosity displacement >5 mm = surgical in a young patient, even as an isolated fragment.',
       pitfall:'Head-splitting and valgus-impacted 4-part fractures have markedly different prognoses and management — CT distinguishes them from classic 4-part pattern.',
       pearl:'4-part fracture in a young patient risks AVN of the humeral head (blood supply via arcuate artery); in the elderly, reverse total shoulder arthroplasty is often preferred.',
       call:'Associated axillary artery injury (rare, seen with proximal fragment displacement) requires immediate vascular surgery.',
@@ -298,9 +298,9 @@ ERCT.add([
     tags:['Midshaft','Displacement','Neurovascular'], rp:'clavicle-fracture',
     sheet:{
       find:'Classify by location: middle third (most common, ~80%), lateral third, medial third. On CT, assess displacement, comminution, and shortening. Medial third fractures require CT to differentiate from sternoclavicular dislocation.',
-      measure:'Midshaft shortening &gt;2 cm or complete displacement (no cortical contact) — surgical threshold in young active patients.',
+      measure:'Midshaft shortening >2 cm or complete displacement (no cortical contact) — surgical threshold in young active patients.',
       pitfall:'Posterior sternoclavicular dislocation mimics medial clavicle fracture and can compress the trachea, esophagus, or great vessels — CT of the chest is mandatory for any suspected sternoclavicular injury.',
-      pearl:'Lateral clavicle fractures with coracoclavicular ligament disruption (displaced CC distance &gt;13 mm) are functionally equivalent to AC joint dislocation and often need fixation.',
+      pearl:'Lateral clavicle fractures with coracoclavicular ligament disruption (displaced CC distance >13 mm) are functionally equivalent to AC joint dislocation and often need fixation.',
       f:'[Midshaft] clavicle fracture with [X mm] displacement and [X mm] shortening. [No / Comminuted fragments.] [Sternoclavicular joint: intact.]',
       i:'[Displaced midshaft] clavicle fracture. [Surgical vs non-operative management per orthopedic surgery.]'
     }
@@ -312,7 +312,7 @@ ERCT.add([
     tags:['Joint effusion','Bony erosion','Aspiration urgent'], rp:'septic-arthritis',
     sheet:{
       find:'Moderate-to-large joint effusion with periarticular soft-tissue edema (stranding, fat plane obliteration). Look for adjacent <b>bony erosion</b>, gas within the joint (pathognomonic for pyarthrosis), and osteolysis.',
-      measure:'Synovial fluid WBC &gt;50,000 cells/mm³ is the diagnostic criterion — CT only confirms effusion, not infection; aspiration is required.',
+      measure:'Synovial fluid WBC >50,000 cells/mm³ is the diagnostic criterion — CT only confirms effusion, not infection; aspiration is required.',
       pitfall:'Crystal arthropathy (gout, pseudogout) can produce tophaceous density within the joint and periarticular erosions that mimic septic arthritis on CT.',
       pearl:'Gas within the joint in a non-postoperative patient = pyarthrosis until proven otherwise — emergent aspiration and orthopedic consult.',
       call:'Any suspected septic joint is a surgical emergency — do not delay aspiration awaiting further imaging.',
@@ -341,7 +341,7 @@ ERCT.add([
     blurb:'Gas tracking along fascial planes is the CT signature of necrotizing fasciitis — surgical debridement within hours saves lives.',
     tags:['Fascial gas','Fascial thickening','Surgical emergency'], rp:'necrotizing-fasciitis',
     sheet:{
-      find:'<b>Gas within or along deep fascial planes</b> (the LRINEC hallmark on CT) — this is the critical finding. Asymmetric fascial thickening (&gt;3 mm) with adjacent fat stranding and fluid tracking along fascial layers. Absence of gas does not exclude the diagnosis.',
+      find:'<b>Gas within or along deep fascial planes</b> — this is the critical CT finding (note: LRINEC is a separate laboratory score, not an imaging finding). Asymmetric fascial thickening (>3 mm) with adjacent fat stranding and fluid tracking along fascial layers. Absence of gas does not exclude the diagnosis.',
       measure:'Gas extent: document the affected fascial compartments. LRINEC score ≥6 is associated with necrotizing soft-tissue infection (CRP, WBC, sodium, glucose, Cr, Hgb).',
       pitfall:'Up to 25% of cases have no CT gas — if clinical suspicion is high (severe pain, sepsis, rapidly spreading erythema), surgical exploration is diagnostic and must not be delayed for imaging.',
       pearl:'The absence of rim enhancement around the affected area (unlike simple abscess) reflects fascial ischemia — a worrisome CT sign of NF.',
@@ -372,7 +372,7 @@ ERCT.add([
     tags:['Compartment pressure','Hematoma','Fasciotomy'], rp:'acute-compartment-syndrome',
     sheet:{
       find:'CT findings supporting raised compartment pressure: diffuse muscular swelling, obliteration of intermuscular fat planes, and the inciting injury (fracture, hematoma). Muscle may show heterogeneous enhancement or lack of enhancement if ischemic.',
-      measure:'Clinical diagnosis: compartment pressure &gt;30 mmHg or within 30 mmHg of diastolic pressure = fasciotomy. CT does not measure pressure.',
+      measure:'Clinical diagnosis: compartment pressure >30 mmHg or within 30 mmHg of diastolic pressure = fasciotomy. CT does not measure pressure.',
       pitfall:'Normal CT does not exclude ACS — if the clinical syndrome (pain out of proportion, passive stretch pain, tense compartment) is present, pressure measurement and fasciotomy should not await CT findings.',
       pearl:'<b>Late ACS imaging</b> on CT: hypodense non-enhancing muscle = ischemic necrosis (Volkmann contracture). This is a delayed complication, not an acute imaging diagnosis.',
       call:'Clinical ACS is a time-sensitive surgical emergency — communicate the fracture and hematoma findings immediately and do not delay measurement or fasciotomy for additional imaging.',
@@ -415,9 +415,9 @@ ERCT.add([
     tags:['Lytic lesion','Metastasis','Myeloma'], rp:'pathological-fracture',
     sheet:{
       find:'Fracture through a lytic or blastic bone lesion. Characterize the lesion: aggressive features (permeative pattern, cortical destruction, soft-tissue mass, periosteal reaction) vs benign (well-defined margins, sclerotic rim, no soft-tissue mass).',
-      measure:'Mirels score for impending pathologic fracture: site, pain, lesion type, size (&gt;2/3 cortex = score 3). Total score &gt;8 = prophylactic fixation recommended.',
+      measure:'Mirels score for impending pathologic fracture: site, pain, lesion type, size (>2/3 cortex = score 3). Total score >8 = prophylactic fixation recommended.',
       pitfall:'Insufficiency fractures (in osteoporotic or irradiated bone) can mimic pathologic fractures — review bone density and treatment history; MRI distinguishes edema from replacement.',
-      pearl:'A fracture through a purely lytic lesion in a patient &gt;40 years without a known primary should prompt workup for myeloma (SPEP, urine BPEP) and metastasis (CT chest/abdomen/pelvis).',
+      pearl:'A fracture through a purely lytic lesion in a patient >40 years without a known primary should prompt workup for myeloma (SPEP, urine BPEP) and metastasis (CT chest/abdomen/pelvis).',
       call:'Pathologic fractures of weight-bearing bones (femur, humerus) with aggressive underlying lesion require urgent orthopedic consult for impending fixation.',
       f:'Fracture through a [lytic / sclerotic / mixed] bone lesion at the [proximal femur] measuring [X cm] with [no / X cm] cortical breakthrough and [no / soft-tissue mass]. [Additional lesions: absent / present at X, Y].',
       i:'Pathologic fracture through [aggressive lytic lesion] at the [proximal femur]. [Differential includes metastasis / myeloma / primary bone tumor]. Orthopedic oncology and oncology notified.'
@@ -430,7 +430,7 @@ ERCT.add([
     tags:['Crescent sign','Subchondral collapse','ARCO staging'], rp:'avascular-necrosis-of-the-femoral-head',
     sheet:{
       find:'On CT: <b>crescent sign</b> (subchondral lucency parallel to the articular surface), subchondral collapse and flattening of the femoral head, sclerosis and cystic change in the weight-bearing segment. <b>ARCO staging</b>: I — MRI/bone scan only; II — sclerosis/cysts; III — crescent sign/collapse; IV — joint space loss.',
-      measure:'Extent of necrotic segment: &lt;15% (small), 15–30% (medium), &gt;30% (large) of femoral head surface — correlates with collapse risk.',
+      measure:'Extent of necrotic segment: <15% (small), 15–30% (medium), >30% (large) of femoral head surface — correlates with collapse risk.',
       pitfall:'CT is insensitive for ARCO stage I and II — MRI (double-line sign on T2) is the gold standard for early diagnosis in the appropriate clinical setting.',
       pearl:'Bilateral AVN is present in ~50% of cases (alcohol, steroids, sickle cell) — always image both hips.',
       f:'[Subchondral crescent sign and collapse] of the [right] femoral head weight-bearing segment involving approximately [X%] of the articular surface. [Associated sclerosis and cystic change.] [Contralateral hip: normal / similar changes.]',
@@ -473,7 +473,7 @@ ERCT.add([
     tags:['Muscle edema','CK elevation','Compartment'], rp:'rhabdomyolysis',
     sheet:{
       find:'Affected muscles appear <b>diffusely swollen and hypodense</b> (edema replaces normal fat-containing stroma) with obliteration of adjacent fascial fat planes. May see heterogeneous or decreased muscle enhancement. In severe cases, intramuscular gas or necrosis.',
-      measure:'On CT, muscle attenuation &lt;10 HU suggests significant edema/necrosis. Identify which compartments are involved for pressure measurement guidance.',
+      measure:'On CT, muscle attenuation <10 HU suggests significant edema/necrosis. Identify which compartments are involved for pressure measurement guidance.',
       pitfall:'CT may be normal early in rhabdomyolysis when CK is already markedly elevated — MRI (T2/STIR hyperintensity) is more sensitive. CT is useful to identify the cause (trauma, ischemia, compression) and exclude compartment syndrome.',
       pearl:'Common precipitants to note in the CT report context: crush injury, prolonged immobility (found-down), electrical injury, ischemic myopathy from vascular occlusion — describe the imaging cause if visible.',
       f:'Diffuse swelling and hypodensity of the [anterior and lateral compartment muscles of the left lower leg] with obliteration of adjacent fat planes, consistent with muscle edema / necrosis in the setting of rhabdomyolysis. [No compartment-expanding hematoma. / Intramuscular gas absent.]',
