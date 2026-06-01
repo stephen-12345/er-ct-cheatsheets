@@ -31,14 +31,20 @@
 <div class="toolbar">
   <div class="wrap">
     <div class="searchbar">
-      <span class="mag">🔍</span>
-      <input id="dx-search" type="search" autocomplete="off" autocapitalize="off" spellcheck="false"
-             placeholder="Search 286 diagnoses — name, region, sign, or threshold…" aria-label="Search diagnoses">
-      <span class="kbd" id="kbd-hint"><kbd>/</kbd></span>
-      <button id="search-clear" aria-label="Clear search">✕</button>
+      <div class="search-field">
+        <span class="mag">🔍</span>
+        <input id="dx-search" type="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+               placeholder="Search 286 diagnoses — name, region, sign, or threshold…" aria-label="Search diagnoses">
+        <span class="kbd" id="kbd-hint"><kbd>/</kbd></span>
+        <button id="search-clear" aria-label="Clear search">✕</button>
+      </div>
+      <button id="voice-btn" class="voice" title="Voice search" aria-label="Voice search">🎤</button>
     </div>
     <div class="filters">
-      <span class="hint-text">Tap a region below, or search by name, sign, or threshold.</span>
+      <a class="fchip tool" href="quiz.html">🎴 Study</a>
+      <a class="fchip tool" href="macros.html">📝 Templates</a>
+      <a class="fchip tool" href="polish.html">✨ AI Polish</a>
+      <a class="fchip tool" href="sync.html">☁️ Sync</a>
       <span class="sep"></span>
       <a class="fchip" href="#sources" style="text-decoration:none">📚 Sources</a>
     </div>
@@ -46,22 +52,18 @@
 </div>
 
 <main class="wrap">
-  <section class="notice">
-    <strong>How it works:</strong> every diagnosis opens a color-zoned sheet —
-    <span style="color:#5fc6e6">How to find it</span> ·
-    <span style="color:#7fb2ea">Measure / threshold</span> ·
-    <span style="color:#f3ad63">Pitfall / mimic</span> ·
-    <span style="color:#6cd49b">Pearl</span> ·
-    <span style="color:#ff7a86">Call now</span> ·
-    <span style="color:#f4955c">F: / I: dictation</span>.
-    Tap any dictation line to copy it. Works fully offline once loaded — pin it to your home screen.
-  </section>
-  <section class="notice warn">
-    <strong>⚠️ Educational reference only.</strong> Thresholds and management vary by institution; this is a workstation memory aid, not a substitute for clinical judgment, local protocol, or direct communication of critical results.
+  <section class="notice warn compact">
+    <strong>⚠️ Educational reference only</strong> — verify against local protocol and clinical context. Tap a region to open it; ⭐ star your common topics; tap any F:/I: line on a sheet to copy.
   </section>
 
   <nav class="region-nav" id="region-nav" aria-label="Jump to body region"></nav>
-  <div class="result-count" id="result-count"></div>
+
+  <div id="pinned"></div>
+
+  <div class="count-row">
+    <div class="result-count" id="result-count"></div>
+    <button id="toggle-all" class="link-btn" type="button">Expand all</button>
+  </div>
 
   <div id="dx-sections"></div>
 
@@ -121,6 +123,7 @@
 <script src="data/pelvis.js"></script>
 <script src="data/msk.js"></script>
 <script src="data/peds.js"></script>
+<script src="assets/store.js"></script>
 <script src="assets/launcher.js"></script>
 </body>
 </html>

@@ -2,12 +2,16 @@
    - HTML / page navigations  -> NETWORK-FIRST (fresh when online, cached when offline)
    - Other assets (CSS/JS/icons) -> CACHE-FIRST with runtime caching
    Bump CACHE on each meaningful change to purge old caches. */
-const CACHE = 'er-ct-v4';
+const CACHE = 'er-ct-v5';
 
 const SHELL = [
   './',
   'index.html',
   'dx.html',
+  'quiz.html',
+  'macros.html',
+  'polish.html',
+  'sync.html',
   'manifest.webmanifest',
   'apple-touch-icon.png',
   'icon-192.png',
@@ -16,6 +20,11 @@ const SHELL = [
   'assets/sheet.js',
   'assets/render.js',
   'assets/launcher.js',
+  'assets/store.js',
+  'assets/quiz.js',
+  'assets/macros.js',
+  'assets/ai.js',
+  'assets/firebase-sync.js',
   // data-driven catalog (powers home search + every generic diagnosis page)
   'data/_core.js',
   'data/neuro.js',

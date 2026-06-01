@@ -21,6 +21,25 @@ it · threshold · pitfall · pearl · call-now). Built as a static PWA you can 
 - **Sources** block + per-page links to **Radiopaedia**, **RadioGraphics/RSNA**, ACR, AAST, etc.
 - Auto-built table-of-contents drawer, font controls, tap-to-copy dictation, and full offline support.
 
+## Productivity tools
+
+All client-side, offline, and **PHI-free by design**:
+
+- **Home page** — collapsible region accordions (no endless scroll), a region table-of-contents,
+  live + **voice** search, ⭐ **Favorites** and 🕘 **Recently viewed** pinned at the top, and a
+  star toggle on every card and sheet.
+- **🎴 Study** (`quiz.html`) — flashcard + multiple-choice quiz over the catalog with Leitner
+  spaced-repetition (progress stored locally).
+- **📝 Templates** (`macros.html`) — every F:/I: template with one-tap copy, your own editable
+  macros, and a **PowerScribe AutoText export** (bulk `erct_<slug>_f/_i` trigger→text file).
+- **✨ AI Polish** (`polish.html`) — bring-your-own-key (Gemini / OpenAI / Anthropic) report-phrasing
+  sandbox. **De-identified / hypothetical text only — never a HIPAA-covered tool.**
+- **☁️ Sync** (`sync.html`, optional) — mirror favorites/macros/quiz across devices via your own
+  free Firebase project. See [FIREBASE_SETUP.md](FIREBASE_SETUP.md). Only non-clinical state syncs.
+
+Local state lives in `assets/store.js` (localStorage); `assets/firebase-sync.js` is the optional
+cross-device layer.
+
 ## Architecture
 
 ```

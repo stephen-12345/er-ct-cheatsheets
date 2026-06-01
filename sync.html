@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cross-Device Sync — ER CT Cheat Sheets</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/sheet.css">
+<style>
+  .sync-wrap{ max-width:720px; }
+  .sync-wrap textarea{ width:100%; min-height:150px; font:13px ui-monospace,Menlo,monospace; color:var(--tx);
+    background:#0c131c; border:1px solid var(--bdr); border-radius:10px; padding:12px; resize:vertical; }
+  .sync-row{ display:flex; flex-wrap:wrap; gap:10px; margin:14px 0; }
+  .btn{ cursor:pointer; border:1px solid var(--bdr); border-radius:9px; background:#0d1722; color:#cfe7f2;
+    font:inherit; font-weight:700; padding:10px 16px; }
+  .btn:hover{ border-color:var(--teal); color:#fff; }
+  .btn.primary{ background:linear-gradient(135deg,var(--crit),#b3202e); color:#fff; border-color:transparent; }
+  #sync-status{ font-weight:700; color:var(--green); }
+  ol{ margin:10px 0 14px 22px; } ol li{ margin:7px 0; }
+</style>
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <span class="crumb">Cross-Device Sync</span>
+  <a href="index.html">← All topics</a>
+</div>
+
+<div class="sync-wrap">
+  <h1 class="sheet-h1">Cross-Device Sync <span style="font-size:.5em;opacity:.7">(optional)</span></h1>
+  <p class="subtitle">Sync your <b>favorites</b>, <b>personal macros</b>, and <b>quiz progress</b> across phone and workstation with your own free Firebase project. No patient data is ever stored — only your stars, templates, and study progress.</p>
+
+  <div class="callout pearl">
+    <div class="c-title"><span class="ico">🔒</span><span class="lbl">Privacy</span><span class="ttl">What syncs</span></div>
+    <p>Only favorites, macros, quiz boxes, and recently-viewed slugs — all non-clinical. Your AI API keys and any report text are <b>never</b> synced.</p>
+  </div>
+
+  <h2>1 · Create a Firebase project (5 min, one time)</h2>
+  <ol>
+    <li>Go to <a href="https://console.firebase.google.com/" target="_blank" rel="noopener noreferrer">console.firebase.google.com</a> → <b>Add project</b>.</li>
+    <li><b>Build → Authentication → Sign-in method → Google → Enable.</b></li>
+    <li><b>Build → Firestore Database → Create database</b> (production mode).</li>
+    <li>In <b>Firestore → Rules</b>, paste the rules from <a href="FIREBASE_SETUP.md" target="_blank">FIREBASE_SETUP.md</a> (each user can read/write only their own doc) and Publish.</li>
+    <li><b>Project settings (gear) → Your apps → Web (&lt;/&gt;)</b> → register an app → copy the <code>firebaseConfig</code> object.</li>
+    <li>Add your GitHub Pages domain under <b>Authentication → Settings → Authorized domains</b> (e.g. <code>stephen-12345.github.io</code>).</li>
+  </ol>
+
+  <h2>2 · Paste your config</h2>
+  <p class="subtitle">Paste the <code>firebaseConfig</code> JSON (the part inside the braces, or the whole <code>{ ... }</code>). It is stored only on this device.</p>
+  <textarea id="cfg" placeholder='{
+  "apiKey": "...",
+  "authDomain": "yourproject.firebaseapp.com",
+  "projectId": "yourproject",
+  "appId": "1:...:web:..."
+}'></textarea>
+  <div class="sync-row">
+    <button class="btn primary" id="save">Save config</button>
+    <button class="btn" id="signin">Sign in with Google</button>
+    <button class="btn" id="signout">Sign out</button>
+    <button class="btn" id="syncnow">Sync now</button>
+  </div>
+  <p>Status: <span id="sync-status">Not configured.</span></p>
+</div>
+
+<script src="assets/store.js"></script>
+<script src="assets/firebase-sync.js"></script>
+<script>
+(function () {
+  var cfg = document.getElementById('cfg');
+  var status = document.getElementById('sync-status');
+  ERCTSync.onStatus(function (s) { status.textContent = s; });
+  var saved = ERCTSync.getConfig();
+  if (saved) { cfg.value = typeof saved === 'string' ? saved : JSON.stringify(saved, null, 2); status.textContent = 'Config saved. Sign in to start syncing.'; }
+  function parseCfg() {
+    var t = cfg.value.trim();
+    if (t[0] !== '{') t = '{' + t + '}';
+    return JSON.parse(t);
+  }
+  document.getElementById('save').onclick = function () {
+    try { var c = parseCfg(); ERCTSync.saveConfig(c); ERCTSync.init().catch(function (e) { status.textContent = 'Error: ' + e.message; }); status.textContent = 'Config saved.'; }
+    catch (e) { status.textContent = 'Invalid JSON: ' + e.message; }
+  };
+  document.getElementById('signin').onclick = function () { ERCTSync.signIn().catch(function (e) { status.textContent = 'Sign-in error: ' + e.message; }); };
+  document.getElementById('signout').onclick = function () { ERCTSync.signOut(); };
+  document.getElementById('syncnow').onclick = function () { ERCTSync.syncNow(); };
+  if (saved) ERCTSync.init().catch(function () {});
+})();
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+</body>
+</html>

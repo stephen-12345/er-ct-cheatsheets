@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Report Polish — ER CT Cheat Sheet</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/sheet.css">
+<style>
+  /* ---- AI Report Polish — page-specific layout (reuses sheet.css tokens) ---- */
+  .ai-wrap{ max-width:880px; margin:0 auto; }
+  .crit-strip.always{ position:sticky; top:54px; z-index:25;
+    background:rgba(36,16,21,0.97); backdrop-filter:blur(8px); }
+  @media (max-width:680px){ .crit-strip.always{ top:48px; } }
+
+  .ai-panel{ background:var(--panel); border:1px solid var(--bdr); border-radius:11px;
+    padding:16px 18px; margin:16px 0; box-shadow:0 12px 32px var(--shadow); }
+  .ai-panel h3{ margin-top:4px; }
+
+  .ai-row{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:10px 0; }
+  .ai-row label{ font-size:13px; font-weight:700; color:var(--tx2);
+    letter-spacing:.4px; text-transform:uppercase; min-width:80px; }
+  .ai-input, .ai-select{
+    flex:1 1 200px; min-width:140px; font:inherit; font-size:15px; color:var(--tx);
+    background:var(--panel2); border:1px solid var(--bdr); border-radius:9px;
+    padding:9px 11px; outline:none; transition:border-color .15s, box-shadow .15s; }
+  .ai-input:focus, .ai-select:focus{ border-color:var(--teal);
+    box-shadow:0 0 0 3px rgba(70,198,224,0.15); }
+  .ai-input::placeholder{ color:var(--tx3); }
+
+  textarea#ai-in{
+    width:100%; min-height:170px; resize:vertical; font:inherit; font-size:16px;
+    line-height:1.5; color:var(--tx); background:var(--panel2);
+    border:1px solid var(--bdr); border-radius:10px; padding:13px 15px; outline:none;
+    transition:border-color .15s, box-shadow .15s; }
+  textarea#ai-in:focus{ border-color:var(--teal); box-shadow:0 0 0 3px rgba(70,198,224,0.15); }
+  textarea#ai-in::placeholder{ color:var(--tx3); }
+
+  .ai-charcount{ text-align:right; color:var(--tx3); font-size:12.5px; margin-top:5px; }
+
+  .ai-actions{ display:flex; flex-wrap:wrap; gap:9px; margin:14px 0 4px; }
+  .ai-actions button, .ai-btn{
+    cursor:pointer; border:1px solid var(--bdr); border-radius:9px; background:#0d1722;
+    color:#9fdcf0; font-weight:700; font-family:inherit; font-size:14.5px;
+    padding:10px 15px; line-height:1.2;
+    transition:border-color .12s, color .12s, background .12s, opacity .12s; }
+  .ai-actions button:hover, .ai-btn:hover{ border-color:var(--teal); color:#fff; }
+  .ai-btn.primary{ border-color:rgba(95,211,154,0.5); color:#aef0cd; background:rgba(95,211,154,0.08); }
+  .ai-btn.primary:hover{ border-color:var(--green); color:#fff; }
+  button:disabled, .ai-btn:disabled{ opacity:.45; cursor:not-allowed; }
+  button:disabled:hover, .ai-btn:disabled:hover{ border-color:var(--bdr); color:#9fdcf0; }
+
+  .ai-out-head{ display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .ai-out-head .o-title{ font-weight:800; color:#fff; font-size:15px;
+    letter-spacing:.4px; text-transform:uppercase; margin-right:auto; }
+  #ai-out{ white-space:pre-wrap; word-wrap:break-word; min-height:60px;
+    font-size:16px; line-height:1.55; color:var(--tx); }
+  #ai-out.placeholder{ color:var(--tx3); font-style:italic; }
+
+  .ai-status{ font-size:13.5px; margin:6px 0; min-height:1.2em; }
+  .ai-status.busy{ color:var(--amber); }
+  .ai-status.ok{ color:var(--green); }
+  .ai-status.err{ color:var(--crit-2); }
+  .ai-err-box{ display:none; margin-top:10px; border:1px solid rgba(255,77,94,0.4);
+    background:rgba(255,77,94,0.08); border-radius:9px; padding:11px 14px;
+    color:#ffd9dd; font-size:14px; white-space:pre-wrap; word-wrap:break-word; }
+  .ai-err-box.show{ display:block; }
+
+  .ai-settings{ display:none; }
+  .ai-settings.open{ display:block; }
+  .ai-gear{ margin-left:auto; }
+  .ai-note{ color:var(--tx3); font-size:12.5px; line-height:1.5; margin:8px 0 0; }
+  .ai-note b{ color:var(--tx2); }
+  .spinner{ display:inline-block; width:13px; height:13px; vertical-align:-2px;
+    border:2px solid rgba(255,182,72,0.35); border-top-color:var(--amber);
+    border-radius:50%; animation:ai-spin .7s linear infinite; margin-right:6px; }
+  @keyframes ai-spin{ to{ transform:rotate(360deg); } }
+</style>
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <span class="crumb">AI Report Polish</span>
+  <a href="index.html">← Back</a>
+</div>
+
+<div class="ai-wrap">
+
+  <!-- ALWAYS-VISIBLE SAFETY BANNER -->
+  <div class="crit-strip always" role="alert">
+    <span class="bolt">⚠️</span>
+    <span class="txt">
+      <b>De-identified / hypothetical text ONLY.</b> Never paste real patient data,
+      identifiers, or actual case reports. This sends text to a third-party AI API
+      using <b>your own key</b> and is <b>NOT a HIPAA-covered or institution-approved
+      tool</b> — it is a personal sandbox for practicing phrasing.
+    </span>
+  </div>
+
+  <h1 class="sheet-h1">AI Report Polish &amp; Articulation Sandbox</h1>
+  <p class="subtitle">Refine de-identified report language with a bring-your-own-key
+    LLM. Everything runs in your browser; the only network call is to the AI provider
+    you choose. Your API key is stored only in this browser via localStorage.</p>
+
+  <div id="ai-app"></div>
+
+</div>
+
+<script src="assets/store.js"></script>
+<script src="assets/ai.js"></script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+</body>
+</html>

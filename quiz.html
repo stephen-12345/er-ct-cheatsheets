@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ER CT Cheat Sheet — Quiz</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#5a121d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ER CT">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/sheet.css">
+<style>
+  /* ── quiz-specific layout (built on sheet.css design language) ── */
+  .quiz-wrap{ max-width:680px; margin:0 auto; }
+  .quiz-sub{ color:var(--tx2); font-size:15px; margin:0 0 18px; line-height:1.5; }
+
+  /* progress bar */
+  .qprogress{ margin:6px 0 20px; }
+  .qprogress .bar{ height:8px; border-radius:999px; background:#0c131c; border:1px solid var(--bdr); overflow:hidden; }
+  .qprogress .bar > i{ display:block; height:100%; width:0%;
+    background:linear-gradient(90deg,var(--teal),var(--green)); transition:width .3s ease; }
+  .qprogress .lbl{ display:flex; justify-content:space-between; gap:10px;
+    color:var(--tx3); font-size:12.5px; font-weight:700; letter-spacing:.4px; margin-top:7px; text-transform:uppercase; }
+
+  /* setup chips */
+  .qchips{ display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 4px; }
+  .qchip{ display:inline-flex; align-items:center; gap:7px; cursor:pointer; user-select:none;
+    border:1px solid var(--bdr); border-radius:999px; padding:8px 14px; font-size:14px; font-weight:600;
+    color:var(--tx2); background:#0c131c; min-height:40px;
+    transition:border-color .12s, color .12s, background .12s; -webkit-tap-highlight-color:transparent; }
+  .qchip .rdot{ width:9px; height:9px; border-radius:3px; background:var(--reg,var(--teal)); }
+  .qchip.on{ color:#fff; border-color:var(--reg,var(--teal));
+    background:color-mix(in srgb, var(--reg,var(--teal)) 14%, transparent); }
+  .qchip .cnt{ color:var(--tx3); font-size:11.5px; font-weight:700; }
+
+  .qfieldlabel{ display:block; color:var(--tx2); font-size:.8rem; font-weight:800; letter-spacing:1.4px;
+    text-transform:uppercase; margin:24px 0 4px; }
+  .qrow{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+
+  /* big buttons (styled like .toc-toggle / .fontctl button) */
+  .qbtn{ display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    cursor:pointer; font-family:inherit; font-weight:700; font-size:15px; line-height:1.1;
+    border:1px solid var(--bdr); border-radius:10px; background:#0d1722; color:#9fdcf0;
+    padding:12px 18px; min-height:48px; -webkit-tap-highlight-color:transparent;
+    transition:border-color .12s, color .12s, background .12s, transform .1s; }
+  .qbtn:hover{ border-color:var(--teal); color:#fff; }
+  .qbtn:active{ transform:translateY(1px); }
+  .qbtn.on{ border-color:var(--teal); color:#fff; background:rgba(70,198,224,0.13); }
+  .qbtn.primary{ color:#fff; border-color:rgba(255,77,94,0.5);
+    background:linear-gradient(135deg,var(--h1b),var(--h1a)); }
+  .qbtn.primary:hover{ border-color:var(--crit); }
+  .qbtn.wide{ width:100%; }
+  .qbtn.good{ color:#aef0cd; border-color:rgba(95,211,154,0.5); background:rgba(95,211,154,0.1); }
+  .qbtn.good:hover{ border-color:var(--green); color:#fff; }
+  .qbtn.bad{ color:#ffc4ca; border-color:rgba(255,77,94,0.5); background:rgba(255,77,94,0.1); }
+  .qbtn.bad:hover{ border-color:var(--crit); color:#fff; }
+  .qbtn.ghost{ background:#0c131c; }
+  .qbtn:disabled{ opacity:.5; cursor:default; }
+
+  /* the centered quiz card */
+  .qcard{ border:1px solid var(--bdr); border-radius:14px;
+    background:linear-gradient(180deg,var(--panel2),var(--panel));
+    box-shadow:0 16px 44px var(--shadow); padding:22px 22px 20px; margin:6px 0 16px; }
+  .qcard .qmeta{ display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:12px; }
+  .qcard .qpill{ font-size:.66rem; font-weight:800; letter-spacing:.7px; text-transform:uppercase;
+    border-radius:999px; padding:3px 10px; color:#fff;
+    border:1px solid color-mix(in srgb, var(--reg,var(--teal)) 50%, transparent);
+    background:color-mix(in srgb, var(--reg,var(--teal)) 16%, transparent); }
+  .qcard .qpill.mod{ color:var(--teal); border-color:var(--bdr); background:#0c131c; }
+  .qprompt{ font-size:19px; line-height:1.5; color:var(--tx); margin:4px 0 6px; }
+  .qhint{ color:var(--tx2); font-size:15px; line-height:1.5; margin:10px 0 2px; }
+  .qhint b{ color:#fff; }
+  .qtagrow{ display:flex; flex-wrap:wrap; gap:6px; margin:12px 0 2px; }
+  .qtagrow .chip{ border:1px solid var(--bdr); border-radius:999px; padding:3px 11px; font-size:13px;
+    color:var(--tx2); background:#0c131c; }
+
+  /* MC option buttons */
+  .qopts{ display:flex; flex-direction:column; gap:10px; margin:16px 0 4px; }
+  .qopt{ display:flex; align-items:center; gap:12px; width:100%; text-align:left;
+    cursor:pointer; font-family:inherit; font-size:16px; line-height:1.35; color:var(--tx);
+    border:1px solid var(--bdr); border-radius:11px; background:#0c131c; padding:14px 16px; min-height:54px;
+    -webkit-tap-highlight-color:transparent; transition:border-color .12s, background .12s; }
+  .qopt:hover:not(:disabled){ border-color:var(--teal); }
+  .qopt .num{ flex:0 0 auto; width:26px; height:26px; border-radius:7px; display:flex; align-items:center;
+    justify-content:center; font-size:13px; font-weight:800; color:var(--tx2); background:#101822; border:1px solid var(--bdr); }
+  .qopt.correct{ border-color:var(--green); background:rgba(95,211,154,0.12); color:#fff; }
+  .qopt.correct .num{ color:#aef0cd; border-color:var(--green); }
+  .qopt.wrong{ border-color:var(--crit); background:rgba(255,77,94,0.12); color:#fff; }
+  .qopt.wrong .num{ color:#ffc4ca; border-color:var(--crit); }
+  .qopt:disabled{ cursor:default; }
+
+  /* reveal block (flashcard answer) */
+  .qreveal{ margin-top:16px; padding-top:16px; border-top:1px dashed var(--bdr); }
+  .qanswer{ font-size:22px; font-weight:800; color:#fff; line-height:1.25; margin:0 0 4px; }
+  .qanswer .reg{ font-size:13px; font-weight:700; letter-spacing:.6px; text-transform:uppercase;
+    color:var(--reg,var(--teal)); display:block; margin-top:3px; }
+  .qfeedback{ font-weight:800; font-size:15px; letter-spacing:.4px; margin:2px 0 12px; }
+  .qfeedback.ok{ color:var(--green); }
+  .qfeedback.no{ color:var(--crit); }
+
+  .qcallouts .callout{ margin:12px 0; }
+  .qlink{ display:inline-flex; align-items:center; gap:6px; margin-top:12px; font-size:14px;
+    font-weight:600; text-decoration:none; color:#9fdcf0; border:1px solid var(--bdr);
+    border-radius:999px; padding:7px 13px; background:#0d1722; }
+  .qlink:hover{ border-color:var(--teal); color:#fff; }
+
+  .qfooter{ display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+  .qkbdhint{ color:var(--tx3); font-size:12px; margin-top:14px; text-align:center; }
+  .qkbdhint kbd{ font:inherit; font-size:.72rem; color:var(--tx2); background:#0c131c;
+    border:1px solid var(--bdr); border-radius:6px; padding:1px 6px; }
+
+  /* results */
+  .qresult-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:18px 0; }
+  .qstat{ border:1px solid var(--bdr); border-radius:12px; background:var(--panel); padding:18px 16px; text-align:center; }
+  .qstat .n{ font-size:34px; font-weight:800; line-height:1; color:#fff; }
+  .qstat .k{ color:var(--tx3); font-size:.72rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-top:7px; }
+  .qstat.good .n{ color:var(--green); }
+  .qstat.review .n{ color:var(--amber); }
+  .qreset{ margin-top:22px; padding-top:16px; border-top:1px solid var(--bdr); text-align:center; }
+  .qreset button{ background:none; border:none; color:var(--tx3); font:inherit; font-size:13px;
+    cursor:pointer; text-decoration:underline; }
+  .qreset button:hover{ color:var(--crit); }
+
+  @media (max-width:680px){
+    .quiz-wrap{ max-width:none; }
+    .qcard{ padding:18px 16px 16px; }
+    .qprompt{ font-size:17.5px; }
+  }
+</style>
+</head>
+<body class="sheet">
+
+<div class="topbar-sheet">
+  <span class="crumb">Study / Quiz</span>
+  <a href="index.html">← All topics</a>
+</div>
+
+<div id="quiz-root" class="quiz-wrap">Loading…</div>
+
+<script src="data/_core.js"></script>
+<script src="data/neuro.js"></script>
+<script src="data/headneck.js"></script>
+<script src="data/spine.js"></script>
+<script src="data/chest.js"></script>
+<script src="data/cardiac.js"></script>
+<script src="data/vascular.js"></script>
+<script src="data/abdomen.js"></script>
+<script src="data/hpb.js"></script>
+<script src="data/gu.js"></script>
+<script src="data/pelvis.js"></script>
+<script src="data/msk.js"></script>
+<script src="data/peds.js"></script>
+<script src="assets/store.js"></script>
+<script src="assets/quiz.js"></script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+</body>
+</html>

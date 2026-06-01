@@ -42,6 +42,24 @@
   if (crumb) crumb.textContent = d.title;
   document.documentElement.style.setProperty('--reg', reg.color);
 
+  // record recently-viewed + offer a favorite toggle in the top bar
+  if (window.ERCTStore) {
+    ERCTStore.pushRecent(d.slug);
+    if (crumb) {
+      var star = document.createElement('button');
+      star.className = 'sheet-star'; star.type = 'button';
+      star.setAttribute('aria-label', 'Toggle favorite');
+      var paint = function () {
+        var on = ERCTStore.isFav(d.slug);
+        star.textContent = on ? '★' : '☆';
+        star.classList.toggle('on', on);
+      };
+      paint();
+      star.addEventListener('click', function () { ERCTStore.toggleFav(d.slug); paint(); });
+      crumb.insertAdjacentElement('afterend', star);
+    }
+  }
+
   var s = d.sheet || {};
   var html = [];
 
