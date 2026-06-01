@@ -183,6 +183,37 @@
     }
   });
 
+  // ---- "Copy F + I" button per dictation scenario ----
+  function clean(node, label) { return node.textContent.replace(/^\s*[FI]:\s*/, '').replace(/\s+/g, ' ').trim(); }
+  [].forEach.call(content.querySelectorAll('.dx'), function (dx) {
+    var f = null, i = null, last = null, node = dx.nextElementSibling;
+    while (node && !node.classList.contains('dx') && node.tagName !== 'H2' && node.tagName !== 'H3') {
+      if (node.classList.contains('f')) { f = node; last = node; }
+      else if (node.classList.contains('i')) { i = node; last = node; }
+      node = node.nextElementSibling;
+    }
+    if (!f && !i) return;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy-both';
+    var label = (f && i) ? 'Copy F + I' : f ? 'Copy findings' : 'Copy impression';
+    btn.innerHTML = '<span class="cb-ico">⧉</span> ' + label;
+    btn.addEventListener('click', function () {
+      var parts = [];
+      if (f) parts.push('FINDINGS:\n' + clean(f));
+      if (i) parts.push('IMPRESSION:\n' + clean(i));
+      var txt = parts.join('\n\n');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(function () {
+          btn.classList.add('copied');
+          btn.innerHTML = '<span class="cb-ico">✓</span> Copied';
+          setTimeout(function () { btn.classList.remove('copied'); btn.innerHTML = '<span class="cb-ico">⧉</span> ' + label; }, 1200);
+        }).catch(function () {});
+      }
+    });
+    (last || dx).insertAdjacentElement('afterend', btn);
+  });
+
   // ---- service worker ----
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {

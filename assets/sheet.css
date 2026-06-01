@@ -422,9 +422,29 @@ b{ color:#fff; }
 ul,ol{ margin:10px 0 14px 26px; }
 li{ margin:6px 0; }
 
-.dx{ margin:18px 0 4px; font-weight:800; color:#fff; font-size:18.5px; line-height:1.3; }
-.f,.i{ margin:5px 0; padding-left:14px; border-left:2px solid #25303e; }
+.dx{ margin:24px 0 9px; font-weight:800; color:#fff; font-size:19px; line-height:1.3; letter-spacing:.2px; }
+.f,.i{
+  position:relative; margin:9px 0; padding:14px 50px 14px 16px;
+  font-size:17.5px; line-height:1.56; color:var(--tx);
+  background:#0e1722; border:1px solid var(--bdr); border-left:4px solid var(--findings); border-radius:10px;
+  cursor:pointer; -webkit-tap-highlight-color:transparent; transition:border-color .12s, background .12s;
+}
+.i{ border-left-color:var(--impression); }
+.f:hover,.i:hover{ border-color:var(--teal); background:#101d29; }
+.f::after,.i::after{
+  content:"⧉ copy"; position:absolute; right:12px; top:12px;
+  font-size:11px; font-weight:700; letter-spacing:.3px; color:var(--tx3);
+}
+.f:hover::after,.i:hover::after{ color:var(--teal); }
 .f b{ color:var(--findings); } .i b{ color:var(--impression); }
+.copy-both{
+  display:inline-flex; align-items:center; gap:7px; margin:6px 0 20px; cursor:pointer;
+  border:1px solid var(--bdr); border-radius:9px; background:#11202d; color:#cfe7f2;
+  font:inherit; font-weight:700; font-size:14px; padding:9px 15px; -webkit-tap-highlight-color:transparent;
+}
+.copy-both:hover{ border-color:var(--teal); color:#fff; }
+.copy-both.copied{ border-color:var(--green); color:var(--green); background:rgba(95,211,154,0.12); }
+.copy-both .cb-ico{ font-size:15px; line-height:1; }
 
 .ph{
   background:var(--ph-bg); color:var(--ph-tx); border:1px solid var(--ph-bd);
@@ -552,6 +572,8 @@ body.toc-open .toc-handle{ opacity:0; visibility:hidden; }
   h1.sheet-h1{ font-size:24px; padding:13px 16px; }
   h2{ font-size:19px; } h2.group{ font-size:18px; }
   h1.sheet-h1,h2,h2.group,h3{ scroll-margin-top:calc(96px + env(safe-area-inset-top,0px)); }
+  .f,.i{ font-size:16.5px; padding:12px 34px 12px 13px; }
+  .f::after,.i::after{ content:"⧉"; }
 }
 
 /* ── print / PDF ── */
@@ -564,5 +586,8 @@ body.toc-open .toc-handle{ opacity:0; visibility:hidden; }
   h2,h2.group{ font-size:15px; break-after:avoid; }
   h3,.dx{ break-after:avoid; }
   .f,.i,.callout{ break-inside:avoid; }
+  .copy-both{ display:none !important; }
+  .f::after,.i::after{ display:none; }
+  .f,.i{ background:none; padding:5px 10px; font-size:12px; border:1px solid #d0d0d0; }
   table,tr{ break-inside:avoid; } table{ font-size:11.5px; }
 }
