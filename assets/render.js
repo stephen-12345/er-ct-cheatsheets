@@ -79,27 +79,35 @@
       '<p>' + ph(body) + '</p></div>');
   }
 
-  html.push('<h2 class="group">How to read it</h2>');
-  callout('find',    '🔍', 'How to find it', 'Where to look', s.find);
-  callout('measure', '📏', 'Threshold',      'The number that matters', s.measure);
-  callout('pitfall', '⚠️', 'Pitfall',        'Mimics &amp; misses', s.pitfall);
-  callout('pearl',   '💡', 'Pearl',          'High-yield point', s.pearl);
-
-  // optional hand-drawn schematic(s): d.diagram = {svg, caption} or an array of them
-  if (d.diagram) {
-    [].concat(d.diagram).forEach(function (g) {
-      if (!g || !g.svg) return;
-      html.push('<figure class="diagram">' + g.svg +
-        (g.caption ? '<figcaption>' + ph(g.caption) + '</figcaption>' : '') + '</figure>');
-    });
-  }
-
+  // ---- 1) DICTATION FIRST — the main goal of the project ----
   if (s.f || s.i) {
-    html.push('<h2 class="group">Copy-Ready Dictation</h2>');
-    html.push('<p class="subtitle">Tap a line to copy.</p>');
+    html.push('<h2 class="group">Dictation — copy-ready</h2>');
+    html.push('<p class="subtitle">Tap a line to copy. Replace <span class="ph">[bracketed]</span> text.</p>');
     html.push('<div class="dx">' + esc(d.title) + '</div>');
     if (s.f) html.push('<p class="f"><b>F:</b> ' + ph(s.f) + '</p>');
     if (s.i) html.push('<p class="i"><b>I:</b> ' + ph(s.i) + '</p>');
+  }
+
+  // ---- 2) SEARCH PATTERN — how to find it ----
+  if (s.find) {
+    html.push('<h2 class="group">Search pattern — how to find it</h2>');
+    callout('find', '🔍', 'How to find it', 'Where to look on the scan', s.find);
+  }
+
+  // ---- 3) PATHOLOGY REVIEW (secondary) ----
+  if (s.measure || s.pitfall || s.pearl || d.diagram) {
+    html.push('<h2 class="group">Pathology review</h2>');
+    callout('measure', '📏', 'Threshold', 'The number that matters', s.measure);
+    callout('pitfall', '⚠️', 'Pitfall',   'Mimics & misses', s.pitfall);
+    callout('pearl',   '💡', 'Pearl',      'High-yield point', s.pearl);
+    // optional hand-drawn schematic(s): d.diagram = {svg, caption} or an array of them
+    if (d.diagram) {
+      [].concat(d.diagram).forEach(function (g) {
+        if (!g || !g.svg) return;
+        html.push('<figure class="diagram">' + g.svg +
+          (g.caption ? '<figcaption>' + ph(g.caption) + '</figcaption>' : '') + '</figure>');
+      });
+    }
   }
 
   // sources
